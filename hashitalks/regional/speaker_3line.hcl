@@ -76,8 +76,8 @@ layer "text" "t" {
 	font = "fonts/klavika/light.ttf"
 }
 
-layer "text" "alks_region" {
-	content = "alks: ${region}"
+layer "text" "alks_edition" {
+	content = "alks: ${edition}"
 	x = 515
 	y = 150
 	size = 128

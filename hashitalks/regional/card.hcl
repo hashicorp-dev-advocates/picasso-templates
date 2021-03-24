@@ -58,5 +58,5 @@ layer "text" "tagline" {
     x = 250
 	y = 530
 	size = 56
-	font = "fonts/arial/arial.ttf"
+	font = "fonts/arial/regular.ttf"
 }
