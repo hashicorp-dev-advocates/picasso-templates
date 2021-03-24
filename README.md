@@ -6,4 +6,4 @@ Some of these templates might require additional assets to be copied into this r
 Due to licenses for those assets, they are not included in this repository.
 
 The paths in the templates are computed from the directory the binary is run in.
-This means that a template that refers to `images/background.png` and is executed with the command `picasso generate -t hashitalks/regional_banner.hcl` will look for the background at `$PWD/images/background.png`.
+This means that a template that refers to `images/background.png` and is executed with the command `picasso generate -t hashitalks/regional/banner.hcl` will look for the background at `$PWD/images/background.png`.
