@@ -1,3 +1,14 @@
+# 
+# This template generates a speaker card for a talk that has a short title that fits on 1 line.
+# The required variables for this template are:
+# - year
+# - speaker
+# - title
+# - photo
+# - date
+# - url
+# 
+
 output "png" {
 	width = 1600
 	height = 900
@@ -5,7 +16,7 @@ output "png" {
 
 variable "background" {
     type = "string"
-    default = "images/card_background_1600x900.png"
+    default = "images/background_1600x900.png"
 }
 
 variable "logo" {
@@ -15,32 +26,26 @@ variable "logo" {
 
 variable "year" {
     type = "string"
-    default = "2020"
 }
 
 variable "speaker" {
     type = "string"
-    default = "John Doe"
 }
 
 variable "title" {
     type = "string"
-    default = "My awesome talk with a very long title that should wrap"
 }
 
 variable "photo" {
     type = "string"
-    default = "images/avatar.jpg"
 }
 
 variable "date" {
     type = "string"
-    default = "Thursday 30 April"
 }
 
 variable "url" {
     type = "string"
-    default = "events.hashicorp.com/hashitalks"
 }
 
 layer "image" "background" {
@@ -60,7 +65,7 @@ layer "text" "hashi" {
 	x = 150
 	y = 150
 	size = 128
-	font = "fonts/klavika/KlavikaBasic-Bold.ttf"
+	font = "fonts/klavika/bold.ttf"
 }
 
 layer "text" "t" {
@@ -68,15 +73,15 @@ layer "text" "t" {
 	x = 460
 	y = 150
 	size = 128
-	font = "fonts/klavika/KlavikaBasic-Light.ttf"
+	font = "fonts/klavika/light.ttf"
 }
 
 layer "text" "alks_year" {
-	content = "alks ${year}"
+	content = "alks: ${year}"
 	x = 515
 	y = 150
 	size = 128
-	font = "fonts/klavika/KlavikaBasic-Light.ttf"
+	font = "fonts/klavika/light.ttf"
 }
 
 layer "image" "photo" {
@@ -106,7 +111,7 @@ layer "text" "title" {
 layer "text" "date" {
     content = "${date}"
     x = 550
-	y = 585
+	y = 525
 	size = 32
 	font = "fonts/metro/light.ttf"
 }
@@ -114,7 +119,7 @@ layer "text" "date" {
 layer "text" "url" {
     content = "${url}"
     x = 550
-	y = 625
+	y = 565
 	size = 32
 	font = "fonts/metro/bold.ttf"
 }

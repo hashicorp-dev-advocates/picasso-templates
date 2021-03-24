@@ -1,3 +1,10 @@
+# 
+# This template generates a twitter card for the event.
+# The required variables for this template are:
+# - edition
+# - tagline
+# 
+
 output "png" {
 	width = 1600
 	height = 900
@@ -5,17 +12,15 @@ output "png" {
 
 variable "background" {
     type = "string"
-    default = "images/card_background_1600x900.png"
-}
-
-variable "tagline" {
-    type = "string"
-    default = "HashiTalks tagline"
+    default = "images/background_1600x900.png"
 }
 
 variable "edition" {
     type = "string"
-    default = "Edition"
+}
+
+variable "tagline" {
+    type = "string"
 }
 
 layer "image" "background" {

@@ -1,3 +1,9 @@
+# 
+# This template generates a banner for the CFP page.
+# The required variables for this template are:
+# - edition
+# 
+
 output "png" {
 	width = 1600
 	height = 467
@@ -5,12 +11,11 @@ output "png" {
 
 variable "background" {
     type = "string"
-    default = "images/banner_background_1600x467.png"
+    default = "images/background_1600x467.png"
 }
 
 variable "edition" {
     type = "string"
-    default = "Edition"
 }
 
 layer "image" "background" {

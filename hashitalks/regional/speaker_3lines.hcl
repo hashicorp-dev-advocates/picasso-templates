@@ -1,3 +1,14 @@
+#
+# This template generates a speaker card for a talk that has a very long title that fits on 3 line.
+# The required variables for this template are:
+# - edition
+# - speaker
+# - title
+# - photo
+# - date
+# - url
+#
+
 output "png" {
 	width = 1600
 	height = 900
@@ -5,7 +16,7 @@ output "png" {
 
 variable "background" {
     type = "string"
-    default = "images/card_background_1600x900.png"
+    default = "images/background_1600x900.png"
 }
 
 variable "logo" {
@@ -13,34 +24,28 @@ variable "logo" {
     default = "images/h.png"
 }
 
-variable "year" {
+variable "edition" {
     type = "string"
-    default = "2020"
 }
 
 variable "speaker" {
     type = "string"
-    default = "John Doe"
 }
 
 variable "title" {
     type = "string"
-    default = "My awesome talk with a very long title that should wrap"
 }
 
 variable "photo" {
     type = "string"
-    default = "images/avatar.jpg"
 }
 
 variable "date" {
     type = "string"
-    default = "Thursday 30 April"
 }
 
 variable "url" {
     type = "string"
-    default = "events.hashicorp.com/hashitalks"
 }
 
 layer "image" "background" {
@@ -60,7 +65,7 @@ layer "text" "hashi" {
 	x = 150
 	y = 150
 	size = 128
-	font = "fonts/klavika/KlavikaBasic-Bold.ttf"
+	font = "fonts/klavika/bold.ttf"
 }
 
 layer "text" "t" {
@@ -68,15 +73,15 @@ layer "text" "t" {
 	x = 460
 	y = 150
 	size = 128
-	font = "fonts/klavika/KlavikaBasic-Light.ttf"
+	font = "fonts/klavika/light.ttf"
 }
 
-layer "text" "alks_year" {
-	content = "alks ${year}"
+layer "text" "alks_region" {
+	content = "alks: ${region}"
 	x = 515
 	y = 150
 	size = 128
-	font = "fonts/klavika/KlavikaBasic-Light.ttf"
+	font = "fonts/klavika/light.ttf"
 }
 
 layer "image" "photo" {
@@ -91,7 +96,15 @@ layer "text" "speaker" {
     x = 550
 	y = 330
 	size = 72
-	font = "fonts/metro/bold.ttf"
+	font = "fonts/arial/bold.ttf"
+}
+
+layer "text" "speaker" {
+    content = "${speaker}"
+    x = 550
+	y = 330
+	size = 72
+	font = "fonts/arial/bold.ttf"
 }
 
 layer "text" "title" {
@@ -100,7 +113,7 @@ layer "text" "title" {
     x = 550
 	y = 395
 	size = 52
-	font = "fonts/metro/regular.ttf"
+	font = "fonts/arial/regular.ttf"
 }
 
 layer "text" "date" {
@@ -108,7 +121,7 @@ layer "text" "date" {
     x = 550
 	y = 645
 	size = 32
-	font = "fonts/metro/light.ttf"
+	font = "fonts/arial/light.ttf"
 }
 
 layer "text" "url" {
@@ -116,5 +129,5 @@ layer "text" "url" {
     x = 550
 	y = 685
 	size = 32
-	font = "fonts/metro/bold.ttf"
+	font = "fonts/arial/bold.ttf"
 }

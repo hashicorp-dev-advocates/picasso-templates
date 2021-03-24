@@ -1,3 +1,14 @@
+#
+# This template generates a speaker card for a talk that has a medium long title that fits on 2 line.
+# The required variables for this template are:
+# - edition
+# - speaker
+# - title
+# - photo
+# - date
+# - url
+# 
+
 output "png" {
 	width = 1600
 	height = 900
@@ -5,7 +16,7 @@ output "png" {
 
 variable "background" {
     type = "string"
-    default = "images/card_background_1600x900.png"
+    default = "images/background_1600x900.png"
 }
 
 variable "logo" {
@@ -13,34 +24,28 @@ variable "logo" {
     default = "images/h.png"
 }
 
-variable "region" {
+variable "edition" {
     type = "string"
-    default = "Vietnam"
 }
 
 variable "speaker" {
     type = "string"
-    default = "John Doe"
 }
 
 variable "title" {
     type = "string"
-    default = "My awesome talk with a very long title that should wrap"
 }
 
 variable "photo" {
     type = "string"
-    default = "images/avatar.jpg"
 }
 
 variable "date" {
     type = "string"
-    default = "Thursday 30 April"
 }
 
 variable "url" {
     type = "string"
-    default = "hashi.co/hashitalksvietnam"
 }
 
 layer "image" "background" {
@@ -60,7 +65,7 @@ layer "text" "hashi" {
 	x = 150
 	y = 150
 	size = 128
-	font = "fonts/klavika/KlavikaBasic-Bold.ttf"
+	font = "fonts/klavika/bold.ttf"
 }
 
 layer "text" "t" {
@@ -68,7 +73,7 @@ layer "text" "t" {
 	x = 460
 	y = 150
 	size = 128
-	font = "fonts/klavika/KlavikaBasic-Light.ttf"
+	font = "fonts/klavika/light.ttf"
 }
 
 layer "text" "alks_region" {
@@ -76,7 +81,7 @@ layer "text" "alks_region" {
 	x = 515
 	y = 150
 	size = 128
-	font = "fonts/klavika/KlavikaBasic-Light.ttf"
+	font = "fonts/klavika/light.ttf"
 }
 
 layer "image" "photo" {
@@ -84,14 +89,6 @@ layer "image" "photo" {
     x = 160
     y = 350
     width = 320
-}
-
-layer "text" "speaker" {
-    content = "${speaker}"
-    x = 550
-	y = 330
-	size = 72
-	font = "fonts/arial/bold.ttf"
 }
 
 layer "text" "speaker" {
@@ -114,7 +111,7 @@ layer "text" "title" {
 layer "text" "date" {
     content = "${date}"
     x = 550
-	y = 645
+	y = 585
 	size = 32
 	font = "fonts/arial/light.ttf"
 }
@@ -122,7 +119,7 @@ layer "text" "date" {
 layer "text" "url" {
     content = "${url}"
     x = 550
-	y = 685
+	y = 625
 	size = 32
 	font = "fonts/arial/bold.ttf"
 }
