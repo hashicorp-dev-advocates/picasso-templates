@@ -21,6 +21,7 @@ variable "edition" {
 
 variable "tagline" {
     type = "string"
+		default = "Virtual knowledge sharing"
 }
 
 layer "image" "background" {
