@@ -1,4 +1,3 @@
-
 # 
 # This template generates a speaker card for a talk that has a short title that fits on 1 line.
 # The required variables for this template are:
@@ -8,6 +7,7 @@
 # - photo
 # - date
 # - url
+# - color
 # 
 
 output "png" {
@@ -91,35 +91,6 @@ layer "image" "logo" {
     width = 58
     height = 62
 }
-
-// layer "rectangle" "gradient" {
-//     x = 0
-//     y = 0
-//     width = 1200
-//     height = 675
-//
-//     color "gradient" {
-//         start {
-//             x = 0
-//             y = 0
-//         }
-//
-//         end {
-//             x = 0
-//             y = 675
-//         }
-//
-//         stop {
-//             position = 0
-//             value = "#ff0000"
-//         }
-//
-//         stop {
-//             position = 1
-//             value = "#0000ff"
-//         }
-//     }
-// }
 
 layer "text" "hashi" {
 	content = "Hashi"
