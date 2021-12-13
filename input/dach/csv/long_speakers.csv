@@ -1,0 +1,9 @@
+id,speaker,title
+1,Cedric Feist,On-Prem Netzwerk Automatisierung mit Terraform Cloud
+2,René Außerehl,Double key encryption mit Hashicorp Vault und Microsoft Azure
+3,Mazin Power El Fehaid,Self-Service Infrastruktur fuer Softwareentwickler
+4,Christian Frank,Erzeugen eines Kubernetes-Cluster mit Terraform und dem rancher2 Provider
+5,Carsten Duch,Secret Management für SUSE Rancher mit HCP Vault
+6,Amar Lojo,Creating a Golden Image Pipeline with HCP Packer and Terraform Cloud
+7,Daniel Ciaglia & Timur Bublik,TIER's service registry and how we drive secondary systems by terraform plugins
+9,Jochen Zehnder,Die Verwendung von Infrastructure as Code (IaC) im DevOps Prozess

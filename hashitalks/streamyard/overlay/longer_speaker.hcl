@@ -17,18 +17,22 @@ variable "logo" {
   default = "images/h.png"
 }
 
-variable "edition" {
+variable "next" {
+  type    = "string"
+  default = "next up"
+}
+
+variable "title" {
   type = "string"
 }
 
-variable "message_english" {
-  type    = "string"
-  default = "The event will start soon"
+variable "speaker" {
+  type = "string"
 }
 
 variable "text_offset" {
   type    = "string"
-  default = 0
+  default = "0"
 }
 
 variable "regular_font" {
@@ -84,58 +88,36 @@ layer "image" "lines" {
 
 layer "image" "logo" {
   content = "${file(logo)}"
-  x       = 1920 - 65 - 76
-  y       = 76
-  height  = 76
+  x       = 1920 - 48 - 64
+  y       = 34
+  height  = 64
 }
 
-layer "text" "hashi" {
-  content = "Hashi"
-  x       = 65
-  y       = 65
-  size    = 76
-  font    = "fonts/klavika/bold.ttf"
+layer "text" "next" {
+  content = "${next}"
+  anchor  = "TOP_LEFT"
+  x       = 64
+  y       = 34
+  size    = 48
+  font    = "${regular_font}"
 }
 
-layer "text" "t" {
-  content = "T"
-  x       = 250
-  y       = 65
-  size    = 76
-  font    = "fonts/klavika/light.ttf"
-}
-
-layer "text" "alks" {
-  content = "alks"
-  x       = 280
-  y       = 65
-  size    = 76
-  font    = "fonts/klavika/light.ttf"
-}
-
-layer "text" "edition" {
-  content = "${edition}"
-  x       = 420
-  y       = 117
-  size    = 24
-  font    = "fonts/klavika/regular.ttf"
-}
-
-layer "text" "message_regional" {
-  content = "${message_regional}"
+layer "text" "title" {
+  content = "${title}"
   anchor  = "TOP_LEFT"
   x       = 250 + "${text_offset}"
-  y       = 380
+  y       = 380 - (76 * 3)
+  width   = 1920 - 250 * 2 + "${text_offset}" * 2
   size    = 76
   font    = "${bold_font}"
 }
 
-layer "text" "message_english" {
-  content = "${message_english}"
+layer "text" "speaker" {
+  content = "${speaker}"
   anchor  = "TOP_LEFT"
   x       = 250 + "${text_offset}"
-  y       = 380 + 96
+  y       = 380 + (76 * 3)
   size    = 76
-  font    = "${light_font}"
+  font    = "${regular_font}"
   color   = "#727274"
 }

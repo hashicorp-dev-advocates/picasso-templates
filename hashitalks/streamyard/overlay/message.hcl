@@ -84,15 +84,15 @@ layer "image" "lines" {
 
 layer "image" "logo" {
   content = "${file(logo)}"
-  x       = 1920 - 65 - 76
-  y       = 76
-  height  = 76
+  x       = 1920 - 48 - 64
+  y       = 34
+  height  = 64
 }
 
 layer "text" "hashi" {
   content = "Hashi"
   x       = 65
-  y       = 65
+  y       = 22
   size    = 76
   font    = "fonts/klavika/bold.ttf"
 }
@@ -100,7 +100,7 @@ layer "text" "hashi" {
 layer "text" "t" {
   content = "T"
   x       = 250
-  y       = 65
+  y       = 22
   size    = 76
   font    = "fonts/klavika/light.ttf"
 }
@@ -108,7 +108,7 @@ layer "text" "t" {
 layer "text" "alks" {
   content = "alks"
   x       = 280
-  y       = 65
+  y       = 22
   size    = 76
   font    = "fonts/klavika/light.ttf"
 }
@@ -116,7 +116,7 @@ layer "text" "alks" {
 layer "text" "edition" {
   content = "${edition}"
   x       = 420
-  y       = 117
+  y       = 74
   size    = 24
   font    = "fonts/klavika/regular.ttf"
 }
