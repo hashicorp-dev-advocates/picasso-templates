@@ -1,17 +1,18 @@
 # 
 # This template generates a banner for the CFP page.
 # The required variables for this template are:
+# - background
 # - edition
 # 
 
 output "png" {
-	width = 1600
-	height = 467
+  width  = 1600
+  height = 468
 }
 
 variable "background" {
-    type = "string"
-    default = "images/background_1600x467.png"
+  type    = "string"
+  default = "HT_GeneratorBanner_C2.png"
 }
 
 variable "edition" {
@@ -19,31 +20,15 @@ variable "edition" {
 }
 
 layer "image" "background" {
-    content = "${file(background)}"
-    x = 0
-    y = 0
+  content = "${file(background)}"
+  x       = 0
+  y       = 0
 }
 
-layer "text" "hashi" {
-	content = "Hashi"
-	x = 450
-	y = 200
-	size = 80
-	font = "fonts/klavika/bold.ttf"
-}
-
-layer "text" "t" {
-	content = "T"
-	x = 645
-	y = 200
-	size = 80
-	font = "fonts/klavika/light.ttf"
-}
-
-layer "text" "alks_edition" {
-	content = "alks: ${edition}"
-	x = 680
-	y = 200
-	size = 80
-	font = "fonts/klavika/light.ttf"
+layer "text" "edition" {
+  content = "${edition}"
+  x       = 613
+  y       = 280
+  size    = 40
+  font    = "fonts/klavika/KlavikaBasic-Bold.ttf"
 }
