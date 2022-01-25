@@ -54,6 +54,16 @@ picasso generate \
   --var regular_font=$REGULAR_FONT \
   --var light_font=$LIGHT_FONT
 
+# messages
+picasso generate \
+  -t hashitalks/streamyard/overlay/coc.hcl \
+  -o $OUTPUT_DIR/coc.png \
+  --var color=$COLOR \
+  --var edition=$EDITION \
+  --var bold_font=$BOLD_FONT \
+  --var regular_font=$REGULAR_FONT \
+  --var light_font=$LIGHT_FONT
+
 # # speakers
 # picasso generate \
 #   -t hashitalks/streamyard/overlay/speaker.hcl \
