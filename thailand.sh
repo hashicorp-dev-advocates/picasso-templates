@@ -4,7 +4,7 @@ EDITION="THAILAND"
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
 REGULAR_FONT="fonts/klavika/regular.ttf,fonts/kanit/regular.ttf"
 BOLD_FONT="fonts/klavika/bold.ttf,fonts/kanit/bold.ttf"
-LIGHT_FONT="fonts/klavika/light.ttf"
+LIGHT_FONT="fonts/klavika/light.ttf,fonts/kanit/light.ttf"
 COLOR="magenta"
 INPUT_DIR="input/thailand"
 OUTPUT_DIR="output/thailand"
@@ -38,7 +38,10 @@ picasso generate \
   --var color=$COLOR \
   --var edition=$EDITION \
   --csv $INPUT_DIR/csv/messages.csv \
-  --csv-var id
+  --csv-var id \
+  --var bold_font=$BOLD_FONT \
+  --var regular_font=$REGULAR_FONT \
+  --var light_font=$LIGHT_FONT
 
 picasso generate \
   -t hashitalks/streamyard/overlay/long_message.hcl \
@@ -46,7 +49,10 @@ picasso generate \
   --var color=$COLOR \
   --var edition=$EDITION \
   --csv $INPUT_DIR/csv/long_messages.csv \
-  --csv-var id
+  --csv-var id \
+  --var bold_font=$BOLD_FONT \
+  --var regular_font=$REGULAR_FONT \
+  --var light_font=$LIGHT_FONT
 
 # # speakers
 # picasso generate \
