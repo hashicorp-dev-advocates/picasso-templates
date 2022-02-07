@@ -40,13 +40,14 @@ picasso generate \
   --csv $INPUT_DIR/csv/messages.csv \
   --csv-var id
 
-# picasso generate \
-#   -t hashitalks/streamyard/overlay/long_message.hcl \
-#   -o $OUTPUT_DIR/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --csv $INPUT_DIR/csv/long_messages.csv \
-#   --csv-var id
+# ..that are a bit long
+picasso generate \
+  -t hashitalks/streamyard/overlay/long_message.hcl \
+  -o $OUTPUT_DIR/ \
+  --var color=$COLOR \
+  --var edition=$EDITION \
+  --csv $INPUT_DIR/csv/long_messages.csv \
+  --csv-var id
 
 # # speakers
 # picasso generate \
@@ -58,20 +59,22 @@ picasso generate \
 #   --csv $INPUT_DIR/csv/speakers.csv \
 #   --csv-var id
 
-# picasso generate \
-#   -t hashitalks/streamyard/overlay/long_speaker.hcl \
-#   -o $OUTPUT_DIR/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --var next="$NEXT" \
-#   --csv $INPUT_DIR/csv/long_speakers.csv \
-#   --csv-var id
+# ..with long titles
+picasso generate \
+  -t hashitalks/streamyard/overlay/long_speaker.hcl \
+  -o $OUTPUT_DIR/ \
+  --var color=$COLOR \
+  --var edition=$EDITION \
+  --var next="$NEXT" \
+  --csv $INPUT_DIR/csv/long_speakers.csv \
+  --csv-var id
 
-# picasso generate \
-#   -t hashitalks/streamyard/overlay/longer_speaker.hcl \
-#   -o $OUTPUT_DIR/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --var next="$NEXT" \
-#   --csv $INPUT_DIR/csv/longer_speakers.csv \
-#   --csv-var id
+# ..with even longer titles
+picasso generate \
+  -t hashitalks/streamyard/overlay/longer_speaker.hcl \
+  -o $OUTPUT_DIR/ \
+  --var color=$COLOR \
+  --var edition=$EDITION \
+  --var next="$NEXT" \
+  --csv $INPUT_DIR/csv/longer_speakers.csv \
+  --csv-var id
