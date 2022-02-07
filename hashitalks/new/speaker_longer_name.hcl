@@ -126,39 +126,40 @@ layer "image" "photo" {
   content = "${file(photo)}"
   x       = 70
   y       = 210
-  width   = 376
-  height  = 353
+  width = 320
+  # width   = 376
+  # height  = 353
 }
 
 layer "text" "speaker" {
   content = "${speaker}"
-  x       = 505
-  y       = 263
-  size    = 60
+  x       = 505-50
+  y       = 263-70
+  size    = 45
   font    = "fonts/arial/bold.ttf"
 }
 
 layer "text" "title" {
   content = "${title}"
-  width   = 800
-  x       = 505
-  y       = 319
+  width   = 650
+  x       = 505-50
+  y       = 319-80
   size    = 34
   font    = "fonts/arial/regular.ttf"
 }
 
 layer "text" "date" {
   content = "${date}"
-  x       = 505
-  y       = 510
+  x       = 505-50
+  y       = 510-33
   size    = 21
   font    = "fonts/arial/bold.ttf"
 }
 
 layer "text" "url" {
   content = "${url}"
-  x       = 505
-  y       = 540
+  x       = 505-50
+  y       = 540-33
   size    = 21
   font    = "fonts/arial/regular.ttf"
 }

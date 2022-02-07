@@ -1,0 +1,42 @@
+name,title,photo
+Andrei Buzoianu,Take Control of Your Data by Integrating HashiCorp Vault,
+Brad McCoy,How We Built a DevOps Dojo to Upskill Our Organization in Terraform,/Users/alexandra/Documents/picasso-templates/input/2022/images/Brad McCoy.jpeg
+bram Vogelaar,Bootstrapping a Multi-DC Cloud Native Observability Stack,
+Caleb Albers,Automating Image Pipelines with HCP Packer,/Users/alexandra/Documents/picasso-templates/input/2022/images/Caleb.jpg
+Carlos Juan Gómez Peñalver,"Forget About DB Credentials with Terraform, Vault, and Kubernetes",/Users/alexandra/Documents/picasso-templates/input/2022/images/Carlos Juan Gómez Peñalver.png
+Chris Blum,VaultPass: Enabling Teams to Share Secrets Confidentially,/Users/alexandra/Documents/picasso-templates/input/2022/images/Chris Blum.jpg
+Elif Mosessohn-Samedin,Take Control of Your Data by Integrating HashiCorp Vault,
+Glynn Forrest,'Static Typing' in Vault,/Users/alexandra/Documents/picasso-templates/input/2022/images/Glynn Forrest.jpeg
+Gregory Robinson,Simplifiy Networking in Kubernetes using Consul and Wireguard,/Users/alexandra/Documents/picasso-templates/input/2022/images/Greg.jpeg
+Hoon Jo,How to Build a Multi-Context Lab for Kubernetes,
+Iago López Galeiras,Nomad + Flatcar: A Harmonious Marriage of Lightweights ,/Users/alexandra/Documents/picasso-templates/input/2022/images/Iago López Galeiras.jpg
+Ivan Zupancic,Building an Internal Development Platform at Bloom and Wild with Terraform,
+Joe Bell,Massive Terraform Imports and Why You Should Avoid Building Monoliths,/Users/alexandra/Documents/picasso-templates/input/2022/images/Joe Bell.jpeg
+Karan Sharma,Inspecting Nomad Events Using Grafana Loki,/Users/alexandra/Documents/picasso-templates/input/2022/images/Karan.jpeg
+Karina Mora,Patterns of Evolution from Monolith to Microservices,/Users/alexandra/Documents/picasso-templates/input/2022/images/Karina Mora.jpg
+Kevin Alwell,Developer-First Application Security and DevSecOps,/Users/alexandra/Documents/picasso-templates/input/2022/images/Kevin Alwell.jpeg
+Kevin De Notariis,HashiCorp Vault and Jenkins: Leveraging AWS IAM to Empower a Hybrid Scenario,
+Kris Iyer,Spring Cloud Integration with HashiCorp Vault and Consul,/Users/alexandra/Documents/picasso-templates/input/2022/images/Krishnakumar Iyer.png
+Laurentius Purba,Upgrade Your Vault Using Failover,
+Leonardo  Rodrigues de Oliveira,Writing High Quality Terraform Modules for Exponential Organizations,/Users/alexandra/Documents/picasso-templates/input/2022/images/Leonardo R. Oliveira.jpg
+Lev Andelman,Consul-Terraform-Sync — Awesome Use Cases,
+Marc LeBlanc,Service Mesh and Your Legacy Apps: Connecting to Kubernetes with Consul,/Users/alexandra/Documents/picasso-templates/input/2022/images/Marc LeBlanc.jpg
+Martin Smith,How HashiCorp SREs Built HCP's Incident Management Program,/Users/alexandra/Documents/picasso-templates/input/2022/images/Martin Smith.png
+Michael Main,How HashiCorp SREs Built HCP's Incident Management Program,/Users/alexandra/Documents/picasso-templates/input/2022/images/Michael Main.jpg
+Mihai Criveti,"Building a Secure AWS Golden Image Pipeline with Packer, Vault and Terraform",/Users/alexandra/Documents/picasso-templates/input/2022/images/Mihai.jpg
+Ned Bellavance,Terraform Config Drift: How to Handle Out-of-Band Infrastructure Changes,/Users/alexandra/Documents/picasso-templates/input/2022/images/Ned.jpg
+Nick Young,How to Migrate from Vault Open Source to Vault Enterprise,/Users/alexandra/Documents/picasso-templates/input/2022/images/Nick.jpg
+Nico Vibert,Policy as Code for Network as Code,/Users/alexandra/Documents/picasso-templates/input/2022/images/NicoVibertPicture - Nico Vibert.jpeg
+Oreoluwa Adegbite,From Intern to Engineer with Terraform: An African Automation Journey,/Users/alexandra/Documents/picasso-templates/input/2022/images/Oreoluwa Adegbite.jpg
+Piermarco Zerbini,HashiCorp Vault and Jenkins: Leveraging AWS IAM to Empower a Hybrid Scenario,/Users/alexandra/Documents/picasso-templates/input/2022/images/Piermarco Zerbini.jpeg
+Robbie Belson,Terraform in Edge Network Architectures,/Users/alexandra/Documents/picasso-templates/input/2022/images/Robert Belson.png
+Ryler Hockenbury,Changing with HashiCorp at Mastercard Data and Services,
+Saiyam Pathak,A Waypoint 0.7 Deep Dive,
+Samuel Baena Hayas,Importing Terraform Resources the Safe Way,/Users/alexandra/Documents/picasso-templates/input/2022/images/Samuel Baena.jpg
+Sanjay Narendran,Rapidly Deploy a Global Cloud Multiverse with Symmetric Architecture & Terraform,/Users/alexandra/Documents/picasso-templates/input/2022/images/Sanjay Narendran.jpg
+Sergey Pronin,Dynamic User Creation with MySQL on Kubernetes and HCP Vault,/Users/alexandra/Documents/picasso-templates/input/2022/images/Sergey Pronin.jpg
+Shai Almog,Cloud Native Debugging in Production - Dig Deep into your Agents,/Users/alexandra/Documents/picasso-templates/input/2022/images/Shai.png
+Shivay Lamba,The Meshery Adapter for HashiCorp Consul,/Users/alexandra/Documents/picasso-templates/input/2022/images/Shivay.jpeg
+Shlomo Bielak,Engineering the Ability to Destroy Non-Production with Terraform,/Users/alexandra/Documents/picasso-templates/input/2022/images/Shlomo.jpg
+Suman Chakraborty,Zero Trust Security and Identity Management with Boundary,
+Tracy Holmes,Exploring HashiCorp Vault and ArgoCD the GitOps Way,
