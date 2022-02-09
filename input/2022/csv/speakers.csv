@@ -10,12 +10,12 @@ Elif Mosessohn-Samedin,Take Control of Your Data by Integrating HashiCorp Vault,
 Glynn Forrest,'Static Typing' in Vault,input/2022/images/Glynn Forrest.jpeg
 Gregory Robinson,Simplifiy Networking in Kubernetes using Consul and Wireguard,input/2022/images/Greg.jpeg
 Guy Barros,Codify Your JWT/OIDC Vault Auth Method with Terraform,images/h.png
-Hoon Jo,How to Build a Multi-Context Lab for Kubernetes,images/h.png
+Hoon Jo,How to Build a Multi-Context Lab for Kubernetes,input/2022/images/HoonJo.png
 Iago López Galeiras,Nomad + Flatcar: A Harmonious Marriage of Lightweights ,input/2022/images/Iago López Galeiras.jpg
 Ivan Zupancic,Building an Internal Development Platform at Bloom and Wild with Terraform,images/h.png
 Jirawat Uttayaya,Best Practices for Terraform AWS Tags,input/2022/images/Jirawat Uttayaya.jpeg
 Joe Bell,Massive Terraform Imports and Why You Should Avoid Building Monoliths,input/2022/images/Joe Bell.jpeg
-John Boero,Nomad as a HashiCorp Operating System,input/2022/images/John Boero.webp
+John Boero,Nomad as a HashiCorp Operating System,images/h.png
 Karan Sharma,Inspecting Nomad Events Using Grafana Loki,input/2022/images/Karan.jpeg
 Karina Mora,Patterns of Evolution from Monolith to Microservices,input/2022/images/Karina Mora.jpg
 Kevin Alwell,Developer-First Application Security and DevSecOps,input/2022/images/Kevin Alwell.jpeg
@@ -24,7 +24,7 @@ Kris Iyer,Spring Cloud Integration with HashiCorp Vault and Consul,input/2022/im
 Laurentius Purba,Upgrade Your Vault Using Failover,images/h.png
 Leonardo Rodrigues de Oliveira,Writing High Quality Terraform Modules for Exponential Organizations,input/2022/images/Leonardo R. Oliveira.jpg
 Lev Andelman,Consul-Terraform-Sync — Awesome Use Cases,images/h.png
-Mahir Kemal Kara,Boundary Instead of Bastion,images/h.png
+Owen Rumney,Using tfsec to Scan Your Terraform Code,input/2022/images/Owen Rumney.jpeg
 Marc LeBlanc,Service Mesh and Your Legacy Apps: Connecting to Kubernetes with Consul,input/2022/images/Marc LeBlanc.jpg
 Margarita Sokolova,Create Preview Environments for Terraform,images/h.png
 Martin Smith,How HashiCorp SREs Built HCP's Incident Management Program,input/2022/images/Martin Smith.png
