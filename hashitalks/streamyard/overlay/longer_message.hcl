@@ -127,7 +127,7 @@ layer "text" "message_regional" {
   x       = 250 + "${text_offset}"
   y       = 380 - 96
   width   = 1920 - 250 * 2 + "${text_offset}" * 2
-  size    = 76
+  size    = 84
   font    = "${bold_font}"
 }
 

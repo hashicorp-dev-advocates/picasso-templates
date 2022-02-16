@@ -126,8 +126,8 @@ layer "text" "message_regional" {
   anchor  = "TOP_LEFT"
   x       = 250 + "${text_offset}"
   y       = 380 - 96
-  width   = 1920 - 250 * 2 + "${text_offset}" * 2
-  size    = 76
+  width   = 1920 - 400 * 2 + "${text_offset}" * 2
+  size    = 95
   font    = "${bold_font}"
 }
 

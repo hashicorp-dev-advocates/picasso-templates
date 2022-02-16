@@ -1,12 +1,12 @@
 speaker,title,photo
 Andrei Buzoianu,Take Control of Your Data by Integrating HashiCorp Vault,images/h.png
 Brad McCoy,How We Built a DevOps Dojo to Upskill Our Organization in Terraform,input/2022/images/Brad McCoy.jpeg
-Bram Vogelaar,Bootstrapping a Multi-DC Cloud Native Observability Stack,images/h.png
+Bram Vogelaar,Bootstrapping a Multi-DC Cloud Native Observability Stack,input/2022/images/Bram Vogelaar.png
 Brett Tegart,Compliance At Scale: Hardened Terraform Modules at Morgan Stanley,images/h.png
 Caleb Albers,Automating Image Pipelines with HCP Packer,input/2022/images/Caleb.jpg
 Carlos Juan Gómez Peñalver,"Forget About DB Credentials with Terraform, Vault, and Kubernetes",input/2022/images/Carlos Juan Gómez Peñalver.png
 Chris Blum,VaultPass: Enabling Teams to Share Secrets Confidentially,input/2022/images/Chris Blum.jpg
-Elif Mosessohn-Samedin,Take Control of Your Data by Integrating HashiCorp Vault,images/h.png
+Elif Mosessohn-Samedin,Take Control of Your Data by Integrating HashiCorp Vault,input/2022/images/Elif Samedin.png
 Glynn Forrest,'Static Typing' in Vault,input/2022/images/Glynn Forrest.jpeg
 Gregory Robinson,Simplifiy Networking in Kubernetes using Consul and Wireguard,input/2022/images/Greg.jpeg
 Guy Barros,Codify Your JWT/OIDC Vault Auth Method with Terraform,images/h.png
@@ -21,7 +21,7 @@ Karina Mora,Patterns of Evolution from Monolith to Microservices,input/2022/imag
 Kevin Alwell,Developer-First Application Security and DevSecOps,input/2022/images/Kevin Alwell.jpeg
 Kevin De Notariis,HashiCorp Vault and Jenkins: Leveraging AWS IAM to Empower a Hybrid Scenario,input/2022/images/Kevin De Notariis.jpg
 Kris Iyer,Spring Cloud Integration with HashiCorp Vault and Consul,input/2022/images/Krishnakumar Iyer.png
-Laurentius Purba,Upgrade Your Vault Using Failover,images/h.png
+Laurentius Purba,Upgrade Your Vault Using Failover,input/2022/images/Laurentius Purba.jpeg
 Leonardo Rodrigues de Oliveira,Writing High Quality Terraform Modules for Exponential Organizations,input/2022/images/Leonardo R. Oliveira.jpg
 Lev Andelman,Consul-Terraform-Sync — Awesome Use Cases,images/h.png
 Owen Rumney,Using tfsec to Scan Your Terraform Code,input/2022/images/Owen Rumney.jpeg
