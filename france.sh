@@ -48,6 +48,17 @@ picasso generate \
   --csv $INPUT_DIR/csv/long_messages.csv \
   --csv-var id
 
+picasso generate \
+  -t hashitalks/streamyard/overlay/coc.hcl \
+  -o $OUTPUT_DIR/coc.png \
+  --var color=$COLOR \
+  --var edition=$EDITION \
+  --var bold_font=$BOLD_FONT \
+  --var regular_font=$REGULAR_FONT \
+  --var light_font=$LIGHT_FONT \
+  --var message="Please take a moment to read through our community guidelines" \
+  --var url="hashi.co/community-guidelines-french"
+
 # # speakers
 # picasso generate \
 #   -t hashitalks/streamyard/overlay/speaker.hcl \

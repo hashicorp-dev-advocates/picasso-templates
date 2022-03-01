@@ -62,7 +62,8 @@ picasso generate \
   --var edition=$EDITION \
   --var bold_font=$BOLD_FONT \
   --var regular_font=$REGULAR_FONT \
-  --var light_font=$LIGHT_FONT
+  --var light_font=$LIGHT_FONT \
+  --var url="hashi.co/community-guidelines-thai"
 
 # # speakers
 # picasso generate \
