@@ -20,6 +20,21 @@ variable "url" {
   type = "string"
 }
 
+variable "regular_font" {
+  type    = "string"
+  default = "fonts/arial/regular.ttf"
+}
+
+variable "bold_font" {
+  type    = "string"
+  default = "fonts/arial/bold.ttf"
+}
+
+variable "light_font" {
+  type    = "string"
+  default = "fonts/arial/light.ttf"
+}
+
 layer "rectangle" "background" {
   x      = 0
   y      = 0
@@ -59,55 +74,55 @@ layer "image" "lines" {
 
 layer "image" "logo" {
   content = "${file(logo)}"
-  x       = 190
-  y       = 315
+  x       = 190 + 1200
+  y       = 315 - 260
   width   = 120
 }
 
 layer "text" "hashi" {
   content = "Hashi"
-  x       = 330
-  y       = 290
+  x       = 330 - 250
+  y       = 290 - 250
   size    = 132
   font    = "fonts/klavika/bold.ttf"
 }
 
 layer "text" "t" {
   content = "T"
-  x       = 650
-  y       = 290
+  x       = 650 - 250
+  y       = 290 - 250
   size    = 132
   font    = "fonts/klavika/light.ttf"
 }
 
 layer "text" "alks" {
   content = "alks"
-  x       = 705
-  y       = 290
+  x       = 705 - 250
+  y       = 290 - 250
   size    = 132
   font    = "fonts/klavika/light.ttf"
 }
 
 layer "text" "edition" {
   content = "${edition}"
-  x       = 950
-  y       = 373
+  x       = 950 - 250
+  y       = 373 - 250
   size    = 48
-  font    = "fonts/klavika/regular.ttf"
+  font    = "${regular_font}"
 }
 
 layer "text" "date" {
   content = "${date}"
-  x       = 465
-  y       = 710
-  size    = 32
-  font    = "fonts/arial/bold.ttf"
+  x       = 465 - 350
+  y       = 710 - 350
+  size    = 72
+  font    = "${regular_font}"
 }
 
 layer "text" "url" {
   content = "${url}"
-  x       = 465
-  y       = 750
-  size    = 32
-  font    = "fonts/arial/regular.ttf"
+  x       = 465 - 350
+  y       = 750 - 300
+  size    = 72
+  font    = "fonts/arial/bold.ttf"
 }

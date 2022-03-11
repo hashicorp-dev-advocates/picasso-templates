@@ -16,6 +16,4 @@ examples:
 		-t hashitalks/social/email_banner.hcl \
 		--var edition=$(EDITION) \
 		--var color=$(COLOR) \
-		--var date=$(DATE) \
-		--var url=$(URL) \
 		-o hashitalks/social/examples/email_banner.png

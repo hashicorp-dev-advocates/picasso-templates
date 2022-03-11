@@ -1,15 +1,15 @@
 #!/bin/bash
-EDITION="Vietnam"
-DATE="05/05"
-URL="hashi.co/hashitalks-vietnam"
+EDITION="Africa"
+DATE="12 April"
+URL="hashi.co/hashitalks-africa"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
 REGULAR_FONT="fonts/klavika/regular.ttf"
 BOLD_FONT="fonts/klavika/bold.ttf"
 LIGHT_FONT="fonts/klavika/light.ttf"
-COLOR="yellow"
-INPUT_DIR="input/vietnam"
-OUTPUT_DIR="output/fy2023/vietnam"
+COLOR="magenta"
+INPUT_DIR="input/africa"
+OUTPUT_DIR="output/fy2023/africa"
 NEXT="Next"
 
 mkdir -p $OUTPUT_DIR
@@ -19,7 +19,7 @@ picasso generate \
 		-t hashitalks/social/twitter_card.hcl \
 		--var edition=$EDITION \
 		--var color=$COLOR \
-		--var date="05/05/2022" \
+		--var date="12 April 2022" \
 		--var url=$URL \
 		-o $OUTPUT_DIR/social/twitter_card.png
 

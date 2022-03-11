@@ -12,6 +12,20 @@ variable "edition" {
   type = "string"
 }
 
+variable "regular_font" {
+  type    = "string"
+  default = "fonts/arial/regular.ttf"
+}
+
+variable "bold_font" {
+  type    = "string"
+  default = "fonts/arial/bold.ttf"
+}
+
+variable "light_font" {
+  type    = "string"
+  default = "fonts/arial/light.ttf"
+}
 
 layer "rectangle" "background" {
   x      = 0
@@ -48,39 +62,39 @@ layer "image" "lines" {
 
 layer "image" "logo" {
   content = "${file(logo)}"
-  x       = 1600 - 120 - 90
-  y       = 95
-  width   = 120
+  x       = 1600 - 120 - 30
+  y       = 95 - 40
+  width   = 120 - 50
 }
 
 layer "text" "hashi" {
   content = "Hashi"
-  x       = 90
-  y       = 70
+  x       = 90 + 375
+  y       = 70 + 50
   size    = 132
   font    = "fonts/klavika/bold.ttf"
 }
 
 layer "text" "t" {
   content = "T"
-  x       = 410
-  y       = 70
+  x       = 410 + 375
+  y       = 70 + 50
   size    = 132
   font    = "fonts/klavika/light.ttf"
 }
 
 layer "text" "alks" {
   content = "alks"
-  x       = 465
-  y       = 70
+  x       = 465 + 375
+  y       = 70 + 50
   size    = 132
   font    = "fonts/klavika/light.ttf"
 }
 
 layer "text" "edition" {
   content = "${edition}"
-  x       = 710
-  y       = 153
-  size    = 48
-  font    = "fonts/klavika/regular.ttf"
+  x       = 710 + 150
+  y       = 153 + 100
+  size    = 50
+  font    = "${regular_font}"
 }
