@@ -1,6 +1,6 @@
 #!/bin/bash
-EDITION="Africa"
-DATE="12 April"
+EDITION="AFRICA"
+DATE="12 April 2022"
 URL="hashi.co/hashitalks-africa"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
@@ -27,8 +27,6 @@ picasso generate \
 		-t hashitalks/social/email_banner.hcl \
 		--var edition=$EDITION \
 		--var color=$COLOR \
-		--var date=$DATE \
-		--var url=$URL \
 		-o $OUTPUT_DIR/social/email_banner.png
 
 # background

@@ -1,5 +1,5 @@
 #!/bin/bash
-EDITION="Vietnam"
+EDITION="VIETNAM"
 DATE="05/05"
 URL="hashi.co/hashitalks-vietnam"
 
@@ -21,14 +21,14 @@ picasso generate \
 		--var color=$COLOR \
 		--var date="05/05/2022" \
 		--var url=$URL \
+		--var regular_font=$REGULAR_FONT \
 		-o $OUTPUT_DIR/social/twitter_card.png
 
 picasso generate \
 		-t hashitalks/social/email_banner.hcl \
 		--var edition=$EDITION \
 		--var color=$COLOR \
-		--var date=$DATE \
-		--var url=$URL \
+		--var regular_font=$REGULAR_FONT \
 		-o $OUTPUT_DIR/social/email_banner.png
 
 # background

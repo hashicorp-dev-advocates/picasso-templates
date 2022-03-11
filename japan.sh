@@ -1,123 +1,167 @@
+#!/bin/bash
 EDITION="JAPAN"
+DATE="2022 August 25"
+URL="hashi.co/hashitalks-japan"
+
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
-REGULAR_FONT="fonts/klavika/regular.ttf,fonts/meiryo/regular.ttf"
-BOLD_FONT="fonts/klavika/bold.ttf,fonts/meiryo/bold.ttf"
+REGULAR_FONT="fonts/klavika/regular.ttf"
+BOLD_FONT="fonts/klavika/bold.ttf"
 LIGHT_FONT="fonts/klavika/light.ttf"
 COLOR="cyan"
+INPUT_DIR="input/fy2023/japan"
+OUTPUT_DIR="output/fy2023/japan"
+NEXT="Next"
+
+mkdir -p $OUTPUT_DIR
+
+# social
+picasso generate \
+		-t hashitalks/social/twitter_card.hcl \
+		--var edition=$EDITION \
+		--var color=$COLOR \
+		--var date="2022 August 25" \
+		--var url=$URL \
+		--var regular_font=$REGULAR_FONT \
+		-o $OUTPUT_DIR/social/twitter_card.png
+
+picasso generate \
+		-t hashitalks/social/email_banner.hcl \
+		--var edition=$EDITION \
+		--var color=$COLOR \
+		--var regular_font=$REGULAR_FONT \
+		-o $OUTPUT_DIR/social/email_banner.png
+
+# background
+picasso generate \
+  -t hashitalks/streamyard/background/default.hcl \
+  -o $OUTPUT_DIR/streaming/default_background.png \
+  --var color=$COLOR
+
+# branding
+picasso generate \
+  -t hashitalks/streamyard/overlay/branding.hcl \
+  -o $OUTPUT_DIR/streaming/branding_overlay.png \
+  --var edition=$EDITION
+
+# title
+picasso generate \
+  -t hashitalks/streamyard/overlay/title.hcl \
+  -o $OUTPUT_DIR/streaming/title.png \
+  --var color=$COLOR \
+  --var edition=$EDITION
+
+# # messages
+# picasso generate \
+#   -t hashitalks/streamyard/overlay/message.hcl \
+#   -o $OUTPUT_DIR/streaming/ \
+#   --var color=$COLOR \
+#   --var edition=$EDITION \
+#   --csv $INPUT_DIR/csv/messages.csv \
+#   --csv-var id
 
 # picasso generate \
-#   -t hashitalks/new/test.hcl \
-#   -o output/obs_test.png
+#   -t hashitalks/streamyard/overlay/long_message.hcl \
+#   -o $OUTPUT_DIR/streaming/ \
+#   --var color=$COLOR \
+#   --var edition=$EDITION \
+#   --csv $INPUT_DIR/csv/long_messages.csv \
+#   --csv-var id
 
-picasso generate \
-  -t hashitalks/new/obs_background.hcl \
-  -o output/obs_background_$ID.png \
-  --var edition="$EDITION" \
-  --var color=$COLOR
+# picasso generate \
+#   -t hashitalks/streamyard/overlay/longer_message.hcl \
+#   -o $OUTPUT_DIR/streaming/ \
+#   --var color=$COLOR \
+#   --var edition=$EDITION \
+#   --csv $INPUT_DIR/csv/longer_messages.csv \
+#   --csv-var id
 
-picasso generate \
-  -t hashitalks/new/obs_title.hcl \
-  -o output/obs_title_$ID.png \
-  --var edition="$EDITION" \
-  --var title_offset=0 \
-  --var color=$COLOR
+# # speakers
+# picasso generate \
+#   -t hashitalks/new/speaker.hcl \
+#   -o $OUTPUT_DIR/speakers/ \
+#   --var color=$COLOR \
+#   --var edition=$EDITION \
+#   --var date="February 17-18" \
+#   --var url=$URL \
+#   --csv $INPUT_DIR/csv/speakers.csv \
+#   --csv-var speaker
 
-picasso generate \
-  -t hashitalks/new/obs_message.hcl \
-  -o output/obs_starting_$ID.png \
-  --var edition="$EDITION" \
-  --var message_regional="イベントはまもなく開始します" \
-  --var message_english="The event will start soon" \
-  --var text_offset=150 \
-  --var regular_font=$REGULAR_FONT \
-  --var bold_font=$BOLD_FONT \
-  --var light_font=$LIGHT_FONT \
-  --var color=$COLOR
+# # speakers
+# picasso generate \
+#   -t hashitalks/new/speaker_long_name.hcl \
+#   -o $OUTPUT_DIR/speakers/ \
+#   --var color=$COLOR \
+#   --var edition=$EDITION \
+#   --var date="February 17-18" \
+#   --var url=$URL \
+#   --csv $INPUT_DIR/csv/speakers_long_name.csv \
+#   --csv-var speaker
 
-picasso generate \
-  -t hashitalks/new/obs_message.hcl \
-  -o output/obs_break_$ID.png \
-  --var edition="$EDITION" \
-  --var message_regional="しばらく休憩いたします" \
-  --var message_english="We will be back after a short break" \
-  --var text_offset=150 \
-  --var regular_font=$REGULAR_FONT \
-  --var bold_font=$BOLD_FONT \
-  --var light_font=$LIGHT_FONT \
-  --var color=$COLOR
+# # speakers
+# picasso generate \
+#   -t hashitalks/new/speaker_longer_name.hcl \
+#   -o $OUTPUT_DIR/speakers/ \
+#   --var color=$COLOR \
+#   --var edition=$EDITION \
+#   --var date="February 17-18" \
+#   --var url=$URL \
+#   --csv $INPUT_DIR/csv/speakers_longer_name.csv \
+#   --csv-var speaker
 
-picasso generate \
-  -t hashitalks/new/obs_message.hcl \
-  -o output/obs_problems_$ID.png \
-  --var edition="$EDITION" \
-  --var message_regional="技術的な問題が起きております" \
-  --var message_english="we are experiencing technical difficulties" \
-  --var text_offset=50 \
-  --var regular_font=$REGULAR_FONT \
-  --var bold_font=$BOLD_FONT \
-  --var light_font=$LIGHT_FONT \
-  --var color=$COLOR
+# # speakers
+# picasso generate \
+#   -t hashitalks/new/speaker_2line.hcl \
+#   -o $OUTPUT_DIR/speakers/ \
+#   --var color=$COLOR \
+#   --var edition=$EDITION \
+#   --var date="February 17-18" \
+#   --var url=$URL \
+#   --csv $INPUT_DIR/csv/speakers_2line.csv \
+#   --csv-var speaker
 
-picasso generate \
-  -t hashitalks/new/obs_message.hcl \
-  -o output/obs_next_$ID.png \
-  --var edition="$EDITION" \
-  --var message_regional="次のトークはまもなく開始します" \
-  --var message_english="The next talk will start soon" \
-  --var text_offset=100 \
-  --var regular_font=$REGULAR_FONT \
-  --var bold_font=$BOLD_FONT \
-  --var light_font=$LIGHT_FONT \
-  --var color=$COLOR
+# # emcees
+# picasso generate \
+#   -t hashitalks/new/speaker.hcl \
+#   -o $OUTPUT_DIR/emcees/ \
+#   --var color=$COLOR \
+#   --var edition=$EDITION \
+#   --var date="February 17-18" \
+#   --var url=$URL \
+#   --csv $INPUT_DIR/csv/emcees.csv \
+#   --csv-var speaker
 
-picasso generate \
-  -t hashitalks/new/obs_speaker.hcl \
-  -o output/obs_speaker \
-  --var next="次は" \
-  --var text_offset=-50 \
-  --var regular_font=$REGULAR_FONT \
-  --var bold_font=$BOLD_FONT \
-  --var light_font=$LIGHT_FONT \
-  --var color=$COLOR \
-  --csv hashitalks_japan.csv \
-  --csv-var output
+# picasso generate \
+#   -t hashitalks/global/speaker_2line.hcl \
+#   -o $OUTPUT_DIR/speakers/ \
+#   --var color=$COLOR \
+#   --var edition=$EDITION \
+#   --csv $INPUT_DIR/csv/long_speakers.csv \
+#   --csv-var id
 
-picasso generate \
-  -t hashitalks/new/obs_speaker_long.hcl \
-  -o output/obs_speaker \
-  --var next="次は" \
-  --var text_offset=-50 \
-  --var regular_font=$REGULAR_FONT \
-  --var bold_font=$BOLD_FONT \
-  --var light_font=$LIGHT_FONT \
-  --var color=$COLOR \
-  --csv hashitalks_japan_long.csv \
-  --csv-var output
+# # speakers
+# picasso generate \
+#   -t hashitalks/streamyard/overlay/speaker.hcl \
+#   -o $OUTPUT_DIR/ \
+#   --var color=$COLOR \
+#   --var edition=$EDITION \
+#   --var next="$NEXT" \
+#   --csv $INPUT_DIR/csv/speakers.csv \
+#   --csv-var id
 
-picasso generate \
-  -t hashitalks/new/obs_speaker_longer.hcl \
-  -o output/obs_speaker \
-  --var next="次は" \
-  --var text_offset=-50 \
-  --var regular_font=$REGULAR_FONT \
-  --var bold_font=$BOLD_FONT \
-  --var light_font=$LIGHT_FONT \
-  --var color=$COLOR \
-  --csv hashitalks_japan_longer.csv \
-  --csv-var output
+# picasso generate \
+#   -t hashitalks/streamyard/overlay/long_speaker.hcl \
+#   -o $OUTPUT_DIR/ \
+#   --var color=$COLOR \
+#   --var edition=$EDITION \
+#   --var next="$NEXT" \
+#   --csv $INPUT_DIR/csv/long_speakers.csv \
+#   --csv-var id
 
-picasso generate \
-  -t hashitalks/new/obs_empty.hcl \
-  -o output/obs_empty_$ID.png \
-  --var color=$COLOR
-
-picasso generate \
-  -t hashitalks/new/obs_message.hcl \
-  -o output/obs_live_$ID.png \
-  --var edition="$EDITION" \
-  --var message_regional="" \
-  --var message_english="" \
-  --var regular_font=$REGULAR_FONT \
-  --var bold_font=$BOLD_FONT \
-  --var light_font=$LIGHT_FONT \
-  --var color=$COLOR
+# picasso generate \
+#   -t hashitalks/streamyard/overlay/longer_speaker.hcl \
+#   -o $OUTPUT_DIR/ \
+#   --var color=$COLOR \
+#   --var edition=$EDITION \
+#   --var next="$NEXT" \
+#   --csv $INPUT_DIR/csv/longer_speakers.csv \
+#   --csv-var id

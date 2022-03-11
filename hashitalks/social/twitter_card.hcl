@@ -22,17 +22,17 @@ variable "url" {
 
 variable "regular_font" {
   type    = "string"
-  default = "fonts/arial/regular.ttf"
+  default = "fonts/klavika/regular.ttf"
 }
 
 variable "bold_font" {
   type    = "string"
-  default = "fonts/arial/bold.ttf"
+  default = "fonts/klavika/bold.ttf"
 }
 
 variable "light_font" {
   type    = "string"
-  default = "fonts/arial/light.ttf"
+  default = "fonts/klavika/light.ttf"
 }
 
 layer "rectangle" "background" {
@@ -124,5 +124,5 @@ layer "text" "url" {
   x       = 465 - 350
   y       = 750 - 300
   size    = 72
-  font    = "fonts/arial/bold.ttf"
+  font    = "fonts/klavika/bold.ttf"
 }
