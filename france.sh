@@ -11,6 +11,7 @@ COLOR="yellow"
 INPUT_DIR="input/france"
 OUTPUT_DIR="output/fy2023/france"
 NEXT="Next"
+LOGO_OFFSET="17"
 
 mkdir -p $OUTPUT_DIR
 
@@ -29,6 +30,7 @@ picasso generate \
 		--var edition=$EDITION \
 		--var color=$COLOR \
 		--var regular_font=$REGULAR_FONT \
+		--var logo_offset=$LOGO_OFFSET \
 		-o $OUTPUT_DIR/social/email_banner.png
 
 # background

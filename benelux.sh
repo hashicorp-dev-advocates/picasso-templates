@@ -11,6 +11,7 @@ COLOR="magenta"
 INPUT_DIR="input/benelux"
 OUTPUT_DIR="output/fy2023/benelux"
 NEXT="Next"
+LOGO_OFFSET="-9"
 
 mkdir -p $OUTPUT_DIR
 
@@ -27,6 +28,7 @@ picasso generate \
 		-t hashitalks/social/email_banner.hcl \
 		--var edition=$EDITION \
 		--var color=$COLOR \
+    --var logo_offset=$LOGO_OFFSET \
 		-o $OUTPUT_DIR/social/email_banner.png
 
 # background

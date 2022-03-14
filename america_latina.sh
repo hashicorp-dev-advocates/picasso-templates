@@ -11,6 +11,7 @@ COLOR="magenta"
 INPUT_DIR="input/america_latina"
 OUTPUT_DIR="output/fy2023/america_latina"
 NEXT="Next"
+LOGO_OFFSET="-180"
 
 mkdir -p $OUTPUT_DIR
 
@@ -21,12 +22,13 @@ picasso generate \
 		--var color=$COLOR \
 		--var date="12 de mayo de 2022" \
 		--var url=$URL \
-		-o $OUTPUT_DIR/social/twitter_card.png
+    -o $OUTPUT_DIR/social/twitter_card.png
 
 picasso generate \
 		-t hashitalks/social/email_banner.hcl \
 		--var edition="AMÉRICA LATINA" \
 		--var color=$COLOR \
+    --var logo_offset=$LOGO_OFFSET \
 		-o $OUTPUT_DIR/social/email_banner.png
 
 # background

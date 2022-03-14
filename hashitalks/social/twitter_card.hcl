@@ -105,7 +105,7 @@ layer "text" "alks" {
 
 layer "text" "edition" {
   content = "${edition}"
-  x       = 950 - 250
+  x       = 950 - 265
   y       = 373 - 250
   size    = 48
   font    = "${regular_font}"
