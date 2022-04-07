@@ -50,22 +50,22 @@ picasso generate \
   --var color=$COLOR \
   --var edition=$EDITION
 
-# # messages
-# picasso generate \
-#   -t hashitalks/streamyard/overlay/message.hcl \
-#   -o $OUTPUT_DIR/streaming/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --csv $INPUT_DIR/csv/messages.csv \
-#   --csv-var id
+# messages
+picasso generate \
+  -t hashitalks/streamyard/overlay/message.hcl \
+  -o $OUTPUT_DIR/streaming/ \
+  --var color=$COLOR \
+  --var edition=$EDITION \
+  --csv $INPUT_DIR/csv/messages.csv \
+  --csv-var id
 
-# picasso generate \
-#   -t hashitalks/streamyard/overlay/long_message.hcl \
-#   -o $OUTPUT_DIR/streaming/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --csv $INPUT_DIR/csv/long_messages.csv \
-#   --csv-var id
+picasso generate \
+  -t hashitalks/streamyard/overlay/long_message.hcl \
+  -o $OUTPUT_DIR/streaming/ \
+  --var color=$COLOR \
+  --var edition=$EDITION \
+  --csv $INPUT_DIR/csv/long_messages.csv \
+  --csv-var id
 
 # picasso generate \
 #   -t hashitalks/streamyard/overlay/longer_message.hcl \
@@ -75,38 +75,38 @@ picasso generate \
 #   --csv $INPUT_DIR/csv/longer_messages.csv \
 #   --csv-var id
 
-# # speakers
-# picasso generate \
-#   -t hashitalks/new/speaker.hcl \
-#   -o $OUTPUT_DIR/speakers/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --var date="February 17-18" \
-#   --var url=$URL \
-#   --csv $INPUT_DIR/csv/speakers.csv \
-#   --csv-var speaker
+# speakers
+picasso generate \
+  -t hashitalks/speakers/speaker.hcl \
+  -o $OUTPUT_DIR/speakers/ \
+  --var color=$COLOR \
+  --var edition=$EDITION \
+  --var date="12 April 2022" \
+  --var url=$URL \
+  --csv $INPUT_DIR/csv/speakers.csv \
+  --csv-var speaker
 
-# # speakers
-# picasso generate \
-#   -t hashitalks/new/speaker_long_name.hcl \
-#   -o $OUTPUT_DIR/speakers/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --var date="February 17-18" \
-#   --var url=$URL \
-#   --csv $INPUT_DIR/csv/speakers_long_name.csv \
-#   --csv-var speaker
+# speakers
+picasso generate \
+  -t hashitalks/speakers/speaker_long_name.hcl \
+  -o $OUTPUT_DIR/speakers/ \
+  --var color=$COLOR \
+  --var edition=$EDITION \
+  --var date="12 April 2022" \
+  --var url=$URL \
+  --csv $INPUT_DIR/csv/speakers_long_name.csv \
+  --csv-var speaker
 
-# # speakers
-# picasso generate \
-#   -t hashitalks/new/speaker_longer_name.hcl \
-#   -o $OUTPUT_DIR/speakers/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --var date="February 17-18" \
-#   --var url=$URL \
-#   --csv $INPUT_DIR/csv/speakers_longer_name.csv \
-#   --csv-var speaker
+# speakers
+picasso generate \
+  -t hashitalks/speaker/speaker_longer_name.hcl \
+  -o $OUTPUT_DIR/speakers/ \
+  --var color=$COLOR \
+  --var edition=$EDITION \
+  --var date="12 April 2022" \
+  --var url=$URL \
+  --csv $INPUT_DIR/csv/speakers_longer_name.csv \
+  --csv-var speaker
 
 # # speakers
 # picasso generate \
