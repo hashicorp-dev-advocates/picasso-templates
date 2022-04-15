@@ -5,10 +5,10 @@ URL="hashi.co/hashitalks-korea"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
 REGULAR_FONT="fonts/klavika/regular.ttf,fonts/notosanskr/regular.ttf"
-BOLD_FONT="fonts/klavika/bold.ttf"
-LIGHT_FONT="fonts/klavika/light.ttf"
+BOLD_FONT="fonts/klavika/bold.ttf,fonts/notosanskr/bold.ttf"
+LIGHT_FONT="fonts/klavika/light.ttf,fonts/notosanskr/light.ttf"
 COLOR="cyan"
-INPUT_DIR="input/fy2023/korea"
+INPUT_DIR="input/korea"
 OUTPUT_DIR="output/fy2023/korea"
 NEXT="Next"
 LOGO_OFFSET="10"
@@ -77,16 +77,19 @@ picasso generate \
 #   --csv $INPUT_DIR/csv/longer_messages.csv \
 #   --csv-var id
 
-# # speakers
-# picasso generate \
-#   -t hashitalks/new/speaker.hcl \
-#   -o $OUTPUT_DIR/speakers/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --var date="February 17-18" \
-#   --var url=$URL \
-#   --csv $INPUT_DIR/csv/speakers.csv \
-#   --csv-var speaker
+# speakers
+picasso generate \
+  -t hashitalks/speakers/speaker.hcl \
+  -o $OUTPUT_DIR/speakers/ \
+  --var color=$COLOR \
+  --var edition=$EDITION \
+  --var date="2022년 4월 28 일" \
+  --var url=$URL \
+  --var bold_font=$BOLD_FONT \
+  --var light_font=$LIGHT_FONT \
+  --var regular_font=$REGULAR_FONT \
+  --csv $INPUT_DIR/csv/speakers.csv \
+  --csv-var speaker
 
 # # speakers
 # picasso generate \

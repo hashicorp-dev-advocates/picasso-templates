@@ -68,12 +68,12 @@ picasso generate \
   --csv-var id
 
 # picasso generate \
-#   -t hashitalks/streamyard/overlay/longer_message.hcl \
-#   -o $OUTPUT_DIR/streaming/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --csv $INPUT_DIR/csv/longer_messages.csv \
-#   --csv-var id
+  -t hashitalks/streamyard/overlay/longer_message.hcl \
+  -o $OUTPUT_DIR/streaming/ \
+  --var color=$COLOR \
+  --var edition=$EDITION \
+  --csv $INPUT_DIR/csv/longer_messages.csv \
+  --csv-var id
 
 # speakers
 picasso generate \
@@ -98,15 +98,15 @@ picasso generate \
   --csv-var speaker
 
 # speakers
-picasso generate \
-  -t hashitalks/speaker/speaker_longer_name.hcl \
-  -o $OUTPUT_DIR/speakers/ \
-  --var color=$COLOR \
-  --var edition=$EDITION \
-  --var date="12 April 2022" \
-  --var url=$URL \
-  --csv $INPUT_DIR/csv/speakers_longer_name.csv \
-  --csv-var speaker
+# picasso generate \
+#  -t hashitalks/speaker/speaker_longer_name.hcl \
+#  -o $OUTPUT_DIR/speakers/ \
+#  --var color=$COLOR \
+#  --var edition=$EDITION \
+#  --var date="12 April 2022" \
+#  --var url=$URL \
+#  --csv $INPUT_DIR/csv/speakers_longer_name.csv \
+#  --csv-var speaker
 
 # # speakers
 # picasso generate \

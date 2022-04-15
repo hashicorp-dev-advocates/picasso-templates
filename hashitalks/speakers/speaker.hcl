@@ -49,6 +49,21 @@ variable "url" {
   type = "string"
 }
 
+variable "regular_font" {
+  type    = "string"
+  default = "fonts/klavika/regular.ttf"
+}
+
+variable "bold_font" {
+  type    = "string"
+  default = "fonts/klavika/bold.ttf"
+}
+
+variable "light_font" {
+  type    = "string"
+  default = "fonts/klavika/light.ttf"
+}
+
 layer "rectangle" "background" {
   x      = 0
   y      = 0
@@ -119,7 +134,7 @@ layer "text" "edition" {
   x       = 420
   y       = 97
   size    = 24
-  font    = "fonts/klavika/regular.ttf"
+  font    = "${regular_font}"
 }
 
 layer "image" "photo" {
@@ -136,7 +151,7 @@ layer "text" "speaker" {
   x       = 505-50
   y       = 263-70
   size    = 60
-  font    = "fonts/arial/bold.ttf"
+  font    = "${regular_font}"
 }
 
 layer "text" "title" {
@@ -145,7 +160,7 @@ layer "text" "title" {
   x       = 505-50
   y       = 319-70
   size    = 34
-  font    = "fonts/arial/regular.ttf"
+  font    = "${regular_font}"
 }
 
 layer "text" "date" {
@@ -153,7 +168,7 @@ layer "text" "date" {
   x       = 505-50
   y       = 510-33
   size    = 21
-  font    = "fonts/arial/bold.ttf"
+  font    = "${regular_font}"
 }
 
 layer "text" "url" {
