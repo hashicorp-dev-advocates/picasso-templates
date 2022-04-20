@@ -50,22 +50,22 @@ picasso generate \
   --var color=$COLOR \
   --var edition=$EDITION
 
-# # messages
-# picasso generate \
-#   -t hashitalks/streamyard/overlay/message.hcl \
-#   -o $OUTPUT_DIR/streaming/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --csv $INPUT_DIR/csv/messages.csv \
-#   --csv-var id
+# messages
+picasso generate \
+  -t hashitalks/streamyard/overlay/message.hcl \
+  -o $OUTPUT_DIR/streaming/ \
+  --var color=$COLOR \
+  --var edition=$EDITION \
+  --csv $INPUT_DIR/csv/messages.csv \
+  --csv-var id
 
-# picasso generate \
-#   -t hashitalks/streamyard/overlay/long_message.hcl \
-#   -o $OUTPUT_DIR/streaming/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --csv $INPUT_DIR/csv/long_messages.csv \
-#   --csv-var id
+ picasso generate \
+  -t hashitalks/streamyard/overlay/long_message.hcl \
+  -o $OUTPUT_DIR/streaming/ \
+  --var color=$COLOR \
+  --var edition=$EDITION \
+  --csv $INPUT_DIR/csv/long_messages.csv \
+  --csv-var id
 
 # picasso generate \
 #   -t hashitalks/streamyard/overlay/longer_message.hcl \

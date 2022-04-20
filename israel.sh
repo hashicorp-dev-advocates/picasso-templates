@@ -8,7 +8,7 @@ REGULAR_FONT="fonts/klavika/regular.ttf"
 BOLD_FONT="fonts/klavika/bold.ttf"
 LIGHT_FONT="fonts/klavika/light.ttf"
 COLOR="cyan"
-INPUT_DIR="input/fy2023/israel"
+INPUT_DIR="input/israel"
 OUTPUT_DIR="output/fy2023/israel"
 NEXT="Next"
 LOGO_OFFSET="38"
@@ -52,22 +52,22 @@ picasso generate \
   --var color=$COLOR \
   --var edition=$EDITION
 
-# # messages
-# picasso generate \
-#   -t hashitalks/streamyard/overlay/message.hcl \
-#   -o $OUTPUT_DIR/streaming/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --csv $INPUT_DIR/csv/messages.csv \
-#   --csv-var id
+# messages
+picasso generate \
+  -t hashitalks/streamyard/overlay/message.hcl \
+  -o $OUTPUT_DIR/streaming/ \
+  --var color=$COLOR \
+  --var edition=$EDITION \
+  --csv $INPUT_DIR/csv/messages.csv \
+  --csv-var id
 
-# picasso generate \
-#   -t hashitalks/streamyard/overlay/long_message.hcl \
-#   -o $OUTPUT_DIR/streaming/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --csv $INPUT_DIR/csv/long_messages.csv \
-#   --csv-var id
+picasso generate \
+  -t hashitalks/streamyard/overlay/long_message.hcl \
+  -o $OUTPUT_DIR/streaming/ \
+  --var color=$COLOR \
+  --var edition=$EDITION \
+  --csv $INPUT_DIR/csv/long_messages.csv \
+  --csv-var id
 
 # picasso generate \
 #   -t hashitalks/streamyard/overlay/longer_message.hcl \
