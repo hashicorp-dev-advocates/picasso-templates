@@ -128,7 +128,7 @@ layer "text" "edition" {
   x       = 420
   y       = 74
   size    = 24
-  font    = "fonts/klavika/regular.ttf"
+  font    = "${regular_font}"
 }
 
 layer "text" "message" {

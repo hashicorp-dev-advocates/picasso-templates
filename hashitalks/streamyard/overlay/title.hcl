@@ -21,6 +21,21 @@ variable "edition" {
   type = "string"
 }
 
+variable "regular_font" {
+  type    = "string"
+  default = "fonts/klavika/regular.ttf"
+}
+
+variable "bold_font" {
+  type    = "string"
+  default = "fonts/klavika/bold.ttf"
+}
+
+variable "light_font" {
+  type    = "string"
+  default = "fonts/klavika/light.ttf"
+}
+
 layer "rectangle" "background" {
   x      = 0
   y      = 0
@@ -93,5 +108,5 @@ layer "text" "edition" {
   x       = 1250
   y       = 473
   size    = 48
-  font    = "fonts/klavika/regular.ttf"
+  font    = "${regular_font}"
 }
