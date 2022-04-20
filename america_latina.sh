@@ -41,31 +41,31 @@ picasso generate \
 picasso generate \
   -t hashitalks/streamyard/overlay/branding.hcl \
   -o $OUTPUT_DIR/streaming/branding_overlay.png \
-  --var edition=$EDITION
+  --var edition="AMÉRICA LATINA" \
 
 # title
 picasso generate \
   -t hashitalks/streamyard/overlay/title.hcl \
   -o $OUTPUT_DIR/streaming/title.png \
+  --var edition="AMÉRICA LATINA" \
   --var color=$COLOR \
-  --var edition=$EDITION
 
 # # messages
-# picasso generate \
-#   -t hashitalks/streamyard/overlay/message.hcl \
-#   -o $OUTPUT_DIR/streaming/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --csv $INPUT_DIR/csv/messages.csv \
-#   --csv-var id
+ picasso generate \
+  -t hashitalks/streamyard/overlay/message.hcl \
+  -o $OUTPUT_DIR/streaming/ \
+  --var edition="AMÉRICA LATINA" \
+  --var color=$COLOR \
+  --csv $INPUT_DIR/csv/messages.csv \
+  --csv-var id
 
-# picasso generate \
-#   -t hashitalks/streamyard/overlay/long_message.hcl \
-#   -o $OUTPUT_DIR/streaming/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --csv $INPUT_DIR/csv/long_messages.csv \
-#   --csv-var id
+ picasso generate \
+  -t hashitalks/streamyard/overlay/long_message.hcl \
+  -o $OUTPUT_DIR/streaming/ \
+  --var color=$COLOR \
+  --var edition="AMÉRICA LATINA" \
+  --csv $INPUT_DIR/csv/long_messages.csv \
+  --csv-var id
 
 # picasso generate \
 #   -t hashitalks/streamyard/overlay/longer_message.hcl \
