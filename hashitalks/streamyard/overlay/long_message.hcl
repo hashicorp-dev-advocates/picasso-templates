@@ -33,17 +33,17 @@ variable "text_offset" {
 
 variable "regular_font" {
   type    = "string"
-  default = "fonts/arial/regular.ttf"
+  default = "fonts/klavika/regular.ttf"
 }
 
 variable "bold_font" {
   type    = "string"
-  default = "fonts/arial/bold.ttf"
+  default = "fonts/klavika/bold.ttf"
 }
 
 variable "light_font" {
   type    = "string"
-  default = "fonts/arial/light.ttf"
+  default = "fonts/klavika/light.ttf"
 }
 
 layer "rectangle" "background" {
@@ -118,7 +118,7 @@ layer "text" "edition" {
   x       = 420
   y       = 74
   size    = 24
-  font    = "fonts/klavika/regular.ttf"
+  font    = "${regular_font}"
 }
 
 layer "text" "message_regional" {

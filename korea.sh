@@ -49,7 +49,7 @@ picasso generate \
   --var bold_font=$BOLD_FONT \
   --var light_font=$LIGHT_FONT \
   --var regular_font=$REGULAR_FONT \ 
-  --var edition=$EDITION
+  --var edition=$EDITION \
 
 # title
 picasso generate \
@@ -59,7 +59,7 @@ picasso generate \
   --var bold_font=$BOLD_FONT \
   --var light_font=$LIGHT_FONT \
   --var regular_font=$REGULAR_FONT \
-  --var edition=$EDITION
+  --var edition=$EDITION \
 
 # # messages
 picasso generate \
@@ -84,16 +84,16 @@ picasso generate \
   --csv $INPUT_DIR/csv/long_messages.csv \
   --csv-var id
 
-picasso generate \
-  -t hashitalks/streamyard/overlay/longer_message.hcl \
-  -o $OUTPUT_DIR/streaming/ \
-  --var color=$COLOR \
-  --var edition=$EDITION \
-  --var bold_font=$BOLD_FONT \
-  --var light_font=$LIGHT_FONT \
-  --var regular_font=$REGULAR_FONT \
-  --csv $INPUT_DIR/csv/longer_messages.csv \
-  --csv-var id
+#picasso generate \
+#  -t hashitalks/streamyard/overlay/longer_message.hcl \
+#  -o $OUTPUT_DIR/streaming/ \
+#  --var color=$COLOR \
+#  --var edition=$EDITION \
+#  --var bold_font=$BOLD_FONT \
+#  --var light_font=$LIGHT_FONT \
+#  --var regular_font=$REGULAR_FONT \
+#  --csv $INPUT_DIR/csv/longer_messages.csv \
+#  --csv-var id
 
 # speakers
 picasso generate \
