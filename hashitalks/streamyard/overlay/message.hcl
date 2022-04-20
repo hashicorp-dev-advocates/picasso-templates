@@ -124,8 +124,8 @@ layer "text" "edition" {
 layer "text" "message_regional" {
   content = "${message_regional}"
   anchor  = "TOP_LEFT"
-  x       = 300 + "${text_offset}"
-  y       = 420
+  x       = 250 + "${text_offset}"
+  y       = 400
   size    = 95
   font    = "${bold_font}"
 }
@@ -134,7 +134,7 @@ layer "text" "message_english" {
   content = "${message_english}"
   anchor  = "TOP_LEFT"
   x       = 250 + "${text_offset}"
-  y       = 380 + 96
+  y       = 380 + 150
   size    = 76
   font    = "${light_font}"
   color   = "#727274"

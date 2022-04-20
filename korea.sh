@@ -46,10 +46,10 @@ picasso generate \
 picasso generate \
   -t hashitalks/streamyard/overlay/branding.hcl \
   -o $OUTPUT_DIR/streaming/branding_overlay.png \
+  --var edition=$EDITION \
   --var bold_font=$BOLD_FONT \
   --var light_font=$LIGHT_FONT \
   --var regular_font=$REGULAR_FONT \ 
-  --var edition=$EDITION \
 
 # title
 picasso generate \

@@ -4,9 +4,9 @@ DATE="05/05"
 URL="hashi.co/hashitalks-vietnam"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
-REGULAR_FONT="fonts/klavika/regular.ttf"
-BOLD_FONT="fonts/klavika/bold.ttf"
-LIGHT_FONT="fonts/klavika/light.ttf"
+REGULAR_FONT="fonts/klavika/regular.ttf,fonts/bevietnampro/regular.ttf"
+BOLD_FONT="fonts/klavika/bold.ttf,fonts/bevietnampro/bold.ttf"
+LIGHT_FONT="fonts/klavika/light.ttf,fonts/bevietnampro/light.ttf"
 COLOR="yellow"
 INPUT_DIR="input/vietnam"
 OUTPUT_DIR="output/fy2023/vietnam"
@@ -37,37 +37,52 @@ picasso generate \
 picasso generate \
   -t hashitalks/streamyard/background/default.hcl \
   -o $OUTPUT_DIR/streaming/default_background.png \
+  --var bold_font=$BOLD_FONT \
+  --var light_font=$LIGHT_FONT \
+  --var regular_font=$REGULAR_FONT \
   --var color=$COLOR
 
 # branding
 picasso generate \
   -t hashitalks/streamyard/overlay/branding.hcl \
   -o $OUTPUT_DIR/streaming/branding_overlay.png \
-  --var edition=$EDITION
+  --var edition=$EDITION \
+  --var bold_font=$BOLD_FONT \
+  --var light_font=$LIGHT_FONT \
+  --var regular_font=$REGULAR_FONT \ 
 
 # title
 picasso generate \
   -t hashitalks/streamyard/overlay/title.hcl \
   -o $OUTPUT_DIR/streaming/title.png \
   --var color=$COLOR \
-  --var edition=$EDITION
+  --var bold_font=$BOLD_FONT \
+  --var light_font=$LIGHT_FONT \
+  --var regular_font=$REGULAR_FONT \
+  --var edition=$EDITION \
 
 # # messages
-# picasso generate \
-#   -t hashitalks/streamyard/overlay/message.hcl \
-#   -o $OUTPUT_DIR/streaming/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --csv $INPUT_DIR/csv/messages.csv \
-#   --csv-var id
+picasso generate \
+  -t hashitalks/streamyard/overlay/message.hcl \
+  -o $OUTPUT_DIR/streaming/ \
+  --var color=$COLOR \
+  --var edition=$EDITION \
+  --var bold_font=$BOLD_FONT \
+  --var light_font=$LIGHT_FONT \
+  --var regular_font=$REGULAR_FONT \
+  --csv $INPUT_DIR/csv/messages.csv \
+  --csv-var id
 
-# picasso generate \
-#   -t hashitalks/streamyard/overlay/long_message.hcl \
-#   -o $OUTPUT_DIR/streaming/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --csv $INPUT_DIR/csv/long_messages.csv \
-#   --csv-var id
+picasso generate \
+  -t hashitalks/streamyard/overlay/long_message.hcl \
+  -o $OUTPUT_DIR/streaming/ \
+  --var color=$COLOR \
+  --var edition=$EDITION \
+  --var bold_font=$BOLD_FONT \
+  --var light_font=$LIGHT_FONT \
+  --var regular_font=$REGULAR_FONT \
+  --csv $INPUT_DIR/csv/long_messages.csv \
+  --csv-var id
 
 # picasso generate \
 #   -t hashitalks/streamyard/overlay/longer_message.hcl \
