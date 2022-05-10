@@ -75,16 +75,16 @@ picasso generate \
 #   --csv $INPUT_DIR/csv/longer_messages.csv \
 #   --csv-var id
 
-# # speakers
-# picasso generate \
-#   -t hashitalks/new/speaker.hcl \
-#   -o $OUTPUT_DIR/speakers/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --var date="February 17-18" \
-#   --var url=$URL \
-#   --csv $INPUT_DIR/csv/speakers.csv \
-#   --csv-var speaker
+# speakers
+picasso generate \
+  -t hashitalks/speakers/speaker.hcl \
+  -o $OUTPUT_DIR/speakers/ \
+  --var color=$COLOR \
+  --var edition="AMÉRICA LATINA" \
+  --var date="12 de mayo de 2022" \
+  --var url=$URL \
+  --csv $INPUT_DIR/csv/speakers.csv \
+  --csv-var speaker
 
 # # speakers
 # picasso generate \
