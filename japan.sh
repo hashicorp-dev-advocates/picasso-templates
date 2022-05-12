@@ -1,5 +1,5 @@
 #!/bin/bash
-EDITION="BUILD"
+EDITION="JAPAN"
 DATE="2022 August 25"
 URL="hashi.co/hashitalks-japan"
 
@@ -11,7 +11,7 @@ COLOR="magenta"
 INPUT_DIR="input/japan"
 OUTPUT_DIR="output/fy2023/japan"
 NEXT="Next"
-LOGO_OFFSET="-180"
+LOGO_OFFSET="55"
 
 mkdir -p $OUTPUT_DIR
 

@@ -7,11 +7,11 @@ ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
 REGULAR_FONT="fonts/klavika/regular.ttf"
 BOLD_FONT="fonts/klavika/bold.ttf"
 LIGHT_FONT="fonts/klavika/light.ttf"
-COLOR="magenta"
+COLOR="yellow"
 INPUT_DIR="input/brasil"
 OUTPUT_DIR="output/fy2023/brasil"
 NEXT="Next"
-LOGO_OFFSET="-180"
+LOGO_OFFSET="35"
 
 mkdir -p $OUTPUT_DIR
 
