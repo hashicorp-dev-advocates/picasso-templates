@@ -1,36 +1,34 @@
 #!/bin/bash
-EDITION="ISRAEL"
-DATE="2022 May 26"
-URL="hashi.co/hashitalks-israel"
+EDITION="AMÉRICA LATINA"
+DATE="12 de mayo de 2022"
+URL="hashi.co/hashitalks-america-latina"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
 REGULAR_FONT="fonts/klavika/regular.ttf"
 BOLD_FONT="fonts/klavika/bold.ttf"
 LIGHT_FONT="fonts/klavika/light.ttf"
-COLOR="cyan"
-INPUT_DIR="input/israel"
-OUTPUT_DIR="output/fy2023/israel"
+COLOR="magenta"
+INPUT_DIR="input/america_latina"
+OUTPUT_DIR="output/fy2023/america_latina"
 NEXT="Next"
-LOGO_OFFSET="38"
+LOGO_OFFSET="-180"
 
 mkdir -p $OUTPUT_DIR
 
 # social
 picasso generate \
 		-t hashitalks/social/twitter_card.hcl \
-		--var edition=$EDITION \
+		--var edition="AMÉRICA LATINA" \
 		--var color=$COLOR \
-		--var date="2022 May 26" \
+		--var date="12 de mayo de 2022" \
 		--var url=$URL \
-		--var regular_font=$REGULAR_FONT \
-		-o $OUTPUT_DIR/social/twitter_card.png
+    -o $OUTPUT_DIR/social/twitter_card.png
 
 picasso generate \
 		-t hashitalks/social/email_banner.hcl \
-		--var edition=$EDITION \
+		--var edition="AMÉRICA LATINA" \
 		--var color=$COLOR \
-		--var regular_font=$REGULAR_FONT \
-		--var logo_offset=$LOGO_OFFSET \
+    --var logo_offset=$LOGO_OFFSET \
 		-o $OUTPUT_DIR/social/email_banner.png
 
 # background
@@ -43,29 +41,29 @@ picasso generate \
 picasso generate \
   -t hashitalks/streamyard/overlay/branding.hcl \
   -o $OUTPUT_DIR/streaming/branding_overlay.png \
-  --var edition=$EDITION
+  --var edition="AMÉRICA LATINA" \
 
 # title
 picasso generate \
   -t hashitalks/streamyard/overlay/title.hcl \
   -o $OUTPUT_DIR/streaming/title.png \
+  --var edition="AMÉRICA LATINA" \
   --var color=$COLOR \
-  --var edition=$EDITION
 
-# messages
-picasso generate \
+# # messages
+ picasso generate \
   -t hashitalks/streamyard/overlay/message.hcl \
   -o $OUTPUT_DIR/streaming/ \
+  --var edition="AMÉRICA LATINA" \
   --var color=$COLOR \
-  --var edition=$EDITION \
   --csv $INPUT_DIR/csv/messages.csv \
   --csv-var id
 
-picasso generate \
+ picasso generate \
   -t hashitalks/streamyard/overlay/long_message.hcl \
   -o $OUTPUT_DIR/streaming/ \
   --var color=$COLOR \
-  --var edition=$EDITION \
+  --var edition="AMÉRICA LATINA" \
   --csv $INPUT_DIR/csv/long_messages.csv \
   --csv-var id
 
@@ -82,8 +80,8 @@ picasso generate \
   -t hashitalks/speakers/speaker.hcl \
   -o $OUTPUT_DIR/speakers/ \
   --var color=$COLOR \
-  --var edition=$EDITION \
-  --var date="2022 May 26" \
+  --var edition="AMÉRICA LATINA" \
+  --var date="12 de mayo de 2022" \
   --var url=$URL \
   --csv $INPUT_DIR/csv/speakers.csv \
   --csv-var speaker
