@@ -1,17 +1,17 @@
 #!/bin/bash
-EDITION="ISRAEL"
-DATE="2022 May 26"
-URL="hashi.co/hashitalks-israel"
+EDITION="CANADA"
+DATE="29 septembre 2022"
+URL="hashi.co/hashitalks-canada"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
 REGULAR_FONT="fonts/klavika/regular.ttf"
 BOLD_FONT="fonts/klavika/bold.ttf"
 LIGHT_FONT="fonts/klavika/light.ttf"
-COLOR="magenta"
-INPUT_DIR="input/israel"
-OUTPUT_DIR="output/fy2023/israel"
+COLOR="cyan"
+INPUT_DIR="input/canada"
+OUTPUT_DIR="output/fy2023/canada"
 NEXT="Next"
-LOGO_OFFSET="-180"
+LOGO_OFFSET="10"
 
 mkdir -p $OUTPUT_DIR
 
@@ -20,7 +20,7 @@ picasso generate \
 		-t hashitalks/social/twitter_card.hcl \
 		--var edition=$EDITION \
 		--var color=$COLOR \
-		--var date="2022 May 26" \
+		--var date="29 septembre 2022" \
 		--var url=$URL \
     -o $OUTPUT_DIR/social/twitter_card.png
 
@@ -81,7 +81,7 @@ picasso generate \
   -o $OUTPUT_DIR/speakers/ \
   --var color=$COLOR \
   --var edition=$EDITION \
-  --var date="2022 May 26" \
+  --var date="29 septembre 2022" \
   --var url=$URL \
   --csv $INPUT_DIR/csv/speakers.csv \
   --csv-var speaker

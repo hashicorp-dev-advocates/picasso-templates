@@ -11,7 +11,7 @@ COLOR="magenta"
 INPUT_DIR="input/israel"
 OUTPUT_DIR="output/fy2023/israel"
 NEXT="Next"
-LOGO_OFFSET="-180"
+LOGO_OFFSET="20"
 
 mkdir -p $OUTPUT_DIR
 
