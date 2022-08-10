@@ -4,9 +4,9 @@ DATE="2022 August 25"
 URL="hashi.co/hashitalks-japan"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
-REGULAR_FONT="fonts/klavika/regular.ttf"
-BOLD_FONT="fonts/klavika/bold.ttf"
-LIGHT_FONT="fonts/klavika/light.ttf"
+REGULAR_FONT="fonts/klavika/regular.ttf,fonts/meiryo/regular.ttf"
+BOLD_FONT="fonts/klavika/bold.ttf,fonts/meiryo/bold.ttf"
+LIGHT_FONT="fonts/klavika/light.ttf,fonts/meiryo/light.ttf"
 COLOR="magenta"
 INPUT_DIR="input/japan"
 OUTPUT_DIR="output/fy2023/japan"
@@ -79,6 +79,7 @@ picasso generate \
 picasso generate \
   -t hashitalks/speakers/speaker.hcl \
   -o $OUTPUT_DIR/speakers/ \
+  --var regular_font=$REGULAR_FONT \
   --var color=$COLOR \
   --var edition=$EDITION \
   --var date="2022 August 25" \
@@ -92,7 +93,7 @@ picasso generate \
 #   -o $OUTPUT_DIR/speakers/ \
 #   --var color=$COLOR \
 #   --var edition=$EDITION \
-#   --var date="February 17-18" \
+#   --var date="2022 August 25" \
 #   --var url=$URL \
 #   --csv $INPUT_DIR/csv/speakers_long_name.csv \
 #   --csv-var speaker
@@ -110,7 +111,7 @@ picasso generate \
 
 # # speakers
 # picasso generate \
-#   -t hashitalks/new/speaker_2line.hcl \
+#   -t hashitalks/new/speaker_two_line.hcl \
 #   -o $OUTPUT_DIR/speakers/ \
 #   --var color=$COLOR \
 #   --var edition=$EDITION \

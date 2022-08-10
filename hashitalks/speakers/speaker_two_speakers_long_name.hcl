@@ -124,7 +124,7 @@ layer "text" "speaker" {
   x       = 65
   y       = 263 - 70
   size    = 40
-  font    = "fonts/arial/bold.ttf"
+  font    = "fonts/klavika/regular.ttf"
 }
 
 layer "text" "title" {
@@ -133,7 +133,7 @@ layer "text" "title" {
   x       = 65
   y       = 319 - 40
   size    = 34
-  font    = "fonts/arial/regular.ttf"
+  font    = "fonts/klavika/regular.ttf"
 }
 
 layer "text" "date" {
@@ -141,7 +141,7 @@ layer "text" "date" {
   x       = 505 - 50
   y       = 510 - 33
   size    = 21
-  font    = "fonts/arial/bold.ttf"
+  font    = "fonts/klavika/bold.ttf"
 }
 
 layer "text" "url" {
@@ -149,5 +149,5 @@ layer "text" "url" {
   x       = 505 - 50
   y       = 540 - 33
   size    = 21
-  font    = "fonts/arial/regular.ttf"
+  font    = "fonts/klavika/regular.ttf"
 }

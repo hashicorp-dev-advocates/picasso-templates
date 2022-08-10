@@ -11,3 +11,6 @@ Philip Laine,The opinionated future of managing Kubernetes with Terraform,input/
 Scott McAllister,Creating a Connection: Lessons Learned from Inheriting a Terraform Provider,input/build/images/Scott_McAllister.jpg
 Serge Smertin,Reaching 3M downloads and 90%+ unit test coverage for a Terraform provider: lessons learned,input/build/images/Serge_Smertin.jpg
 Sophia Castellarin,Building Vagrant plugins,input/build/images/Sophia_Castellarin.png
+Anna Winkler,Up and running tests with go-tfe!,input/build/images/Anna_Winkler.png
+Chris Arcand,"Terraforming Terraform: The TFC API, Go client and Terraform provider",input/build/images/Chris_Arcand.jpg
+Rafael Natali,How to Test Your Terraform Code,input/build/images/Rafael_Natali.jpg

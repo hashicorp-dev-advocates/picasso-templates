@@ -168,7 +168,7 @@ layer "text" "date" {
   x       = 505-50
   y       = 510-33
   size    = 21
-  font    = "${regular_font}"
+  font    = "${bold_font}"
 }
 
 layer "text" "url" {
@@ -176,5 +176,5 @@ layer "text" "url" {
   x       = 505-50
   y       = 540-33
   size    = 21
-  font    = "fonts/arial/regular.ttf"
+  font    = "fonts/klavika/regular.ttf"
 }

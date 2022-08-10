@@ -1,0 +1,23 @@
+speaker,title,photo
+Atsushi Tanaka,Terraform と Kubernetes の共存による IaC の実践,input/japan/images/Atsushi_Tanaka.jpg
+Benjamin Poh,Taking your Terraform Skills to the Next Level,input/japan/images/Benjamin_Poh.jpg
+Brad McCoy,Taking your Terraform Skills to the Next Level,input/japan/images/Brad_McCoy.jpg
+Hiroaki Hattori,AWSにおけるIaCを活かした Terraformの使い方2選！ 〜循環型IaCとマルチクラウドチックなDR環境〜,input/japan/images/Hiroaki_Hattori.jpg
+Kanji Yomoda,Terraform Provider開発のノウハウ,input/japan/images/Kanji_Yomoda.jpg
+Katsuya Yamaguchi,社内認証基盤用のVault Pluginを作るメリット,input/japan/images/Katsuya_Yamaguchi.png
+Kentaro Koba,ZscalerのTerraform provider で実現する Secure Service Edge as Code,input/japan/images/Kentaro_Koba.png
+Masa Ito,Terraform cloudへのSnyk integration,input/japan/images/Masa_Ito.jpg
+Masaki Kazue,シングルテナント構成のSaaSのIaCにTerraform Workspacesを導入してみた,input/japan/images/Masaki_Kazue.png
+Motoki Habuchi,コード化できていなかったヤプリを Terraform文化に変えていった話,input/japan/images/Motoki_Habuchi.jpg
+Nagnath Masali,Vault in Rakuten Card,input/japan/images/Nagnath_Masali.jpg
+Shohei Aoki,Terraform 構成管理 NG祭,input/japan/images/Shohei_Aoki.jpg
+Shotaro Iwase,Terraform EnterpriseやTerraform CloudのAPIを活用して、 一歩踏み込んだTerraform運用自動化を！,input/japan/images/Shotaro_Iwase.jpg
+Takayuki Ito,CircleCIのinfrastructureを支える TerraformのCI/CDパイプラインの改善,input/japan/images/Takayuki_Ito.jpg
+Unno Wataru,世界初のHashiCorpディストリビューターが語る、 TFCBご提案時のバカウケポイントご紹介,input/japan/images/Unno_Wataru.jpg
+Watanabe Yohei,CDK使いがAWS Adapter for CDKTFでTerraformに入門した話,input/japan/images/Watanabe_Yohei.jpg
+Yossy Sakai,Nomad + Consul-Terraform-Sync + F5 BIG-IPで、 ワークロードのデプロイと負荷分散を自動化してみた,input/japan/images/Yossy_Sakai.jpg
+Yosuke Hirono,mermaid を使って依存関係をどこまで可視化できるか試してみました,input/japan/images/Yosuke_Hirono.jpg
+Yu Sudo,Terraform EnterpriseやTerraform CloudのAPIを活用して、 一歩踏み込んだTerraform運用自動化を！,input/japan/images/Yu_Sudo.png
+Yuki Takagi,Terraform と Serverless Framework を相互連携させる,input/japan/images/Yuki_Takagi.jpg
+Haruka Sakihara,ベストなTerraform ディレクトリ構成を考察してみた,input/japan/images/Haruka_Sakihara.png
+勇気 前野,CIパイプラインのシークレットを安全に管理する方法　HashiCorp Vault × GitHub Actions,input/japan/images/Yong_Qi_Qian_Ye.png
