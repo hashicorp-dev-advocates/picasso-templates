@@ -54,6 +54,8 @@ picasso generate \
  picasso generate \
   -t hashitalks/streamyard/overlay/message.hcl \
   -o $OUTPUT_DIR/streaming/ \
+  --var regular_font=$REGULAR_FONT \
+  --var bold_font=$BOLD_FONT \
   --var edition=$EDITION \
   --var color=$COLOR \
   --csv $INPUT_DIR/csv/messages.csv \
@@ -62,6 +64,8 @@ picasso generate \
  picasso generate \
   -t hashitalks/streamyard/overlay/long_message.hcl \
   -o $OUTPUT_DIR/streaming/ \
+  --var regular_font=$REGULAR_FONT \
+  --var bold_font=$BOLD_FONT \
   --var color=$COLOR \
   --var edition=$EDITION \
   --csv $INPUT_DIR/csv/long_messages.csv \
@@ -85,6 +89,18 @@ picasso generate \
   --var date="2022 August 25" \
   --var url=$URL \
   --csv $INPUT_DIR/csv/speakers.csv \
+  --csv-var speaker
+
+# speakers
+picasso generate \
+  -t hashitalks/speakers/speaker_two_speakers.hcl \
+  -o $OUTPUT_DIR/speakers/ \
+  --var regular_font=$REGULAR_FONT \
+  --var color=$COLOR \
+  --var edition=$EDITION \
+  --var date="2022 August 25" \
+  --var url=$URL \
+  --csv $INPUT_DIR/csv/two_speakers.csv \
   --csv-var speaker
 
 # # speakers

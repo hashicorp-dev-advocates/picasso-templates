@@ -26,6 +26,11 @@ variable "message_english" {
   default = "The event will start soon"
 }
 
+variable "message_regional" {
+  type    = "string"
+  default = "The event will start soon"
+}
+
 variable "text_offset" {
   type    = "string"
   default = 0

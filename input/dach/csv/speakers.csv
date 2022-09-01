@@ -1,0 +1,9 @@
+speaker,title,photo
+Martin Alfke,Managing training instances in the cloud,input/dach/images/Martin_Alfke.png
+Jochen Zehnder,Was ist CDK für Terraform und soll ich es verwenden?,input/dach/images/Jochen_Zehnder.jpg
+Amar Lojo,Packer & HCP Vault Better together,input/dach/images/Amar_Lojo.jpg
+Max Fröhlich,Implementing Machine Learning Workflows on Nomad,input/dach/images/Max_Frohlich.jpg
+Pedram Hamidehkhan,Democratizing IaC with CDK for Terraform,input/dach/images/Pedram_Hamidehkhan.jpg
+Daniel Banck,Terraform Language Server — Ein Überblick,input/dach/images/Daniel_Banck.jpg
+Max Fröhlich,Managing Keycloak client secrets with vault,input/dach/images/Max_Frohlich.jpg
+Dominik Lekse,"Terraform your ""pets"" - A Terraform Provider for (Operating) System resources",input/dach/images/Dominik_Lekse.jpg
