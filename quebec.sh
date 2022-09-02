@@ -1,15 +1,15 @@
 #!/bin/bash
-EDITION="CANADA"
+EDITION="QUEBEC"
 DATE="29 septembre 2022"
-URL="hashi.co/hashitalks-canada"
+URL="hashi.co/hashitalks-quebec"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
 REGULAR_FONT="fonts/klavika/regular.ttf"
 BOLD_FONT="fonts/klavika/bold.ttf"
 LIGHT_FONT="fonts/klavika/light.ttf"
 COLOR="cyan"
-INPUT_DIR="input/canada"
-OUTPUT_DIR="output/fy2023/canada"
+INPUT_DIR="input/quebec"
+OUTPUT_DIR="output/fy2023/quebec"
 NEXT="Next"
 LOGO_OFFSET="10"
 
