@@ -1,5 +1,5 @@
 #!/bin/bash
-EDITION="QUEBEC"
+EDITION="QUÉBEC"
 DATE="29 septembre 2022"
 URL="hashi.co/hashitalks-quebec"
 
@@ -8,10 +8,10 @@ REGULAR_FONT="fonts/klavika/regular.ttf"
 BOLD_FONT="fonts/klavika/bold.ttf"
 LIGHT_FONT="fonts/klavika/light.ttf"
 COLOR="cyan"
-INPUT_DIR="input/quebec"
-OUTPUT_DIR="output/fy2023/quebec"
+INPUT_DIR="input/québec"
+OUTPUT_DIR="output/fy2023/québec"
 NEXT="Next"
-LOGO_OFFSET="10"
+LOGO_OFFSET="20"
 
 mkdir -p $OUTPUT_DIR
 
