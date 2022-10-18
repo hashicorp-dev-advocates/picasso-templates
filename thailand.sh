@@ -1,23 +1,26 @@
 #!/bin/bash
-EDITION="THAILAND"
+EDITION="ประเทศไทย"
 DATE="3/11/2565"
 URL="hashi.co/hashitalks-thailand"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
-REGULAR_FONT="fonts/klavika/regular.ttf"
-BOLD_FONT="fonts/klavika/bold.ttf"
-LIGHT_FONT="fonts/klavika/light.ttf"
+REGULAR_FONT="fonts/klavika/regular.ttf,fonts/tahoma/regular.ttf"
+BOLD_FONT="fonts/klavika/bold.ttf,fonts/tahoma/bold.ttf"
+LIGHT_FONT="fonts/klavika/light.ttf,fonts/tahoma/light.ttf"
 COLOR="yellow"
 INPUT_DIR="input/thailand"
 OUTPUT_DIR="output/fy2023/thailand"
 NEXT="Next"
-LOGO_OFFSET="-30"
+LOGO_OFFSET="-55"
 
 mkdir -p $OUTPUT_DIR
 
 # social
 picasso generate \
 		-t hashitalks/social/twitter_card.hcl \
+    --var regular_font=$REGULAR_FONT \
+    --var bold_font=$BOLD_FONT \
+    --var light_font=$LIGHT_FONT \
 		--var edition=$EDITION \
 		--var color=$COLOR \
 		--var date=$DATE \
@@ -26,6 +29,7 @@ picasso generate \
 
 picasso generate \
 		-t hashitalks/social/email_banner.hcl \
+    --var regular_font=$REGULAR_FONT \
 		--var edition=$EDITION \
 		--var color=$COLOR \
     --var logo_offset=$LOGO_OFFSET \
@@ -42,12 +46,14 @@ picasso generate \
   -t hashitalks/streamyard/overlay/branding.hcl \
   -o $OUTPUT_DIR/streaming/branding_overlay.png \
   --var edition=$EDITION \
+  --var regular_font=$REGULAR_FONT \
 
 # title
 picasso generate \
   -t hashitalks/streamyard/overlay/title.hcl \
   -o $OUTPUT_DIR/streaming/title.png \
   --var edition=$EDITION \
+  --var regular_font=$REGULAR_FONT \
   --var color=$COLOR \
 
 # # messages
@@ -55,6 +61,9 @@ picasso generate \
   -t hashitalks/streamyard/overlay/message.hcl \
   -o $OUTPUT_DIR/streaming/ \
   --var edition=$EDITION \
+  --var regular_font=$REGULAR_FONT \
+  --var bold_font=$BOLD_FONT \
+  --var light_font=$LIGHT_FONT \
   --var color=$COLOR \
   --csv $INPUT_DIR/csv/messages.csv \
   --csv-var id
@@ -62,6 +71,9 @@ picasso generate \
  picasso generate \
   -t hashitalks/streamyard/overlay/long_message.hcl \
   -o $OUTPUT_DIR/streaming/ \
+  --var regular_font=$REGULAR_FONT \
+  --var bold_font=$BOLD_FONT \
+  --var light_font=$LIGHT_FONT \
   --var color=$COLOR \
   --var edition=$EDITION \
   --csv $INPUT_DIR/csv/long_messages.csv \
@@ -79,6 +91,7 @@ picasso generate \
 picasso generate \
   -t hashitalks/speakers/speaker.hcl \
   -o $OUTPUT_DIR/speakers/ \
+  --var regular_font=$REGULAR_FONT \
   --var color=$COLOR \
   --var edition=$EDITION \
   --var date=$DATE \
