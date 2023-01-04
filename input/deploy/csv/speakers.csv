@@ -1,6 +1,6 @@
 speaker,title,photo
 Adithya Krishna,Terraform meets Elastic Cloud,input/deploy/images/Adithya_Krishna.jpg
-Bram Vogelaar,10 things i learned building nomad-packs,input/deploy/images/Bram_Vogelaar.jpg
+Bram Vogelaar,10 Things I Learned Building Nomad Packs,input/deploy/images/Bram_Vogelaar.png
 Cassie Coyle,Use Waypoint To Easily Deploy To All 3 Cloud Providers,input/deploy/images/Cassie_Coyle.jpg
 Chris Ayers,Securely deploying Infrastructure as Code,input/deploy/images/Chris_Ayers.jpg
 Chris Nesbitt-Smith,Is It Time To Put Your Pet Kubernetes Down?,input/deploy/images/Chris_Nesbitt-Smith.png
@@ -17,5 +17,5 @@ Kyle Penfound,Portable CD pipelines for Nomad with Vault and Dagger,input/deploy
 Martin Smith,Looking at idempotency in AWS Lambda deployments,input/deploy/images/Martin_Smith.png
 Matt Butcher,Launching the Fermyon Cloud with Nomad and WebAssembly,input/deploy/images/Matt_Butcher.jpg
 Michael Lange,All Hands on Deck: How We Share Our Work,input/deploy/images/Michael_Lange.jpg
-Natalie Sererbyakova,how to keep your secrets secured and audited,input/deploy/images/Natalie_Sererbyakova.jpg
-Saptak Takalkar,Self service infrastructure provisioning with Terraform & AWS Service Catalog,input/deploy/images/Septak_Takalkar.jpg
+Natalie Sererbyakova,how to keep your secrets secured and audited,input/deploy/images/Natalie_Sererbyakova.jpeg
+Saptak Takalkar,Self service infrastructure provisioning with Terraform & AWS Service Catalog,input/deploy/images/Saptak_Takalkar.jpg

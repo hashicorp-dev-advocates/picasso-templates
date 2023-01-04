@@ -1,0 +1,52 @@
+speaker,title,photo
+Chris van Meer,How to deploy your HashiCorp stack with Ansible under 15 minutes,input/2023/images/Chris_van_Meer.jpg
+Aakash Shah,Terraform and DevSecOps: Top 10 Lessons Learned for Scaling Terraform,input/2023/images/Aakash_Shah.jpg
+Abigail Bangser,Providing Waypoint as-a-Service across multi-cluster Kubernetes,input/2023/images/Abigail_Bangser.jpg
+Adriana Villela,How to Nomadify Your Kubernetes Manifests,input/2023/images/Adriana_Villela.jpg
+Alain Chiasson,Securing Vault Agent in existing Windows environment.,input/2023/images/Alain_Chiasson.jpg
+Allessandria Polizzi,Hidden Hazards: Unique Burnout Risks in Tech,input/2023/images/Allessandria_Polizzi.jpg
+Andrei Buzoianu,Exploring and Provisioning Infrastructure with Packer,input/2023/images/Andrei_Buzoianu.jpg
+Bervianto Leo Pratama,Getting Started with Minikube in Vagrant,input/2023/images/Bervianto_Leo_Pratama.jpg
+Bram Vogelaar,Writing your first waypoint deploy plugin,input/2023/images/Bram_Vogelaar.png
+Dan Norris,Running Cilium with Nomad,input/2023/images/Dan_Norris.jpg
+David Alexander,IRSA evolved: Transparent AWS access by any Kubernetes workload,input/2023/images/David_Alexander.jpg
+Elif Samedin,Exploring and Provisioning Infrastructure with Packer,input/2023/images/Elif_Samedin.jpg
+Elijah Voigt,Replatforming with minimal drama and downtime,input/2023/images/Elijah_Voigt.jpg
+Fokke Dekker,Writing your first waypoint deploy plugin,input/2023/images/Fokke_Dekker.jpg
+Issac Goldstand,Terraform for Platform Teams,input/2023/images/Issac_Goldstand.jpg
+Jacob Mammoliti,Multi-Cloud WAN Federation with Consul and Kubernetes,input/2023/images/Jacob_Mammoliti.jpg
+Japneet Sahni,Zero Trust Security with Boundary and Vault,input/2023/images/Japneet_Sahni.jpg
+Jasmine Whaley,Designing for Equity,input/2023/images/Jasmine_Whaley.jpg
+John McDonough,Advanced Terraform Techniques,input/2023/images/John_McDonough.jpg
+Joinal Ahmed,Lets look at Terraform for MLOps,input/2023/images/Joinal_Ahmed.jpg
+Jonathann Zenou,How Terraform helps us catching bad guys at sea,input/2023/images/Jonathann_Zenou.jpg
+Josh Freda,Scaling HashiCorp's writing culture with internal tooling,input/2023/images/Josh_Freda.jpg
+Juan Peredo,Fast track your Kubernetes journey with EKS BluePrints for Terraform and Waypoint,input/2023/images/Juan_Peredo.jpg
+Jurnell Cockhren,"Defeat the ""computer setup blues"" and get coding faster with Backpack",input/2023/images/Jurnell_Cockhren.jpg
+Kalam Abdul,Zero trust with Boundary and Vault - Credential Injection with Boundary and Vault,input/2023/images/Kalam_Abdul.jpg
+Kartik Lunkad,Secure Developer Workflows with Vault & Github Actions,input/2023/images/Kartik_Lunkad.jpg
+Lays Rodrigues,Terraform: Don't reinvent the modules,input/2023/images/Lays_Rodrigues.jpg
+Marko Bevc,Using HCP Waypoint,input/2023/images/Marko_Bevc.jpg
+Martin Wentzel,The Ups and Downs of Maintaining a Terraform provider,input/2023/images/Martin_Wentzel.jpg
+Ned Bellavance,Autoscaling Workers for Boundary,input/2023/images/Ned_Bellavance.jpg
+Norbert Gruszka,Consul Dataplane on Kubernetes,input/2023/images/Norbert_Gruszka.jpg
+Pato Arvizu,HCP Boundary at home,input/2023/images/Pato_Arvizu.jpg
+Phuong Le,Hybrid Microservices with HashiCorp Stack,input/2023/images/Phuong_Le.jpg
+Sam Gabrail,Packer and Terraform to Build a Nomad Cluster in vSphere,input/2023/images/Sam_Gabrail.jpg
+Sivamuthu Kumar,Enhancing Platform Teams Workflow with Infrastructure as Code,input/2023/images/Sivamuthu_Kumar.jpg
+Thang Chung,Hybrid Microservices with HashiCorp Stack,input/2023/images/Thang_Chung.jpg
+Thomas Kula,Why you should use Vault as your Consul Certificate Authority,input/2023/images/Thomas_Kula.jpg
+Anubhav Mishra,Scaling HashiCorp's writing culture with internal tooling,input/2023/images/Anubhav_Mishra.png
+Ari Kalfus,Building Scalable Enterprise Secrets Management with GitHub OIDC and HashiCorp Vault,input/2023/images/Ari_Kalfus.png
+Du'An Lightfoot,Scale Your Cloud Network to Infinity and Beyond,input/2023/images/DuAn_Lightfoot.png
+Felipe Angelo Sgarbi,Containerized Infrastructure-as-Code with Immutable clusters,input/2023/images/Felipe_Angelo_Sgarbi.png
+Hillol Habib Un Nabi,Building  security agnostic solution  with Hashicorp Vault,input/2023/images/Hillol_Habib_Un_Nabi.png
+Josh Armitage,Behavior Driven Development Help Shift Security Left,input/2023/images/Josh_Armitage.png
+Lev Andelman,Back to the future: Service Mesh for Legacy Software,input/2023/images/Lev_Andelman.png
+Liav Yona,Everything you Need to Know about *CDK - The Internals: From CDKTF to CDK8s,input/2023/images/Liav_Yona.png
+Marcelo Zambrana,Multi-Cloud Image Pipeline,input/2023/images/Marcelo_Zambrana.png
+Martin Smith,When you're in command of the incident,input/2023/images/Martin_Smith.png
+Michael Greenlaw,Vault and Boundary - Managing Secrets at Home,input/2023/images/Michael_Greenlaw.png
+Peter ONeill,Open Policy Agent in Terraform Cloud,input/2023/images/Peter_ONeill.png
+Tom Howarth,"An Introduction to ""Packering""",input/2023/images/Tom_Howarth.png
+Welly Siauw,Validate IAM policy using Terraform Run Tasks,input/2023/images/Welly_Siauw.png

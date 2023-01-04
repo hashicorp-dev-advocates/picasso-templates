@@ -86,17 +86,6 @@ picasso generate \
   --csv $INPUT_DIR/csv/speakers.csv \
   --csv-var speaker
 
-   # speakers
-picasso generate \
-  -t hashitalks/speakers/speaker_two_speakers.hcl \
-  -o $OUTPUT_DIR/speakers/ \
-  --var color=$COLOR \
-  --var edition=$EDITION \
-  --var date="December 7-8, 2022" \
-  --var url=$URL \
-  --csv $INPUT_DIR/csv/two_speakers.csv \
-  --csv-var speaker
-
 # # speakers
 # picasso generate \
 #   -t hashitalks/speakers/speaker_long_name.hcl \
