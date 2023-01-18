@@ -49,6 +49,11 @@ variable "url" {
   type = "string"
 }
 
+variable "x_axis" {
+  type = "string"
+  default = "40"
+}
+
 variable "logo_medium_font" {
   type    = "string"
   default = "fonts/klavika/medium.ttf"
@@ -121,7 +126,7 @@ layer "image" "sun" {
 
 layer "image" "logo" {
   content = "${file(logo)}"
-  x       = 40
+  x       = "${x_axis}"
   y       = 64
   width   = 45
   height  = 48
@@ -178,7 +183,7 @@ layer "image" "photo" {
 layer "text" "title" {
   content = "${title}"
   width   = 650
-  x       = 40
+  x       = "${x_axis}"
   y       = 175
   size    = 45
   font    = "${title_bold_font}"
@@ -186,7 +191,7 @@ layer "text" "title" {
 
 layer "text" "speaker" {
   content = "${speaker}"
-  x       = 40
+  x       = "${x_axis}"
   y       = 477
   size    = 28
   font    = "${bold_font}"
@@ -197,12 +202,11 @@ layer "text" "company" {
   y       = 477
   size    = 28
   font    = "${regular_font}"
-  # content = ""
 }
 
 layer "text" "date" {
   content = "${date}"
-  x       = 40
+  x       = "${x_axis}"
   y       = 517
   size    = 28
   font    = "${regular_font}"
@@ -213,5 +217,4 @@ layer "text" "time" {
   y       = 517
   size    = 28
   font    = "${regular_font}"
-  # content = "| ${time} GMT"
 }
