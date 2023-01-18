@@ -49,6 +49,21 @@ variable "url" {
   type = "string"
 }
 
+variable "logo_medium_font" {
+  type    = "string"
+  default = "fonts/klavika/medium.ttf"
+}
+
+variable "logo_light_font" {
+  type    = "string"
+  default = "fonts/klavika/light.ttf"
+}
+
+variable "title_bold_font" {
+  type    = "string"
+  default = "fonts/gilmer/bold.ttf"
+}
+
 variable "regular_font" {
   type    = "string"
   default = "fonts/metro/regular.ttf"
@@ -56,7 +71,7 @@ variable "regular_font" {
 
 variable "bold_font" {
   type    = "string"
-  default = "fonts/gilmer/bold.ttf"
+  default = "fonts/metro/bold.ttf"
 }
 
 variable "light_font" {
@@ -73,7 +88,7 @@ layer "rectangle" "background" {
   color = "#000000"
 }
 layer "image" "background" {
-  content = "${file("images_2023/background.png")}"
+  content = "${file("images_2023/background_${color}.png")}"
   x      = 0
   y      = 0
   width  = 1200
@@ -81,24 +96,24 @@ layer "image" "background" {
 }
 
 layer "image" "top" {
-  content = "${file("images_2023/top.png")}"
-  x       = 725
+  content = "${file("images_2023/top_${color}.png")}"
+  x       = 730
   y       = 0
   width   = 500
   height  = 262
 }
 
 layer "image" "bottom" {
-  content = "${file("images_2023/bottom.png")}"
-  x       = 745
+  content = "${file("images_2023/bottom_${color}.png")}"
+  x       = 750
   y       = 415
   width   = 500
   height  = 262
 }
 
 layer "image" "sun" {
-  content = "${file("images_2023/sun.png")}"
-  x       = 715
+  content = "${file("images_2023/sun_${color}.png")}"
+  x       = 700
   y       = -15
   width   = 500
   height  = 700
@@ -107,50 +122,66 @@ layer "image" "sun" {
 layer "image" "logo" {
   content = "${file(logo)}"
   x       = 40
-  y       = 65
-  width   = 58
-  height  = 62
+  y       = 64
+  width   = 45
+  height  = 48
+}
+
+layer "text" "2_point" {
+  content = "|"
+  x       = 105
+  y       = 55
+  size    = 45
+  font    = "fonts/klavika/light.ttf"
 }
 
 layer "text" "hashi" {
-  content = "| Hashi"
-  x       = 125
+  content = "Hashi"
+  x       = 140
   y       = 45
-  size    = 76
-  font    = "fonts/klavika/bold.ttf"
+  size    = 64
+  font    = "fonts/klavika/medium.ttf"
 }
 
 layer "text" "t" {
   content = "T"
-  x       = 345
+  x       = 295
   y       = 45
-  size    = 76
+  size    = 64
   font    = "fonts/klavika/light.ttf"
 }
 
 layer "text" "alks" {
   content = "alks"
-  x       = 375
+  x       = 320
   y       = 45
-  size    = 76
+  size    = 64
   font    = "fonts/klavika/light.ttf"
 }
 
 layer "text" "edition" {
   content = "${edition}"
-  x       = 505
-  y       = 97
-  size    = 24
+  x       = 435
+  y       = 65
+  size    = 45
   font    = "${regular_font}"
 }
 
 layer "image" "photo" {
   content = "${file(photo)}"
-  x       = 750
+  x       = 800
   y       = 140
-  width = 400
-  # width   = 369
-  # height  = 369
+  width   = 369
+  height  = 369
+}
+
+layer "text" "title" {
+  content = "${title}"
+  width   = 650
+  x       = 40
+  y       = 175
+  size    = 45
+  font    = "${title_bold_font}"
 }
 
 layer "text" "speaker" {
@@ -158,24 +189,15 @@ layer "text" "speaker" {
   x       = 40
   y       = 477
   size    = 28
-  font    = "fonts/metro/bold.ttf"
+  font    = "${bold_font}"
 }
 layer "text" "company" {
-  content = "| Monsters, Inc."
+  content = "| ${company}"
   x       = 292
   y       = 477
   size    = 28
   font    = "${regular_font}"
-  # content = "| ${company}"
-}
-
-layer "text" "title" {
-  content = "${title}"
-  width   = 650
-  x       = 40
-  y       = 249
-  size    = 45
-  font    = "${bold_font}"
+  # content = ""
 }
 
 layer "text" "date" {
@@ -186,10 +208,10 @@ layer "text" "date" {
   font    = "${regular_font}"
 }
 layer "text" "time" {
-  content = "| 12:00 GMT"
+  content = "| ${time} GMT"
   x       = 275
   y       = 517
   size    = 28
   font    = "${regular_font}"
-  # content = "| ${time}"
+  # content = "| ${time} GMT"
 }
