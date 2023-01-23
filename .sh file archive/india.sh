@@ -9,11 +9,14 @@ BOLD_FONT="fonts/klavika/bold.ttf"
 LIGHT_FONT="fonts/klavika/light.ttf"
 COLOR="magenta"
 INPUT_DIR="input/india"
-OUTPUT_DIR="output/fy2023/india"
+OUTPUT_DIR="../hashitalks-assets/2023/india"
 NEXT="Next"
 LOGO_OFFSET="70"
 
 mkdir -p $OUTPUT_DIR
+mkdir -p $OUTPUT_DIR/speakers
+mkdir -p $OUTPUT_DIR/streaming
+mkdir -p $OUTPUT_DIR/social
 
 # social
 picasso generate \

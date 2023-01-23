@@ -9,11 +9,14 @@ BOLD_FONT="fonts/klavika/bold.ttf"
 LIGHT_FONT="fonts/klavika/light.ttf"
 COLOR="yellow"
 INPUT_DIR="input/france"
-OUTPUT_DIR="output/fy2023/france"
+OUTPUT_DIR="../hashitalks-assets/2023/france"
 NEXT="Next"
 LOGO_OFFSET="20"
 
 mkdir -p $OUTPUT_DIR
+mkdir -p $OUTPUT_DIR/speakers
+mkdir -p $OUTPUT_DIR/streaming
+mkdir -p $OUTPUT_DIR/social
 
 # social
 picasso generate \

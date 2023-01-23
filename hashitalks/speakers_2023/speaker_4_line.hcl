@@ -187,9 +187,9 @@ layer "image" "photo" {
 
 layer "text" "title" {
   content = "${title}"
-  width   = 615
+  width   = 675+25
   x       = "${x_axis}"
-  y       = 175+70
+  y       = 175+28
   size    = 40
   font    = "${title_bold_font}"
 }
