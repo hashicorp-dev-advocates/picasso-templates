@@ -37,6 +37,10 @@ variable "title" {
   type = "string"
 }
 
+variable "photo" {
+  type = "string"
+}
+
 variable "date" {
   type = "string"
 }
@@ -45,19 +49,44 @@ variable "url" {
   type = "string"
 }
 
+variable "x_axis" {
+  type = "string"
+  default = "40"
+}
+
+variable "y_axis" {
+  type = "string"
+  default = "85"
+}
+
+variable "logo_medium_font" {
+  type    = "string"
+  default = "fonts/klavika/medium.ttf"
+}
+
+variable "logo_light_font" {
+  type    = "string"
+  default = "fonts/klavika/light.ttf"
+}
+
+variable "title_bold_font" {
+  type    = "string"
+  default = "fonts/gilmer/bold.ttf"
+}
+
 variable "regular_font" {
   type    = "string"
-  default = "fonts/klavika/regular.ttf"
+  default = "fonts/metro/regular.ttf"
 }
 
 variable "bold_font" {
   type    = "string"
-  default = "fonts/klavika/bold.ttf"
+  default = "fonts/metro/bold.ttf"
 }
 
 variable "light_font" {
   type    = "string"
-  default = "fonts/klavika/light.ttf"
+  default = "fonts/metro/light.ttf"
 }
 
 layer "rectangle" "background" {
@@ -68,101 +97,121 @@ layer "rectangle" "background" {
 
   color = "#000000"
 }
-
-layer "image" "dots_left" {
-  content = "${file("images/dots_${color}.png")}"
-  x       = 0
-  y       = 675 - 190
+layer "image" "background" {
+  content = "${file("images_2023/background_${color}.png")}"
+  x      = 0
+  y      = 0
+  width  = 1200
+  height = 675
 }
 
-layer "image" "dots_right" {
-  content = "${file("images/dots_${color}.png")}"
-  x       = 220
-  y       = 675 - 190
+layer "image" "top" {
+  content = "${file("images_2023/top_${color}.png")}"
+  x       = 730
+  y       = 0
+  width   = 500
+  height  = 262
 }
 
-layer "image" "lines_mask" {
-  content = "${file("images/lines_mask.png")}"
-  x       = 0
-  y       = 675 - 190
+layer "image" "bottom" {
+  content = "${file("images_2023/bottom_${color}.png")}"
+  x       = 750
+  y       = 415
+  width   = 500
+  height  = 262
 }
 
-layer "image" "lines" {
-  content = "${file("images/lines_${color}.png")}"
-  x       = 0
-  y       = 675 - 190
+layer "image" "sun" {
+  content = "${file("images_2023/sun_${color}.png")}"
+  x       = 700
+  y       = -15
+  width   = 500
+  height  = 700
 }
 
 layer "image" "logo" {
   content = "${file(logo)}"
-  x       = 1070
-  y       = 60
-  width   = 58
-  height  = 62
+  x       = "${x_axis}"
+  y       = "${y_axis}"+20-3
+  width   = 48
+  height  = 48
+}
+
+layer "text" "2_point" {
+  content = "|"
+  x       = 105+10
+  y       = "${y_axis}"+10
+  size    = 45
+  font    = "fonts/klavika/light.ttf"
 }
 
 layer "text" "hashi" {
   content = "Hashi"
-  x       = 65
-  y       = 45
-  size    = 76
-  font    = "fonts/klavika/bold.ttf"
+  x       = 140+10
+  y       = "${y_axis}"
+  size    = 64
+  font    = "fonts/klavika/medium.ttf"
 }
 
 layer "text" "t" {
   content = "T"
-  x       = 250
-  y       = 45
-  size    = 76
+  x       = 295+9
+  y       = "${y_axis}"
+  size    = 64
   font    = "fonts/klavika/light.ttf"
 }
 
 layer "text" "alks" {
   content = "alks"
-  x       = 280
-  y       = 45
-  size    = 76
+  x       = 320+9
+  y       = "${y_axis}"
+  size    = 64
   font    = "fonts/klavika/light.ttf"
 }
 
 layer "text" "edition" {
   content = "${edition}"
-  x       = 420
-  y       = 97
-  size    = 24
-  font    = "fonts/klavika/regular.ttf"
-}
-
-layer "text" "speaker" {
-  content = "${speaker}"
-  width   = 1000
-  x       = 65
-  y       = 263 - 70
-  size    = 60
-  font    = "fonts/klavika/regular.ttf"
+  x       = 435+10
+  y       = "${y_axis}"+20+9
+  size    = 35
+  font    = "${regular_font}"
 }
 
 layer "text" "title" {
   content = "${title}"
-  width   = 1000
-  x       = 65 + 5
-  y       = 319 - 10
-  size    = 34
-  font    = "${regular_font}"
+  width   = 675+25
+  x       = "${x_axis}"
+  y       = 175+70
+  size    = 40
+  font    = "${title_bold_font}"
 }
+
+layer "text" "speaker" {
+  content = "${speaker}"
+  x       = "${x_axis}"
+  y       = 477
+  size    = 28
+  font    = "${bold_font}"
+}
+# layer "text" "company" {
+#  content = "| ${company}"
+#  x       = 292
+#  y       = 477
+#  size    = 28
+#  font    = "${regular_font}"
+#}
 
 layer "text" "date" {
   content = "${date}"
-  x       = 505 - 50
-  y       = 510 - 33
-  size    = 21
-  font    = "fonts/klavika/bold.ttf"
+  x       = "${x_axis}"
+  y       = 517
+  size    = 28
+  font    = "${regular_font}"
 }
-
-layer "text" "url" {
-  content = "${url}"
-  x       = 505 - 50
-  y       = 540 - 33
-  size    = 21
-  font    = "fonts/klavika/regular.ttf"
+layer "text" "time" {
+  content = "| ${time} GMT"
+  x       = 275
+  y       = 517
+  size    = 28
+  font    = "${regular_font}"
 }

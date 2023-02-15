@@ -145,49 +145,27 @@ picasso generate \
   --csv $INPUT_DIR/csv/speakers_4_line.csv \
   --csv-var speaker
 
-# # speakers
-# picasso generate \
-#   -t hashitalks/new/speaker_long_name.hcl \
-#   -o $OUTPUT_DIR/speakers/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --var date="February 17-18" \
-#   --var url=$URL \
-#   --csv $INPUT_DIR/csv/speakers_long_name.csv \
-#   --csv-var speaker
+  # speakers
+picasso generate \
+  -t hashitalks/speakers_2023/speaker_two_speakers.hcl \
+  -o $OUTPUT_DIR/speakers/ \
+  --var color=$COLOR \
+  --var edition=$EDITION \
+  --var date="February 16, 2023" \
+  --var url=$URL \
+  --csv $INPUT_DIR/csv/speakers_two_speakers.csv \
+  --csv-var speaker
 
-# # speakers
-# picasso generate \
-#   -t hashitalks/new/speaker_longer_name.hcl \
-#   -o $OUTPUT_DIR/speakers/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --var date="February 17-18" \
-#   --var url=$URL \
-#   --csv $INPUT_DIR/csv/speakers_longer_name.csv \
-#   --csv-var speaker
-
-# # speakers
-# picasso generate \
-#   -t hashitalks/new/speaker_2line.hcl \
-#   -o $OUTPUT_DIR/speakers/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --var date="February 17-18" \
-#   --var url=$URL \
-#   --csv $INPUT_DIR/csv/speakers_2line.csv \
-#   --csv-var speaker
-
-# # emcees
-# picasso generate \
-#   -t hashitalks/new/speaker.hcl \
-#   -o $OUTPUT_DIR/emcees/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --var date="February 17-18" \
-#   --var url=$URL \
-#   --csv $INPUT_DIR/csv/emcees.csv \
-#   --csv-var speaker
+ # emcees
+picasso generate \
+  -t hashitalks/speakers_2023/speaker.hcl \
+  -o $OUTPUT_DIR/emcees/ \
+  --var color=$COLOR \
+  --var edition=$EDITION \
+  --var date="February 17-18" \
+  --var url=$URL \
+  --csv $INPUT_DIR/csv/emcees.csv \
+  --csv-var title
 
 # picasso generate \
 #   -t hashitalks/global/speaker_2line.hcl \
