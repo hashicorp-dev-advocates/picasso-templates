@@ -69,7 +69,7 @@ layer "rectangle" "background" {
 }
 
 layer "image" "background" {
-  content = "${file("images_2023/background_${color}.png")}"
+  content = "${file("images/background_${color}.png")}"
   x      = 0
   y      = 0
   width  = 1600
@@ -77,7 +77,7 @@ layer "image" "background" {
 }
 
 layer "image" "top" {
-  content = "${file("images_2023/top_${color}.png")}"
+  content = "${file("images/top_${color}.png")}"
   x       = 1050
   y       = 0
   width   = 775
@@ -85,7 +85,7 @@ layer "image" "top" {
 }
 
 layer "image" "bottom" {
-  content = "${file("images_2023/bottom_${color}.png")}"
+  content = "${file("images/bottom_${color}.png")}"
   x       = 1050
   y       = 500
   width   = 775
@@ -93,7 +93,7 @@ layer "image" "bottom" {
 }
 
 layer "image" "sun" {
-  content = "${file("images_2023/sun_${color}.png")}"
+  content = "${file("images/sun_${color}.png")}"
   x       = 825
   y       = 0
   width   = 775
@@ -149,18 +149,18 @@ layer "text" "tagline" {
   font    = "${bold_font}"
 }
 
+layer "text" "url" {
+  content = "${url}"
+  x       = "${x_axis}"+365
+  y       = "${y_axis}"+260
+  size    = 45
+  font    = "${regular_font}"
+}
+
 layer "text" "date" {
   content = "${date}"
   x       = "${x_axis}"
   y       = "${y_axis}"+500
   size    = 45
   font    = "${light_font}"
-}
-
-layer "text" "url" {
-  content = "${url}"
-  x       = "${x_axis}"+275
-  y       = "${y_axis}"+263
-  size    = 45
-  font    = "${bold_font}"
 }

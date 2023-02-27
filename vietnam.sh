@@ -1,18 +1,18 @@
 #!/bin/bash
-EDITION="TEMPLATE"
-DATE="APRIL 27, 2023"
-URL="hashi.co/template"
+EDITION="VIỆT NAM"
+DATE="APRIL 13, 2023"
+URL="hashi.co/hashitalks-vietnam"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
-TAGLINE="Connect with your regional community to hear from and learn with fellow practitioners."
-REGULAR_FONT="fonts/klavika/regular.ttf"
-BOLD_FONT="fonts/klavika/bold.ttf"
-LIGHT_FONT="fonts/klavika/light.ttf"
+TAGLINE="Hear from and learn with fellow practitioners."
+REGULAR_FONT="fonts/klavika/regular.ttf,fonts/bevietnampro/regular.ttf"
+BOLD_FONT="fonts/klavika/bold.ttf,fonts/bevietnampro/bold.ttf"
+LIGHT_FONT="fonts/klavika/light.ttf,fonts/bevietnampro/light.ttf"
 COLOR="yellow"
-INPUT_DIR="input/test_2023"
-OUTPUT_DIR="../hashitalks-assets/2023/$EDITION"
+INPUT_DIR="input/vietnam"
+OUTPUT_DIR="../hashitalks-assets/2023/vietnam"
 NEXT="Next"
-LOGO_OFFSET="0"
+LOGO_OFFSET="43"
 
 mkdir -p $OUTPUT_DIR
 mkdir -p $OUTPUT_DIR/speakers
@@ -22,18 +22,24 @@ mkdir -p $OUTPUT_DIR/social
 # social
 picasso generate \
 	-t hashitalks/social/twitter_card.hcl \
-	--var edition=$EDITION \
-	--var tagline="Hear from and learn with fellow practitioners:" \
+	--var edition="VIỆT NAM" \
+	--var tagline="Xem và học hỏi từ những người dùng giàu kinh nghiệm:" \
 	--var color=$COLOR \
-	--var date="APRIL 27, 2023" \
+	--var date="APRIL 13, 2023" \
 	--var url=$URL \
+	--var regular_font=$REGULAR_FONT \
+	--var bold_font=$BOLD_FONT \
+	--var light_font=$LIGHT_FONT \
     -o $OUTPUT_DIR/social/twitter_card.png
 
 picasso generate \
 	-t hashitalks/social/email_banner.hcl \
-	--var edition=$EDITION \
+	--var edition="VIỆT NAM" \
 	--var color=$COLOR \
     --var logo_offset=$LOGO_OFFSET \
+	--var regular_font=$REGULAR_FONT \
+	--var bold_font=$BOLD_FONT \
+	--var light_font=$LIGHT_FONT \
 	-o $OUTPUT_DIR/social/email_banner.png
 
 # # background
@@ -52,7 +58,10 @@ picasso generate \
 picasso generate \
   -t hashitalks/streamyard/overlay/title.hcl \
   -o $OUTPUT_DIR/streaming/title.png \
-  --var edition=$EDITION \
+  --var edition="VIỆT NAM" \
+  --var regular_font=$REGULAR_FONT \
+  --var bold_font=$BOLD_FONT \
+  --var light_font=$LIGHT_FONT \
   --var color=$COLOR \
 
 #  # messages

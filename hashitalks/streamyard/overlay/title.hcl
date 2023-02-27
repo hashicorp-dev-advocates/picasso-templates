@@ -1,6 +1,15 @@
+picasso {
+  version = "v0.2.0"
+}
+
 output "png" {
-  width  = 1600
-  height = 467
+  width  = 1920
+  height = 1080
+}
+
+variable "color" {
+  type    = "string"
+  default = "yellow"
 }
 
 variable "logo" {
@@ -10,6 +19,11 @@ variable "logo" {
 
 variable "edition" {
   type = "string"
+}
+
+variable "x_axis" {
+  type = "string"
+  default = "85"
 }
 
 variable "logo_medium_font" {
@@ -37,87 +51,82 @@ variable "light_font" {
   default = "fonts/metro/light.ttf"
 }
 
-variable "logo_offset" {
-  type    = "string"
-  default = "0"
-}
-
 layer "rectangle" "background" {
   x      = 0
   y      = 0
-  width  = 1600
-  height = 467
-
-  color = "#000000"
+  width  = 1920
+  height = 1080
+  color  = "#000000"
 }
 
 layer "image" "background" {
-  content = "${file("images_2023/background_${color}.png")}"
+  content = "${file("images/background_${color}.png")}"
   x      = 0
   y      = 0
-  width  = 1600
-  height = 467
+  width  = 1920
+  height = 1080
 }
 
 layer "image" "top" {
-  content = "${file("images_2023/top_${color}.png")}"
-  x       = 1150
+  content = "${file("images/top_${color}.png")}"
+  x       = 1500
   y       = 0
-  width   = 540
-  height  = 283
+  width   = 500
+  height  = 262
 }
 
 layer "image" "bottom" {
-  content = "${file("images_2023/bottom_${color}.png")}"
-  x       = 1150
-  y       = 250
-  width   = 540
-  height  = 283
+  content = "${file("images/bottom_${color}.png")}"
+  x       = 1500
+  y       = 1000
+  width   = 500
+  height  = 262
 }
 
 layer "image" "sun" {
-  content = "${file("images_2023/sun_${color}.png")}"
-  x       = 1110
-  y       = 0
-  width   = 490
-  height  = 570
+  content = "${file("images/sun_${color}.png")}"
+  x       = 1500
+  y       = -100
+  width   = 540
+  height  = 628
 }
 
 layer "image" "logo" {
   content = "${file(logo)}"
-  x       = 65
-  y       = 50
-  width   = 65
+  x       = "${x_axis}"
+  y       = "85"
+  width   = 85
+  height  = 85
 }
 
 layer "text" "hashi" {
   content = "Hashi"
-  x       = 300
-  y       = 120
+  x       = 525
+  y       = 425
   size    = 132
-  font    = "${logo_medium_font}"
+  font    = "fonts/klavika/bold.ttf"
 }
 
 layer "text" "t" {
   content = "T"
-  x       = 620
-  y       = 120
+  x       = 845
+  y       = 425
   size    = 132
-  font    = "${logo_light_font}"
+  font    = "fonts/klavika/light.ttf"
 }
 
 layer "text" "alks" {
   content = "alks"
-  x       = 670
-  y       = 120
+  x       = 900
+  y       = 425
   size    = 132
-  font    = "${logo_light_font}"
+  font    = "fonts/klavika/light.ttf"
 }
 
 layer "text" "edition" {
   content = "${edition}"
-  x       = 580 + "${logo_offset}"
-  y       = 253
-  size    = 60
+  x       = 1145
+  y       = 508
+  size    = 48
   font    = "${regular_font}"
 }

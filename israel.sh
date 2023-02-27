@@ -1,18 +1,18 @@
 #!/bin/bash
-EDITION="TEMPLATE"
-DATE="APRIL 27, 2023"
-URL="hashi.co/template"
+EDITION="ISRAEL"
+DATE="JULY 13, 2023"
+URL="hashi.co/hashitalks-israel"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
-TAGLINE="Connect with your regional community to hear from and learn with fellow practitioners."
+TAGLINE="Hear from and learn with fellow practitioners."
 REGULAR_FONT="fonts/klavika/regular.ttf"
 BOLD_FONT="fonts/klavika/bold.ttf"
 LIGHT_FONT="fonts/klavika/light.ttf"
 COLOR="yellow"
-INPUT_DIR="input/test_2023"
+INPUT_DIR="input/$EDITION"
 OUTPUT_DIR="../hashitalks-assets/2023/$EDITION"
 NEXT="Next"
-LOGO_OFFSET="0"
+LOGO_OFFSET="95"
 
 mkdir -p $OUTPUT_DIR
 mkdir -p $OUTPUT_DIR/speakers
@@ -25,7 +25,7 @@ picasso generate \
 	--var edition=$EDITION \
 	--var tagline="Hear from and learn with fellow practitioners:" \
 	--var color=$COLOR \
-	--var date="APRIL 27, 2023" \
+	--var date="JULY 13, 2023" \
 	--var url=$URL \
     -o $OUTPUT_DIR/social/twitter_card.png
 
