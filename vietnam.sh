@@ -1,18 +1,20 @@
 #!/bin/bash
 EDITION="VIỆT NAM"
-DATE="APRIL 13, 2023"
+DATE="13/04/2023"
 URL="hashi.co/hashitalks-vietnam"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
 TAGLINE="Hear from and learn with fellow practitioners."
-REGULAR_FONT="fonts/klavika/regular.ttf,fonts/bevietnampro/regular.ttf"
-BOLD_FONT="fonts/klavika/bold.ttf,fonts/bevietnampro/bold.ttf"
-LIGHT_FONT="fonts/klavika/light.ttf,fonts/bevietnampro/light.ttf"
+REGULAR_FONT="fonts/metro/regular.ttf,fonts/bevietnampro/regular.ttf"
+BOLD_FONT="fonts/metro/bold.ttf,fonts/bevietnampro/bold.ttf"
+LIGHT_FONT="fonts/metro/light.ttf,fonts/bevietnampro/light.ttf"
+EDITION_FONT="fonts/bevietnampro/light.ttf"
 COLOR="yellow"
 INPUT_DIR="input/vietnam"
-OUTPUT_DIR="../hashitalks-assets/2023/vietnam"
+OUTPUT_DIR="../hashitalks-assets/2023/VIETNAM"
 NEXT="Next"
-LOGO_OFFSET="43"
+LOGO_OFFSET="12"
+TAGLINE_OFFSET="395"
 
 mkdir -p $OUTPUT_DIR
 mkdir -p $OUTPUT_DIR/speakers
@@ -21,15 +23,17 @@ mkdir -p $OUTPUT_DIR/social
 
 # social
 picasso generate \
-	-t hashitalks/social/twitter_card.hcl \
+	-t hashitalks/social/twitter_card_multi-font.hcl \
 	--var edition="VIỆT NAM" \
 	--var tagline="Xem và học hỏi từ những người dùng giàu kinh nghiệm:" \
 	--var color=$COLOR \
-	--var date="APRIL 13, 2023" \
+	--var date=$DATE \
 	--var url=$URL \
+	--var tagline_offset=$TAGLINE_OFFSET \
 	--var regular_font=$REGULAR_FONT \
 	--var bold_font=$BOLD_FONT \
 	--var light_font=$LIGHT_FONT \
+	--var edition_font="fonts/bevietnampro/light.ttf" \
     -o $OUTPUT_DIR/social/twitter_card.png
 
 picasso generate \
@@ -37,7 +41,7 @@ picasso generate \
 	--var edition="VIỆT NAM" \
 	--var color=$COLOR \
     --var logo_offset=$LOGO_OFFSET \
-	--var regular_font=$REGULAR_FONT \
+	--var regular_font="fonts/bevietnampro/regular.ttf" \
 	--var bold_font=$BOLD_FONT \
 	--var light_font=$LIGHT_FONT \
 	-o $OUTPUT_DIR/social/email_banner.png
@@ -64,22 +68,6 @@ picasso generate \
   --var light_font=$LIGHT_FONT \
   --var color=$COLOR \
 
-#  # messages
-#  picasso generate \
-#   -t hashitalks/streamyard/overlay/message.hcl \
-#   -o $OUTPUT_DIR/streaming/ \
-#   --var edition=$EDITION \
-#   --var color=$COLOR \
-#   --csv $INPUT_DIR/csv/messages.csv \
-#   --csv-var id
-
-#  picasso generate \
-#   -t hashitalks/streamyard/overlay/long_message.hcl \
-#   -o $OUTPUT_DIR/streaming/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --csv $INPUT_DIR/csv/long_messages.csv \
-#   --csv-var id
 
 # # speakers
 # picasso generate \

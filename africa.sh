@@ -1,18 +1,19 @@
 #!/bin/bash
 EDITION="AFRICA"
-DATE="MAY 18, 2023"
+DATE="18 MAY 2023"
 URL="hashi.co/hashitalks-africa"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
 TAGLINE="Hear from and learn with fellow practitioners."
-REGULAR_FONT="fonts/klavika/regular.ttf"
-BOLD_FONT="fonts/klavika/bold.ttf"
-LIGHT_FONT="fonts/klavika/light.ttf"
+REGULAR_FONT="fonts/metro/regular.ttf"
+BOLD_FONT="fonts/metro/bold.ttf"
+LIGHT_FONT="fonts/metro/light.ttf"
 COLOR="yellow"
 INPUT_DIR="input/$EDITION"
 OUTPUT_DIR="../hashitalks-assets/2023/$EDITION"
 NEXT="Next"
 LOGO_OFFSET="85"
+TAGLINE_OFFSET="275"
 
 mkdir -p $OUTPUT_DIR
 mkdir -p $OUTPUT_DIR/speakers
@@ -25,7 +26,8 @@ picasso generate \
 	--var edition=$EDITION \
 	--var tagline="Hear from and learn with fellow practitioners:" \
 	--var color=$COLOR \
-	--var date="MAY 18, 2023" \
+	--var tagline_offset=$TAGLINE_OFFSET \
+	--var date="18 MAY 2023" \
 	--var url=$URL \
     -o $OUTPUT_DIR/social/twitter_card.png
 
@@ -54,23 +56,6 @@ picasso generate \
   -o $OUTPUT_DIR/streaming/title.png \
   --var edition=$EDITION \
   --var color=$COLOR \
-
-#  # messages
-#  picasso generate \
-#   -t hashitalks/streamyard/overlay/message.hcl \
-#   -o $OUTPUT_DIR/streaming/ \
-#   --var edition=$EDITION \
-#   --var color=$COLOR \
-#   --csv $INPUT_DIR/csv/messages.csv \
-#   --csv-var id
-
-#  picasso generate \
-#   -t hashitalks/streamyard/overlay/long_message.hcl \
-#   -o $OUTPUT_DIR/streaming/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --csv $INPUT_DIR/csv/long_messages.csv \
-#   --csv-var id
 
 # # speakers
 # picasso generate \

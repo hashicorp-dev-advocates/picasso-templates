@@ -59,9 +59,9 @@ variable "light_font" {
   default = "fonts/metro/light.ttf"
 }
 
-variable "tagline_offset" {
+variable "edition_font" {
   type    = "string"
-  default = "0"
+  default = "fonts/metro/light.ttf"
 }
 
 layer "rectangle" "background" {
@@ -142,14 +142,14 @@ layer "text" "edition" {
   x       = "${x_axis}"+660
   y       = "${y_axis}"+75
   size    = 70-5
-  font    = "${light_font}"
+  font    = "${edition_font}"
 }
 
 layer "text" "tagline" {
   content = "${tagline}"
   x       = "${x_axis}"
   y       = "${y_axis}"+150
-  width   = "750"
+  width   = "900"
   size    = 45
   font    = "${bold_font}"
 }
