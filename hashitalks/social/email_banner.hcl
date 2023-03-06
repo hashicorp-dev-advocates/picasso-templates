@@ -60,7 +60,7 @@ layer "image" "background" {
 }
 
 layer "image" "top" {
-  content = "${file("images/top_${color}.png")}"
+  content = "${file("images/top.png")}"
   x       = 1150
   y       = 0
   width   = 540
@@ -68,7 +68,7 @@ layer "image" "top" {
 }
 
 layer "image" "bottom" {
-  content = "${file("images/bottom_${color}.png")}"
+  content = "${file("images/bottom.png")}"
   x       = 1150
   y       = 250
   width   = 540
@@ -76,7 +76,7 @@ layer "image" "bottom" {
 }
 
 layer "image" "sun" {
-  content = "${file("images/sun_${color}.png")}"
+  content = "${file("images/sun.png")}"
   x       = 1110
   y       = 0
   width   = 490

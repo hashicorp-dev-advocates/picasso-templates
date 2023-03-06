@@ -18,7 +18,7 @@ variable "edition" {
 
 variable "regular_font" {
   type    = "string"
-  default = "fonts/klavika/regular.ttf"
+  default = "fonts/metro/regular.ttf"
 }
 
 variable "bold_font" {
