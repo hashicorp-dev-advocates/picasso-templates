@@ -1,6 +1,6 @@
 #!/bin/bash
 EDITION="VIỆT NAM"
-DATE="13/04/2023"
+DATE="20/04/2023"
 URL="hashi.co/hashitalks-vietnam"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')

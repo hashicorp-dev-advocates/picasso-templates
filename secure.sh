@@ -1,6 +1,6 @@
 #!/bin/bash
 EDITION="SECURE"
-DATE="APRIL 26-27, 2023"
+DATE="MAY 2-3, 2023"
 URL="hashi.co/secure"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
@@ -27,7 +27,7 @@ picasso generate \
 	--var tagline="Hear from and learn with fellow practitioners:" \
 	--var color=$COLOR \
 	--var tagline_offset=$TAGLINE_OFFSET \
-	--var date="APRIL 26-27, 2023" \
+	--var date="MAY 2-3, 2023" \
 	--var url=$URL \
     -o $OUTPUT_DIR/social/twitter_card.png
 
