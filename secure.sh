@@ -57,16 +57,38 @@ picasso generate \
   --var edition=$EDITION \
   --var color=$COLOR \
 
-# # speakers
-# picasso generate \
-#   -t hashitalks/speakers/speaker.hcl \
-#   -o $OUTPUT_DIR/speakers/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --var date="December 7-8, 2022" \
-#   --var url=$URL \
-#   --csv $INPUT_DIR/csv/speakers.csv \
-#   --csv-var speaker
+# speakers
+picasso generate \
+  -t hashitalks/speakers/speaker.hcl \
+  -o $OUTPUT_DIR/speakers/ \
+  --var color=$COLOR \
+  --var edition=$EDITION \
+  --var date="May 3-4, 2023" \
+  --var url=$URL \
+  --csv $INPUT_DIR/csv/speakers.csv \
+  --csv-var speaker
+
+# new speakers 2023_3_line
+picasso generate \
+  -t hashitalks/speakers/speaker_3_line.hcl \
+  -o $OUTPUT_DIR/speakers/ \
+  --var color=$COLOR \
+  --var edition=$EDITION \
+  --var date="May 3-4, 2023" \
+  --var url=$URL \
+  --csv $INPUT_DIR/csv/speakers_3_line.csv \
+  --csv-var speaker
+
+# new speakers 2023_4_line
+picasso generate \
+  -t hashitalks/speakers/speaker_4_line.hcl \
+  -o $OUTPUT_DIR/speakers/ \
+  --var color=$COLOR \
+  --var edition=$EDITION \
+  --var date="May 3-4, 2023" \
+  --var url=$URL \
+  --csv $INPUT_DIR/csv/speakers_4_line.csv \
+  --csv-var speaker
 
 # # speakers
 # picasso generate \
