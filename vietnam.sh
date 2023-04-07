@@ -69,16 +69,35 @@ picasso generate \
   --var color=$COLOR \
 
 
-# # speakers
-# picasso generate \
-#   -t hashitalks/speakers/speaker.hcl \
-#   -o $OUTPUT_DIR/speakers/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --var date="December 7-8, 2022" \
-#   --var url=$URL \
-#   --csv $INPUT_DIR/csv/speakers.csv \
-#   --csv-var speaker
+# speakers
+picasso generate \
+  -t hashitalks/speakers/speaker.hcl \
+  -o $OUTPUT_DIR/speakers/ \
+  --var edition="VIỆT NAM" \
+  --var color=$COLOR \
+  --var date="20/04/2023" \
+  --var url=$URL \
+  --var regular_font=$REGULAR_FONT \
+  --var bold_font=$BOLD_FONT \
+  --var light_font=$LIGHT_FONT \
+  --var edition_font="fonts/bevietnampro/light.ttf" \
+  --csv $INPUT_DIR/csv/speakers.csv \
+  --csv-var speaker
+
+  # new speakers 2023_3_line
+picasso generate \
+  -t hashitalks/speakers/speaker_3_line.hcl \
+  -o $OUTPUT_DIR/speakers/ \
+  --var color=$COLOR \
+  --var edition="VIỆT NAM" \
+  --var date="20/04/2023" \
+  --var url=$URL \
+  --var regular_font=$REGULAR_FONT \
+  --var bold_font=$BOLD_FONT \
+  --var light_font=$LIGHT_FONT \
+  --var edition_font="fonts/bevietnampro/light.ttf" \
+  --csv $INPUT_DIR/csv/speakers_3_line.csv \
+  --csv-var speaker
 
 # # speakers
 # picasso generate \

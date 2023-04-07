@@ -98,7 +98,7 @@ layer "rectangle" "background" {
   color = "#000000"
 }
 layer "image" "background" {
-  content = "${file("images_2023/background_${color}.png")}"
+  content = "${file("images/background_${color}.png")}"
   x      = 0
   y      = 0
   width  = 1200
@@ -106,7 +106,7 @@ layer "image" "background" {
 }
 
 layer "image" "top" {
-  content = "${file("images_2023/top_${color}.png")}"
+  content = "${file("images/top.png")}"
   x       = 730
   y       = 0
   width   = 500
@@ -114,7 +114,7 @@ layer "image" "top" {
 }
 
 layer "image" "bottom" {
-  content = "${file("images_2023/bottom_${color}.png")}"
+  content = "${file("images/bottom.png")}"
   x       = 750
   y       = 415
   width   = 500
@@ -122,7 +122,7 @@ layer "image" "bottom" {
 }
 
 layer "image" "sun" {
-  content = "${file("images_2023/sun_${color}.png")}"
+  content = "${file("images/sun.png")}"
   x       = 700
   y       = -15
   width   = 500
@@ -187,7 +187,7 @@ layer "image" "photo" {
 
 layer "text" "title" {
   content = "${title}"
-  width   = 610
+  width   = 650
   x       = "${x_axis}"
   y       = 175+28
   size    = 40
@@ -201,24 +201,10 @@ layer "text" "speaker" {
   size    = 28
   font    = "${bold_font}"
 }
-# layer "text" "company" {
-#  content = "| ${company}"
-#  x       = 292
-#  y       = 477
-#  size    = 28
-#  font    = "${regular_font}"
-#}
 
 layer "text" "date" {
   content = "${date}"
   x       = "${x_axis}"
-  y       = 517
-  size    = 28
-  font    = "${regular_font}"
-}
-layer "text" "time" {
-  content = "| ${time} GMT"
-  x       = 275
   y       = 517
   size    = 28
   font    = "${regular_font}"

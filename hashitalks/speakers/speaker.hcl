@@ -89,6 +89,11 @@ variable "light_font" {
   default = "fonts/metro/light.ttf"
 }
 
+variable "edition_font" {
+  type    = "string"
+  default = "fonts/metro/light.ttf"
+}
+
 layer "rectangle" "background" {
   x      = 0
   y      = 0
@@ -98,7 +103,7 @@ layer "rectangle" "background" {
   color = "#000000"
 }
 layer "image" "background" {
-  content = "${file("images_2023/background_${color}.png")}"
+  content = "${file("images/background_${color}.png")}"
   x      = 0
   y      = 0
   width  = 1200
@@ -106,7 +111,7 @@ layer "image" "background" {
 }
 
 layer "image" "top" {
-  content = "${file("images_2023/top.png")}"
+  content = "${file("images/top.png")}"
   x       = 730
   y       = 0
   width   = 500
@@ -114,7 +119,7 @@ layer "image" "top" {
 }
 
 layer "image" "bottom" {
-  content = "${file("images_2023/bottom.png")}"
+  content = "${file("images/bottom.png")}"
   x       = 750
   y       = 415
   width   = 500
@@ -122,7 +127,7 @@ layer "image" "bottom" {
 }
 
 layer "image" "sun" {
-  content = "${file("images_2023/sun.png")}"
+  content = "${file("images/sun.png")}"
   x       = 700
   y       = -15
   width   = 500
@@ -174,7 +179,7 @@ layer "text" "edition" {
   x       = 435+10
   y       = "${y_axis}"+20+9
   size    = 35
-  font    = "${regular_font}"
+  font    = "${edition_font}"
 }
 
 layer "image" "photo" {
@@ -216,10 +221,12 @@ layer "text" "date" {
   size    = 28
   font    = "${regular_font}"
 }
-layer "text" "time" {
-  content = "| ${time} GMT"
-  x       = 275
-  y       = 517
-  size    = 28
-  font    = "${regular_font}"
-}
+
+#}
+#layer "text" "time" {
+#  content = "| ${time} GMT"
+#  x       = 275
+#  y       = 517
+#  size    = 28
+#  font    = "${regular_font}"
+#}
