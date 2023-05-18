@@ -41,6 +41,10 @@ variable "photo" {
   type = "string"
 }
 
+#variable "photo2" {
+#  type = "string"
+#}
+
 variable "date" {
   type = "string"
 }
@@ -98,7 +102,7 @@ layer "rectangle" "background" {
   color = "#000000"
 }
 layer "image" "background" {
-  content = "${file("images_2023/background_${color}.png")}"
+  content = "${file("images/background_${color}.png")}"
   x      = 0
   y      = 0
   width  = 1200
@@ -106,7 +110,7 @@ layer "image" "background" {
 }
 
 layer "image" "top" {
-  content = "${file("images_2023/top.png")}"
+  content = "${file("images/top.png")}"
   x       = 730
   y       = 0
   width   = 500
@@ -114,7 +118,7 @@ layer "image" "top" {
 }
 
 layer "image" "bottom" {
-  content = "${file("images_2023/bottom.png")}"
+  content = "${file("images/bottom.png")}"
   x       = 750
   y       = 415
   width   = 500
@@ -122,7 +126,7 @@ layer "image" "bottom" {
 }
 
 layer "image" "sun" {
-  content = "${file("images_2023/sun.png")}"
+  content = "${file("images/sun.png")}"
   x       = 700
   y       = -15
   width   = 500
@@ -177,11 +181,27 @@ layer "text" "edition" {
   font    = "${regular_font}"
 }
 
+layer "image" "photo" {
+  content = "${file(photo)}"
+  x       = 790+75
+  y       = 50
+  width   = 250+25
+  height  = 250+25
+}
+
+layer "image" "photo" {
+  content = "${file(photo1)}"
+  x       = 790+75
+  y       = 350
+  width   = 250+25
+  height  = 250+25
+}
+
 layer "text" "title" {
   content = "${title}"
   width   = 675+25
   x       = "${x_axis}"
-  y       = 175+70
+  y       = 175+25
   size    = 40
   font    = "${title_bold_font}"
 }
@@ -208,10 +228,10 @@ layer "text" "date" {
   size    = 28
   font    = "${regular_font}"
 }
-layer "text" "time" {
-  content = "| ${time} GMT"
-  x       = 275
-  y       = 517
-  size    = 28
-  font    = "${regular_font}"
-}
+#layer "text" "time" {
+#  content = "| ${time} GMT"
+#  x       = 275
+#  y       = 517
+#  size    = 28
+#  font    = "${regular_font}"
+#}

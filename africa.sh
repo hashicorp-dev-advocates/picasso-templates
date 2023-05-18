@@ -80,15 +80,14 @@ picasso generate \
   --csv $INPUT_DIR/csv/speakers_3_line.csv \
   --csv-var speaker
 
-# new speakers 2023_4_line
+# speakers 2_speakers
 picasso generate \
-  -t hashitalks/speakers/speaker_4_line.hcl \
+  -t hashitalks/speakers/speaker_two_speakers.hcl \
   -o $OUTPUT_DIR/speakers/ \
   --var color=$COLOR \
   --var edition=$EDITION \
-  --var date="May 3-4, 2023" \
   --var url=$URL \
-  --csv $INPUT_DIR/csv/speakers_4_line.csv \
+  --csv $INPUT_DIR/csv/speakers_two_speakers.csv \
   --csv-var speaker
 
 # # speakers

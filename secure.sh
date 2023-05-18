@@ -1,6 +1,6 @@
 #!/bin/bash
 EDITION="SECURE"
-DATE="MAY 2-3, 2023"
+DATE="MAY 3-4, 2023"
 URL="hashi.co/secure"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
@@ -27,7 +27,7 @@ picasso generate \
 	--var tagline="Hear from and learn with fellow practitioners:" \
 	--var color=$COLOR \
 	--var tagline_offset=$TAGLINE_OFFSET \
-	--var date="MAY 2-3, 2023" \
+	--var date="MAY 3-4, 2023" \
 	--var url=$URL \
     -o $OUTPUT_DIR/social/twitter_card.png
 
@@ -63,7 +63,6 @@ picasso generate \
   -o $OUTPUT_DIR/speakers/ \
   --var color=$COLOR \
   --var edition=$EDITION \
-  --var date="May 3-4, 2023" \
   --var url=$URL \
   --csv $INPUT_DIR/csv/speakers.csv \
   --csv-var speaker
@@ -74,7 +73,6 @@ picasso generate \
   -o $OUTPUT_DIR/speakers/ \
   --var color=$COLOR \
   --var edition=$EDITION \
-  --var date="May 3-4, 2023" \
   --var url=$URL \
   --csv $INPUT_DIR/csv/speakers_3_line.csv \
   --csv-var speaker
@@ -85,9 +83,18 @@ picasso generate \
   -o $OUTPUT_DIR/speakers/ \
   --var color=$COLOR \
   --var edition=$EDITION \
-  --var date="May 3-4, 2023" \
   --var url=$URL \
   --csv $INPUT_DIR/csv/speakers_4_line.csv \
+  --csv-var speaker
+
+  # speakers
+picasso generate \
+  -t hashitalks/speakers/speaker_two_speakers.hcl \
+  -o $OUTPUT_DIR/speakers/ \
+  --var color=$COLOR \
+  --var edition=$EDITION \
+  --var url=$URL \
+  --csv $INPUT_DIR/csv/speakers_two_speakers.csv \
   --csv-var speaker
 
 # # speakers
