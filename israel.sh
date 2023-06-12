@@ -44,12 +44,6 @@ picasso generate \
 #   -o $OUTPUT_DIR/streaming/default_background.png \
 #   --var color=$COLOR
 
-# # branding
-# picasso generate \
-#   -t hashitalks/streamyard/overlay/branding.hcl \
-#   -o $OUTPUT_DIR/streaming/branding_overlay.png \
-#   --var edition=$EDITION \
-
 # title
 picasso generate \
   -t hashitalks/streamyard/overlay/title.hcl \
@@ -57,16 +51,25 @@ picasso generate \
   --var edition=$EDITION \
   --var color=$COLOR \
 
-# # speakers
-# picasso generate \
-#   -t hashitalks/speakers/speaker.hcl \
-#   -o $OUTPUT_DIR/speakers/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --var date="December 7-8, 2022" \
-#   --var url=$URL \
-#   --csv $INPUT_DIR/csv/speakers.csv \
-#   --csv-var speaker
+# speakers
+picasso generate \
+  -t hashitalks/speakers/speaker.hcl \
+  -o $OUTPUT_DIR/speakers/ \
+  --var color=$COLOR \
+  --var edition=$EDITION \
+  --var url=$URL \
+  --csv $INPUT_DIR/csv/speakers.csv \
+  --csv-var speaker
+
+# new speakers 2023_3_line
+picasso generate \
+  -t hashitalks/speakers/speaker_3_line.hcl \
+  -o $OUTPUT_DIR/speakers/ \
+  --var color=$COLOR \
+  --var edition=$EDITION \
+  --var url=$URL \
+  --csv $INPUT_DIR/csv/speakers_3_line.csv \
+  --csv-var speaker  
 
 # # speakers
 # picasso generate \
