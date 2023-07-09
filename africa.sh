@@ -44,12 +44,6 @@ picasso generate \
 #   -o $OUTPUT_DIR/streaming/default_background.png \
 #   --var color=$COLOR
 
-# # branding
-# picasso generate \
-#   -t hashitalks/streamyard/overlay/branding.hcl \
-#   -o $OUTPUT_DIR/streaming/branding_overlay.png \
-#   --var edition=$EDITION \
-
 # title
 picasso generate \
   -t hashitalks/streamyard/overlay/title.hcl \
