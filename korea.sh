@@ -8,8 +8,10 @@ TAGLINE="Hear from and learn with fellow practitioners."
 REGULAR_FONT="fonts/metro/regular.ttf,fonts/notosanskr/regular.ttf"
 BOLD_FONT="fonts/metro/bold.ttf,fonts/notosanskr/bold.ttf"
 LIGHT_FONT="fonts/metro/light.ttf,fonts/notosanskr/light.ttf"
+TITLE_BOLD_FONT="fonts/gilmer/bold.ttf,fonts/notosanskr/bold.ttf"
+EDITION_FONT="fonts/metro/light.ttf,fonts/notosanskr/light.ttf"
 COLOR="yellow"
-INPUT_DIR="input/$EDITION"
+INPUT_DIR="input/KOREA"
 OUTPUT_DIR="../hashitalks-assets/2023/KOREA"
 NEXT="Next"
 LOGO_OFFSET="85"
@@ -64,24 +66,16 @@ picasso generate \
   --var edition=$EDITION \
   --var color=$COLOR \
 
-# # speakers
-# picasso generate \
-#   -t hashitalks/speakers/speaker.hcl \
-#   -o $OUTPUT_DIR/speakers/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --var date="December 7-8, 2022" \
-#   --var url=$URL \
-#   --csv $INPUT_DIR/csv/speakers.csv \
-#   --csv-var speaker
-
-# # speakers
-# picasso generate \
-#   -t hashitalks/speakers/speaker_long_name.hcl \
-#   -o $OUTPUT_DIR/speakers/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --var date="February 17-18" \
-#   --var url=$URL \
-#   --csv $INPUT_DIR/csv/speakers_long_name.csv \
-#   --csv-var speaker
+# speakers
+ picasso generate \
+  -t hashitalks/speakers/speaker.hcl \
+  -o $OUTPUT_DIR/speakers/ \
+  --var edition=$EDITION \
+  --var url=$URL \
+  --var bold_font=$BOLD_FONT \
+  --var light_font=$LIGHT_FONT \
+  --var regular_font=$REGULAR_FONT \
+  --var title_bold_font=$TITLE_BOLD_FONT \
+  --var edition_font=$EDITION_FONT \
+  --csv $INPUT_DIR/csv/speakers.csv \
+  --csv-var speaker

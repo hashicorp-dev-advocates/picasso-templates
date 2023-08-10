@@ -206,13 +206,6 @@ layer "text" "speaker" {
   size    = 28
   font    = "${bold_font}"
 }
-# layer "text" "company" {
-#  content = "| ${company}"
-#  x       = 292
-#  y       = 477
-#  size    = 28
-#  font    = "${regular_font}"
-#}
 
 layer "text" "date" {
   content = "${date}"
@@ -221,12 +214,3 @@ layer "text" "date" {
   size    = 28
   font    = "${regular_font}"
 }
-
-#}
-#layer "text" "time" {
-#  content = "| ${time} GMT"
-#  x       = 275
-#  y       = 517
-#  size    = 28
-#  font    = "${regular_font}"
-#}
