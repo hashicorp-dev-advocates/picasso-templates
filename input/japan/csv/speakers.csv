@@ -1,13 +1,5 @@
 speaker,title,date,photo
-Takayoshi Naito,トヨタCCoEがAFT を活用して最高の開発者体験を提供する Platform を作っている話,2023 年 9 月 14 日,input/japan/images/Takayoshi_Naito.png
-Jukiya Shimakawa,Terraform を抽象化し環境構築の工数を削減する取り組みについて,2023 年 9 月 14 日,input/japan/images/Jukiya_Shimakawa.png
-Chiba Ryotaro,Terraform Cloud の導入施策3選 ～社内自動化推進チームがエンジニアの負担を減らす～,2023 年 9 月 14 日,input/japan/images/Chiba_Ryotaro.jpg
-福元 将高,AWS 中上級者へのステップアップのための Terraform,2023 年 9 月 14 日,input/japan/images/Fu_Yuan_Jiang_Gao.png
-太一 埜下,Vault Secrets Operator と HCP Vault を使った AKS のシークレット管理,2023 年 9 月 14 日,input/japan/images/Tai_Yi_Ye_Xia.jpg
-Shinnosuke Takakuni,AWS SAM CLI for Terraform を利用した Lambda のローカル実行を解説,2023 年 9 月 14 日,input/japan/images/Shinnosuke_Takakuni.jpg
-Issei Hiraoka,動的クレデンシャルで Terraform Cloud から Google Cloud を楽に＆安全に利用しよう,2023 年 9 月 14 日,input/japan/images/Issei_Hiraoka.jpg
-Ryusuke Kinoshita,サービス基盤のTerraform 移行で見えた、押さえておきたい3つのポイント,2023 年 9 月 14 日,input/japan/images/Ryusuke_Kinoshita.jpg
-Mikita Endoh,Terraform Workspaces の弱点をcountやmoved でカバーしつつ開発を進めた話,2023 年 9 月 14 日,input/japan/images/Mikita_Endoh.jpg
-Yossy Sakai,Vault エージェントを使ってサーバー証明書管理の自動化を実現！,2023 年 9 月 14 日,input/japan/images/Yossy_Sakai.jpg
-Masaki Kazue,わかる！Hashicorp Waypoint,2023 年 9 月 14 日,input/japan/images/Masaki_Kazue.jpg
-渉 大滝,Vaultによる機密情報管理の重要性,2023 年 9 月 14 日,input/japan/images/She_Da_Long.jpg
+Jukiya Shimakawa,Terraform を抽象化し環境構築の工数を削減する取り組みについて,2023 年 9 月 14 日 | 11:05,input/japan/images/Jukiya_Shimakawa.png
+Masaki Kazue,わかる！Hashicorp Waypoint,2023 年 9 月 14 日 | 11:50,input/japan/images/Masaki_Kazue.jpg
+Yossy Sakai,Vault エージェントを使ってサーバー証明書管理の自動化を実現！,2023 年 9 月 14 日 | 12:20,input/japan/images/Yossy_Sakai.jpg
+渉 大滝,Vaultによる機密情報管理の重要性,2023 年 9 月 14 日 | 12:35,input/japan/images/She_Da_Long.jpg
