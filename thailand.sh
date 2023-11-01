@@ -65,6 +65,20 @@ picasso generate \
   --var edition=$EDITION \
   --var color=$COLOR \
 
+# speakers
+ picasso generate \
+  -t hashitalks/speakers/speaker.hcl \
+  -o $OUTPUT_DIR/speakers/ \
+  --var edition=$EDITION \
+  --var url=$URL \
+  --var bold_font=$BOLD_FONT \
+  --var light_font=$LIGHT_FONT \
+  --var regular_font="fonts/tahoma/regular.ttf" \
+  --var title_bold_font=$TITLE_BOLD_FONT \
+  --var edition_font=$EDITION_FONT \
+  --csv input/thailand/csv/speakers.csv \
+  --csv-var speaker
+
 # # speakers
 # picasso generate \
 #   -t hashitalks/speakers/speaker.hcl \

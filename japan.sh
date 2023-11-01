@@ -15,7 +15,7 @@ INPUT_DIR="input/$EDITION"
 OUTPUT_DIR="../hashitalks-assets/2023/$EDITION"
 NEXT="Next"
 LOGO_OFFSET="105"
-TAGLINE_OFFSET="350"
+TAGLINE_OFFSET="350-325"
 
 mkdir -p $OUTPUT_DIR
 mkdir -p $OUTPUT_DIR/speakers

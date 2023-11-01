@@ -145,14 +145,14 @@ layer "text" "edition" {
   font    = "${edition_font}"
 }
 
-#layer "text" "tagline" {
-#  content = "${tagline}"
-#  x       = "${x_axis}"
-#  y       = "${y_axis}"+150
-#  width   = "900"
-#  size    = 45
-#  font    = "${bold_font}"
-#}
+layer "text" "tagline" {
+  content = "${tagline}"
+  x       = "${x_axis}"
+  y       = "${y_axis}"+150
+  width   = "900"
+  size    = 45
+  font    = "${bold_font}"
+}
 
 layer "text" "url" {
   content = "${url}"
