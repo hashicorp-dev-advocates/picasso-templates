@@ -1,0 +1,4 @@
+speaker,title,date,photo
+Markus Bauer,Avoiding pipeline leaks using Vault and Sentinel - Or how I learned not to trust my CI/CD system,December 6 | 11:50,input/deploy/images/Markus_Bauer.jpg
+Aniket Kumar Sinha,Revolutionizing cloud infrastructure deployment: unleash the power of integration,December 6 | 14:30,input/deploy/images/Aniket_Kumar_Sinha.jpg
+Sebastian Maniak,Building a break glass solution with HashiCorp Boundary + Vault and ServiceNow integration,December 7 | 11:35,input/deploy/images/Sebastian_Maniak.jpeg
