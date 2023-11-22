@@ -189,7 +189,7 @@ layer "text" "title" {
   content = "${title}"
   width   = 675+25
   x       = "${x_axis}"
-  y       = 175+28
+  y       = 175+28-38
   size    = 40
   font    = "${title_bold_font}"
 }

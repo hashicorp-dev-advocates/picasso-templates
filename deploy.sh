@@ -75,7 +75,7 @@ picasso generate \
   --csv $INPUT_DIR/csv/speakers_3_line.csv \
   --csv-var speaker
 
-    # new speakers 2023_4_line
+# new speakers 2023_4_line
 picasso generate \
   -t hashitalks/speakers/speaker_4_line.hcl \
   -o $OUTPUT_DIR/speakers/ \
