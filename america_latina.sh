@@ -9,7 +9,7 @@ REGULAR_FONT="fonts/metro/regular.ttf"
 BOLD_FONT="fonts/metro/bold.ttf"
 LIGHT_FONT="fonts/metro/light.ttf"
 COLOR="yellow"
-INPUT_DIR="input/$EDITION"
+INPUT_DIR="input/america_latina"
 OUTPUT_DIR="../hashitalks-assets/2023/AMERICA_LATINA"
 NEXT="Next"
 LOGO_OFFSET="-188"
@@ -57,24 +57,29 @@ picasso generate \
   --var edition=$EDITION \
   --var color=$COLOR \
 
-# # speakers
-# picasso generate \
-#   -t hashitalks/speakers/speaker.hcl \
-#   -o $OUTPUT_DIR/speakers/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --var date="December 7-8, 2022" \
-#   --var url=$URL \
-#   --csv $INPUT_DIR/csv/speakers.csv \
-#   --csv-var speaker
+# speakers
+ picasso generate \
+   -t hashitalks/speakers/speaker.hcl \
+   -o $OUTPUT_DIR/speakers/ \
+   --var color=$COLOR \
+   --var edition=$EDITION \
+   --csv input/america_latina/csv/speakers.csv \
+   --csv-var speaker
 
-# # speakers
-# picasso generate \
-#   -t hashitalks/speakers/speaker_long_name.hcl \
-#   -o $OUTPUT_DIR/speakers/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --var date="February 17-18" \
-#   --var url=$URL \
-#   --csv $INPUT_DIR/csv/speakers_long_name.csv \
-#   --csv-var speaker
+# new speakers 2023_3_line
+picasso generate \
+  -t hashitalks/speakers/speaker_3_line.hcl \
+  -o $OUTPUT_DIR/speakers/ \
+  --var edition=$EDITION \
+  --var url=$URL \
+  --csv input/america_latina/csv/speakers_3_line.csv \
+  --csv-var speaker
+
+  # new speakers 2023_4_line
+picasso generate \
+  -t hashitalks/speakers/speaker_4_line.hcl \
+  -o $OUTPUT_DIR/speakers/ \
+  --var edition=$EDITION \
+  --var url=$URL \
+  --csv input/america_latina/csv/speakers_4_line.csv \
+  --csv-var speaker
