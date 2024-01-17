@@ -1,6 +1,6 @@
 #!/bin/bash
 EDITION="ESPAÑA"
-DATE="18 January 2024"
+DATE="18 de enero"
 URL="hashi.co/hashitalks-espana"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
@@ -24,10 +24,10 @@ mkdir -p $OUTPUT_DIR/social
 picasso generate \
 	-t hashitalks/social/twitter_card.hcl \
 	--var edition=$EDITION \
+  --var date="18 de enero 2024" \
 	--var tagline="Hear from and learn with fellow practitioners:" \
 	--var color=$COLOR \
 	--var tagline_offset=$TAGLINE_OFFSET \
-	--var date=$DATE \
 	--var url=$URL \
     -o $OUTPUT_DIR/social/twitter_card.png
 

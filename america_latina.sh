@@ -1,6 +1,6 @@
 #!/bin/bash
 EDITION="AMÉRICA LATINA"
-DATE="17 January 2024"
+DATE="17 de enero"
 URL="hashi.co/hashitalks-america-latina"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
@@ -24,18 +24,18 @@ mkdir -p $OUTPUT_DIR/social
 picasso generate \
 	-t hashitalks/social/twitter_card.hcl \
 	--var edition="AMÉRICA LATINA" \
+  --var date="17 de enero 2024" \
 	--var tagline="Hear from and learn with fellow practitioners:" \
 	--var color=$COLOR \
-	--var tagline_offset=$TAGLINE_OFFSET \
-	--var date=$DATE \
+	--var tagline_offset=$TAGLINE_OFFSET ] \
 	--var url=$URL \
-    -o $OUTPUT_DIR/social/twitter_card.png
+  -o $OUTPUT_DIR/social/twitter_card.png
 
 picasso generate \
 	-t hashitalks/social/email_banner.hcl \
 	--var edition="AMÉRICA LATINA" \
 	--var color=$COLOR \
-    --var logo_offset=$LOGO_OFFSET \
+  --var logo_offset=$LOGO_OFFSET \
 	-o $OUTPUT_DIR/social/email_banner.png
 
 # # background
