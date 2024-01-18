@@ -13,7 +13,7 @@ INPUT_DIR="input/espana"
 OUTPUT_DIR="../hashitalks-assets/2023/$EDITION"
 NEXT="Next"
 LOGO_OFFSET="65"
-TAGLINE_OFFSET="275"
+TAGLINE_OFFSET="550"
 
 mkdir -p $OUTPUT_DIR
 mkdir -p $OUTPUT_DIR/speakers
@@ -25,9 +25,9 @@ picasso generate \
 	-t hashitalks/social/twitter_card.hcl \
 	--var edition=$EDITION \
   --var date="18 de enero 2024" \
-	--var tagline="Hear from and learn with fellow practitioners:" \
+  --var tagline="Escuchar y aprender con compañeros profesionales:" \
 	--var color=$COLOR \
-	--var tagline_offset=$TAGLINE_OFFSET \
+	--var tagline_offset=$TAGLINE_OFFSET ] \
 	--var url=$URL \
     -o $OUTPUT_DIR/social/twitter_card.png
 
@@ -35,7 +35,7 @@ picasso generate \
 	-t hashitalks/social/email_banner.hcl \
 	--var edition=$EDITION \
 	--var color=$COLOR \
-    --var logo_offset=$LOGO_OFFSET \
+  --var logo_offset=$LOGO_OFFSET \
 	-o $OUTPUT_DIR/social/email_banner.png
 
 # # background
