@@ -17,7 +17,7 @@ output "png" {
 
 variable "color" {
   type    = "string"
-  default = "yellow"
+  default = "pink"
 }
 
 variable "logo" {
