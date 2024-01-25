@@ -18,6 +18,7 @@ mkdir -p $OUTPUT_DIR
 mkdir -p $OUTPUT_DIR/speakers
 mkdir -p $OUTPUT_DIR/streaming
 mkdir -p $OUTPUT_DIR/social
+mkdir -p $OUTPUT_DIR/emcees
 
 
 # social
@@ -69,26 +70,26 @@ picasso generate \
   --csv-var speaker
 
 # new speakers 1_line
-picasso generate \
-  -t hashitalks/speakers/speaker_1_line.hcl \
-  -o $OUTPUT_DIR/speakers/ \
-  --var color=$COLOR \
-  --var edition=$EDITION \
-  --var date="February 15, 2024" \
-  --var url=$URL \
-  --csv $INPUT_DIR/csv/speakers_1_line.csv \
-  --csv-var speaker
+#picasso generate \
+#  -t hashitalks/speakers/speaker_1_line.hcl \
+#  -o $OUTPUT_DIR/speakers/ \
+#  --var color=$COLOR \
+#  --var edition=$EDITION \
+#  --var date="February 15, 2024" \
+#  --var url=$URL \
+#  --csv $INPUT_DIR/csv/speakers_1_line.csv \
+#  --csv-var speaker
 
   # new speakers 2_line
-picasso generate \
-  -t hashitalks/speakers/speaker_2_line.hcl \
-  -o $OUTPUT_DIR/speakers/ \
-  --var color=$COLOR \
-  --var edition=$EDITION \
-  --var date="February 15, 2024" \
-  --var url=$URL \
-  --csv $INPUT_DIR/csv/speakers_2_line.csv \
-  --csv-var speaker
+#picasso generate \
+#  -t hashitalks/speakers/speaker_2_line.hcl \
+#  -o $OUTPUT_DIR/speakers/ \
+#  --var color=$COLOR \
+#  --var edition=$EDITION \
+#  --var date="February 15, 2024" \
+#  --var url=$URL \
+#  --csv $INPUT_DIR/csv/speakers_2_line.csv \
+#  --csv-var speaker
 
  # new speakers 3_line
 picasso generate \
@@ -113,15 +114,15 @@ picasso generate \
   --csv-var speaker
 
   # speakers
-picasso generate \
-  -t hashitalks/speakers/speaker_two_speakers.hcl \
-  -o $OUTPUT_DIR/speakers/ \
-  --var color=$COLOR \
-  --var edition=$EDITION \
-  --var date="February 15, 2024" \
-  --var url=$URL \
-  --csv $INPUT_DIR/csv/speakers_two_speakers.csv \
-  --csv-var speaker
+#picasso generate \
+#  -t hashitalks/speakers/speaker_two_speakers.hcl \
+#  -o $OUTPUT_DIR/speakers/ \
+#  --var color=$COLOR \
+#  --var edition=$EDITION \
+#  --var date="February 15, 2024" \
+#  --var url=$URL \
+#  --csv $INPUT_DIR/csv/speakers_two_speakers.csv \
+#  --csv-var speaker
 
  # emcees
 picasso generate \

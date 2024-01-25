@@ -187,7 +187,7 @@ layer "image" "photo" {
 
 layer "text" "title" {
   content = "${title}"
-  width   = 650
+  width   = 675+25
   x       = "${x_axis}"
   y       = 175+28
   size    = 40

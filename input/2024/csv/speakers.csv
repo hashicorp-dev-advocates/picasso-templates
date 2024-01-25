@@ -1,52 +1,27 @@
 speaker,title,date,photo
-Mattias Fjellström | Solidify,Mastering Terraform testing: a layered approach to testing complex infrastructure,"February 15, 2024 | 12:05 GMT",input/2024/images/Mattias_Fjellstrom.jpeg
 Marko Bevc | The Scale Factory,What happened to my Terraform module?,"February 15, 2024 | 12:35 GMT",input/2024/images/Marko_Bevc.jpg
-Samuel Chniber | AWS,How to build an AMI Factory with Hashicorp Packer & HCP Packer Registry,"February 15, 2024 | 13:05 GMT",input/2024/images/Samuel_Chniber.jpg
-Kyle Penfound | Dagger,Secure and portable CI pipelines with Dagger and Vault,"February 15, 2024 | 14:05 GMT",input/2024/images/Kyle_Penfound.jpg
-Nic Jackson | HashiCorp,Secure and portable CI pipelines with Dagger and Vault,"February 15, 2024 | 14:05 GMT",input/2024/images/Nic_Jackson.jpg
-Andrei Buzoianu | DevOps Consultant,Vault Autounseal with Transit Secrets Engine & OIDC Authentication: a synergy for improved security,"February 15, 2024 | 14:35 GMT",input/2024/images/Andrei_Buzoianu.jpg
-Elif Samedin | Senior DevOps Engineer,Vault Autounseal with Transit Secrets Engine & OIDC Authentication: a synergy for improved security,"February 15, 2024 | 14:35 GMT",input/2024/images/Elif_Samedin.jpg
-Bram Vogelaar | Seaplane.io,Self scaling multi-cloud Nomad workloads,"February 15, 2024 | 15:05 GMT",input/2024/images/Bram_Vogelaar.png
-Femi Taiwo | INITS,Building resilience and security into your app & infrastructure,"February 15, 2024 | 15:35 GMT",input/2024/images/Femi_Taiwo.jpg
-Yassine Snoussi | Cloud Developer,Using new native testing feature with Terraform 1.6,"February 15, 2024 | 16:15 GMT",input/2024/images/Yassine_Snoussi.jpg
-Mark Tinderholt | Microsoft Azure,Automating AKS with Terraform: best practices from the field,"February 15, 2024 | 16:45 GMT",input/2024/images/Mark_Tinderholt.jpg
-Cami Martins | Storyblok,Using Terraform to migrate to containers: journey about security,"February 15, 2024 | 17:15 GMT",input/2024/images/Cami_Martins.jpeg
 Andrei Buzoianu | DevOps Consultant,Terraform and beyond: infrastructure end-to-end testing,"February 15, 2024 | 17:45 GMT",input/2024/images/Andrei_Buzoianu.jpg
 Elif Samedin | Senior DevOps Engineer,Terraform and beyond: infrastructure end-to-end testing,"February 15, 2024 | 17:45 GMT",input/2024/images/Elif_Samedin.jpg
+Bram Vogelaar | Seaplane.io,Self scaling multi-cloud Nomad workloads,"February 15, 2024 | 15:05 GMT",input/2024/images/Bram_Vogelaar.png
+Caleb Sutton | H&R Block,How H&R Block uses the Terraform Cloud API to manage workspaces,"February 16, 2024 | 1:05 GMT",input/2024/images/Caleb_Sutton.png
+Cami Martins | Storyblok,Using Terraform to migrate to containers: journey about security,"February 15, 2024 | 17:15 GMT",input/2024/images/Cami_Martins.jpeg
+Femi Taiwo | INITS,Building resilience and security into your app & infrastructure,"February 15, 2024 | 15:35 GMT",input/2024/images/Femi_Taiwo.jpg
+Kyle Penfound | Dagger,Secure and portable CI pipelines with Dagger and Vault,"February 15, 2024 | 14:05 GMT",input/2024/images/Kyle_Penfound.jpg
+Nic Jackson | HashiCorp,Secure and portable CI pipelines with Dagger and Vault,"February 15, 2024 | 14:05 GMT",input/2024/images/Nic_Jackson.jpg
+Mark Tinderholt | Microsoft Azure,Automating AKS with Terraform: best practices from the field,"February 15, 2024 | 16:45 GMT",input/2024/images/Mark_Tinderholt.jpg
+Neelam Koshiya | AWS,Deploy generative AI models on Amazon EKS using Terraform,"February 16, 2024 | 5:45 GMT",input/2024/images/Neelam_Koshiya.jpg
+Yassine Snoussi | Cloud Developer,Using new native testing feature with Terraform 1.6,"February 15, 2024 | 16:15 GMT",input/2024/images/Yassine_Snoussi.jpg
 Marc LeBlanc | ,Edge security: PKI unleashed - the secret handshake,"February 15, 2024 | 18:15 GMT",input/2024/images/Marc_LeBlanc.jpg
-Sam Gabrail | TeKanAid Solutions Inc.,GitOps made simple with ArgoCD: enhancing Kubernetes with HashiCorp Vault,"February 15, 2024 | 18:45 GMT",input/2024/images/Sam_Gabrail.jpg
 Adriana Villela | Lightstep,KubeNomad: how to run Kubernetes on Nomad,"February 15, 2024 | 19:45 GMT",input/2024/images/Adriana_Villela.jpg
-Marcelo Zambrana | Microsoft,Mastering Databricks environment creation in the cloud with Terraform,"February 15, 2024 | 20:25 GMT",input/2024/images/Marcelo_Zambrana.png
-Gabe Maentz | River Point Technology,Practical and inexpensive ways to test infrastructure deployments using Terraform,"February 15, 2024 | 20:55 GMT",input/2024/images/Gabe_Maentz.jpg
 Connor Brown | 84.51,Automating the module registry with GitOps,"February 15, 2024 | 21:25 GMT",input/2024/images/Connor_Brown.jpg
 Nate Jones | 84.51,Automating the module registry with GitOps,"February 15, 2024 | 21:25 GMT",input/2024/images/Nate_Jones.jpg
 Welly Siauw | AWS,AWSCC documentation with the help of GenAI,"February 15, 2024 | 21:55 GMT",input/2024/images/Welly_Siauw.png
-Sebastian Maniak | Consultant,Building a break glass solution with HashiCorp Boundary + Vault and ServiceNow integration,"February 15, 2024 | 22:55 GMT",input/2024/images/Sebastian_Maniak.jpeg
 Yahya Fadhluloh Al Fatih | eFishery,Self-Build CI/CD for Hashicorp stack,"February 15, 2024 | 23:25 GMT",input/2024/images/Yahya_Fadhluloh_Al_Fatih.png
-Ned Bellavance | Ned in the Cloud LLC,Everything is useful: How singing in a death metal band helped my career,"February 15, 2024 | 23:55 GMT",input/2024/images/Ned_Bellavance.jpg
 Robin Rodriguez | AWS,Operating DNS at scale with Terraform,"February 16, 2024 | 0:35 GMT",input/2024/images/Robin_Rodriguez.jpeg
-Caleb Sutton | H&R Block,How H&R Block uses the Terraform Cloud API to manage workspaces,"February 16, 2024 | 1:05 GMT",input/2024/images/Caleb_Sutton.png
 Riaan Nolan | Servian,A top gun Terraform development environment,"February 16, 2024 | 1:35 GMT",input/2024/images/Riaan_Nolan.jpg
-Jacob Mammoliti | PwC Canada,Changing the way your applications interact with databases,"February 16, 2024 | 10:25 GMT",input/2024/images/Jacob_Mammoliti.jpg
-Japneet Sahni | Arctiq,Elevating security: the art and science of password vault management in Boundary,"February 16, 2024 | 10:55 GMT",input/2024/images/Japneet_Sahni.jpg
 Pato Arvizu | ASAPP Inc.,HashiCake: stacking all HashiCorp components,"February 16, 2024 | 11:25 GMT",input/2024/images/Pato_Arvizu.jpg
-Bervianto Leo Pratama | Mitrais,Increasing confidence and trust of your open source Terraform modules with Terraform Test Framework,"February 16, 2024 | 2:05 GMT",input/2024/images/Bervianto_Leo_Pratama.jpg
 Aiden Ziegelaar | Cognizant Servian,CDKtf - patterns for security by default,"February 16, 2024 | 2:35 GMT",input/2024/images/Aiden_Ziegelaar.jpg
 Jonathan Hurley | AWS,AWS IAM roles anywhere via Hashicorp Vault,"February 16, 2024 | 3:05 GMT",input/2024/images/Jonathan_Hurley.jpeg
-Piti Champeethong | MongoDB,Securing MongoDB in Azure with Vault Plus: enhanced encryption techniques,"February 16, 2024 | 3:35 GMT",input/2024/images/Piti_Champeethong.jpeg
-Aniket Kumar Sinha | Rapid Circle,Unleash the power of policy-as-code with HashiCorp Sentinel,"February 16, 2024 | 4:45 GMT",input/2024/images/Aniket_Kumar_Sinha.jpg
-Prerit Munjal | Whizlabs,The coldest Monday with a $1 million in cloud bill: Terraform to the rescue,"February 16, 2024 | 5:15 GMT",input/2024/images/Prerit_Munjal.jpg
-Neelam Koshiya | AWS,Deploy generative AI models on Amazon EKS using Terraform,"February 16, 2024 | 5:45 GMT",input/2024/images/Neelam_Koshiya.jpg
-Neetu Mallan | EZOPS Technologies,"Code, click, deploy: how Terraform transformed our infrastructure landscape","February 16, 2024 | 6:15 GMT",input/2024/images/Neetu_Mallan.png
-Parnika Kaushik | Dejero,"Enable, integrate & secure: Terraform Cloud, Vault, Github & AWS","February 16, 2024 | 7:15 GMT",input/2024/images/Parnika_Kaushik.jpeg
-Aditya Sharma | Arctiq,Unlocking security harmony: Vault Secret Sync across multi-cloud environments,"February 16, 2024 | 7:45 GMT",input/2024/images/Aditya_Sharma.jpg
 Chris van Meer | AT Computing,Certificates on the fly: Traefik Enterprise and Vault,"February 16, 2024 | 8:15 GMT",input/2024/images/Chris_van_Meer.jpg
-Anton Babenko | Betajob,Streamlining compliance: leveraging open source AWS modules for HashiCorp Terraform,"February 16, 2024 | 8:55 GMT",input/2024/images/Anton_Babenko.jpg
 Hamza Naqi | Cloud Architect,Resiliency with cloud SQL delivered via Terraform,"February 16, 2024 | 9:25 GMT",input/2024/images/Hamza_Naqi.png
 Patrick Koch | AVL List GmbH,Migration of a containerized legacy application to the cloud,"February 16, 2024 | 9:55 GMT",input/2024/images/Patrick_Koch.png
-Agata Skorupka | The Scale Factory,[Hold for Agata],,input/2024/images/Agata_Skorupka.jpg
-Joseph Roland | ,DevSecOps in action: orchestrating confidence through secure Terraform CICD deployments,,input/2024/images/Joseph_Roland.png
-Juliano Silva | DXC Luxoft,Terraform for both pipeline-as-code and infrastructure-as-code on AWS CI/CD,,input/2024/images/Juliano_Silva.jpg
-Madhu Kumar Reddy | Samsung R&D,Revolutionizing infrastructure automation: HashiCorp’s Terraform and Consul in ArgoCD pipelines,,input/2024/images/Madhu_Kumar_Reddy.jpg
-Renaldi Gondosubroto | Seek Limited,Leveraging HashiCorp and AWS for environmentally sustainable deployments: a step into a green future,,input/2024/images/Renaldi_Gondosubroto.png
-Sarah Christoff | Microsoft,Consistent workflow for application deployments using Porter and CNAB,,input/2024/images/Sarah_Christoff.jpeg
