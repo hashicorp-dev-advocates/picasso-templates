@@ -175,9 +175,9 @@ layer "text" "edition" {
 
 layer "text" "title" {
   content = "${title}"
-  width   = 675
+  width   = 675+75
   x       = "${x_axis}"
-  y       = 175+70
+  y       = 175+28
   size    = 40
   font    = "${title_bold_font}"
 }

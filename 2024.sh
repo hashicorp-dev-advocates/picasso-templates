@@ -114,14 +114,19 @@ picasso generate \
   --csv-var speaker
 
   # speakers
+picasso generate \
+  -t hashitalks/speakers/speaker_two_speakers.hcl \
+  -o $OUTPUT_DIR/speakers/ \
+  --var edition=$EDITION \
+  --csv $INPUT_DIR/csv/speakers_two_speakers.csv \
+  --csv-var speaker
+
+  # speakers
 #picasso generate \
-#  -t hashitalks/speakers/speaker_two_speakers.hcl \
+#  -t hashitalks/speakers/speaker_two_speakers_4_line.hcl \
 #  -o $OUTPUT_DIR/speakers/ \
-#  --var color=$COLOR \
 #  --var edition=$EDITION \
-#  --var date="February 15, 2024" \
-#  --var url=$URL \
-#  --csv $INPUT_DIR/csv/speakers_two_speakers.csv \
+#  --csv $INPUT_DIR/csv/speakers_two_speakers_4_line.csv \
 #  --csv-var speaker
 
  # emcees

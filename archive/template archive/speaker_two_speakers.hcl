@@ -37,6 +37,14 @@ variable "title" {
   type = "string"
 }
 
+variable "photo" {
+  type = "string"
+}
+
+#variable "photo2" {
+#  type = "string"
+#}
+
 variable "date" {
   type = "string"
 }
@@ -173,11 +181,27 @@ layer "text" "edition" {
   font    = "${regular_font}"
 }
 
+# layer "image" "photo" {
+#  content = "${file(photo)}"
+#  x       = 790+75
+#  y       = 50
+#  width   = 250+25
+#  height  = 250+25
+# }
+
+# layer "image" "photo" {
+#  content = "${file(photo1)}"
+#  x       = 790+75
+#  y       = 350
+#  width   = 250+25
+#  height  = 250+25
+#}
+
 layer "text" "title" {
   content = "${title}"
-  width   = 675
+  width   = 675+25
   x       = "${x_axis}"
-  y       = 175+70
+  y       = 175+25
   size    = 40
   font    = "${title_bold_font}"
 }
@@ -189,6 +213,13 @@ layer "text" "speaker" {
   size    = 28
   font    = "${bold_font}"
 }
+# layer "text" "company" {
+#  content = "| ${company}"
+#  x       = 292
+#  y       = 477
+#  size    = 28
+#  font    = "${regular_font}"
+#}
 
 layer "text" "date" {
   content = "${date}"
@@ -197,3 +228,10 @@ layer "text" "date" {
   size    = 28
   font    = "${regular_font}"
 }
+#layer "text" "time" {
+#  content = "| ${time} GMT"
+#  x       = 275
+#  y       = 517
+#  size    = 28
+#  font    = "${regular_font}"
+#}
