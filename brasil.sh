@@ -1,19 +1,19 @@
 #!/bin/bash
-EDITION="TEMPLATE"
-DATE="APRIL 27, 2024"
-URL="hashi.co/hashitalks-template"
+EDITION="BRASIL"
+DATE="1 DE AGOSTO DE 2024"
+URL="hashi.co/hashitalks-brasil"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
-TAGLINE="Hear from and learn with fellow practitioners:"
+TAGLINE="Aprender com profissionais como você:"
 REGULAR_FONT="fonts/klavika/regular.ttf"
 BOLD_FONT="fonts/klavika/bold.ttf"
 LIGHT_FONT="fonts/klavika/light.ttf"
-COLOR="yellow"
+COLOR="pink"
 INPUT_DIR="input/$EDITION"
 OUTPUT_DIR="../hashitalks-assets/2024/$EDITION"
 NEXT="Next"
-LOGO_OFFSET="60"
-TAGLINE_OFFSET="275"
+LOGO_OFFSET="95"
+TAGLINE_OFFSET="130"
 
 mkdir -p $OUTPUT_DIR
 mkdir -p $OUTPUT_DIR/speakers

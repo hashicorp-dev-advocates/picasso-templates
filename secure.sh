@@ -1,18 +1,18 @@
 #!/bin/bash
-EDITION="TEMPLATE"
-DATE="APRIL 27, 2024"
-URL="hashi.co/hashitalks-template"
+EDITION="SECURE"
+DATE="MAY 22-23, 2024"
+URL="hashi.co/secure"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
 TAGLINE="Hear from and learn with fellow practitioners:"
 REGULAR_FONT="fonts/klavika/regular.ttf"
 BOLD_FONT="fonts/klavika/bold.ttf"
 LIGHT_FONT="fonts/klavika/light.ttf"
-COLOR="yellow"
+COLOR="pink"
 INPUT_DIR="input/$EDITION"
 OUTPUT_DIR="../hashitalks-assets/2024/$EDITION"
 NEXT="Next"
-LOGO_OFFSET="60"
+LOGO_OFFSET="68"
 TAGLINE_OFFSET="275"
 
 mkdir -p $OUTPUT_DIR
@@ -51,7 +51,7 @@ picasso generate \
 #   -o $OUTPUT_DIR/speakers/ \
 #   --var color=$COLOR \
 #   --var edition=$EDITION \
-#   --var date="February 16, 2023" \
+#   --var date="$DATE" \
 #   --var url=$URL \
 #   --csv $INPUT_DIR/csv/speakers.csv \
 #   --csv-var speaker

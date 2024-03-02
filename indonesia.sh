@@ -13,7 +13,7 @@ INPUT_DIR="input/indonesia"
 OUTPUT_DIR="../hashitalks-assets/2024/$EDITION"
 NEXT="Next"
 LOGO_OFFSET="-15"
-TAGLINE_OFFSET="275"
+TAGLINE_OFFSET="425"
 
 mkdir -p $OUTPUT_DIR
 mkdir -p $OUTPUT_DIR/speakers
@@ -26,7 +26,7 @@ picasso generate \
 	--var edition=$EDITION \
 	--var tagline="Mendengar dan belajar dari rekan-rekan praktisi:" \
 	--var color=$COLOR \
-  --var tagline_offset=$TAGLINE_OFFSET ] \
+    --var tagline_offset=$TAGLINE_OFFSET ] \
 	--var date="25 APRIL 2025" \
 	--var url=$URL \
     -o $OUTPUT_DIR/social/twitter_card.png
