@@ -1,19 +1,19 @@
 #!/bin/bash
-EDITION="TEMPLATE"
-DATE="APRIL 27, 2023"
-URL="hashi.co/template"
+EDITION="INDONESIA"
+DATE="25 APRIL 2025"
+URL="hashi.co/hashitalks-indonesia"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
 TAGLINE="Hear from and learn with fellow practitioners:"
 REGULAR_FONT="fonts/klavika/regular.ttf"
 BOLD_FONT="fonts/klavika/bold.ttf"
 LIGHT_FONT="fonts/klavika/light.ttf"
-COLOR="yellow"
-INPUT_DIR="input/test_2023"
-OUTPUT_DIR="../hashitalks-assets/2023/$EDITION"
+COLOR="pink"
+INPUT_DIR="input/indonesia"
+OUTPUT_DIR="../hashitalks-assets/2024/$EDITION"
 NEXT="Next"
-LOGO_OFFSET="0"
-TAGLINE_OFFSET="500"
+LOGO_OFFSET="-15"
+TAGLINE_OFFSET="275"
 
 mkdir -p $OUTPUT_DIR
 mkdir -p $OUTPUT_DIR/speakers
@@ -24,10 +24,10 @@ mkdir -p $OUTPUT_DIR/social
 picasso generate \
 	-t hashitalks/social/twitter_card.hcl \
 	--var edition=$EDITION \
-	--var tagline="Hear from and learn with fellow practitioners:" \
+	--var tagline="Mendengar dan belajar dari rekan-rekan praktisi:" \
 	--var color=$COLOR \
-  --var tagline_offset=$TAGLINE_OFFSET \
-	--var date="APRIL 27, 2023" \
+  --var tagline_offset=$TAGLINE_OFFSET ] \
+	--var date="25 APRIL 2025" \
 	--var url=$URL \
     -o $OUTPUT_DIR/social/twitter_card.png
 
@@ -35,7 +35,7 @@ picasso generate \
 	-t hashitalks/social/email_banner.hcl \
 	--var edition=$EDITION \
 	--var color=$COLOR \
-    --var logo_offset=$LOGO_OFFSET \
+  --var logo_offset=$LOGO_OFFSET \
 	-o $OUTPUT_DIR/social/email_banner.png
 
 # title
@@ -46,15 +46,15 @@ picasso generate \
   --var color=$COLOR \
 
 # speakers
-picasso generate \
-  -t hashitalks/speakers/speaker.hcl \
-  -o $OUTPUT_DIR/speakers/ \
-  --var color=$COLOR \
-  --var edition=$EDITION \
-  --var date="February 16, 2023" \
-  --var url=$URL \
-  --csv $INPUT_DIR/csv/speakers.csv \
-  --csv-var speaker
+# picasso generate \
+#   -t hashitalks/speakers/speaker.hcl \
+#   -o $OUTPUT_DIR/speakers/ \
+#   --var color=$COLOR \
+#   --var edition=$EDITION \
+#   --var date="February 16, 2023" \
+#   --var url=$URL \
+#   --csv $INPUT_DIR/csv/speakers.csv \
+#   --csv-var speaker
 
 # speakers 1_line
 #picasso generate \
