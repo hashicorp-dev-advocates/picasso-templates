@@ -1,7 +1,7 @@
 #!/bin/bash
-EDITION="TEMPLATE"
-DATE="APRIL 27, 2024"
-URL="hashi.co/hashitalks-template"
+EDITION="AFRICA"
+DATE="19 SEPTEMBER 2024"
+URL="hashi.co/hashitalks-africa"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
 TAGLINE="Hear from and learn with fellow practitioners:"
@@ -12,7 +12,7 @@ COLOR="pink"
 INPUT_DIR="input/$EDITION"
 OUTPUT_DIR="../hashitalks-assets/2024/$EDITION"
 NEXT="Next"
-LOGO_OFFSET="60"
+LOGO_OFFSET="90"
 TAGLINE_OFFSET="275"
 
 mkdir -p $OUTPUT_DIR
@@ -27,8 +27,8 @@ picasso generate \
 	--var tagline="$TAGLINE" \
 	--var color=$COLOR \
     --var tagline_offset=$TAGLINE_OFFSET \
-	--var url=$URL \
 	--var date="$DATE" \
+	--var url=$URL \
   -o $OUTPUT_DIR/social/twitter_card.png
 
 picasso generate \

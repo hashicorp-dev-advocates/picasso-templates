@@ -1,10 +1,10 @@
 #!/bin/bash
-EDITION="TEMPLATE"
-DATE="APRIL 27, 2024"
-URL="hashi.co/hashitalks-template"
+EDITION="FRANCE"
+DATE="12 SEPTEMBRE 2024"
+URL="hashi.co/hashitalks-france"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
-TAGLINE="Hear from and learn with fellow practitioners:"
+TAGLINE="Écoutez et apprenez avec d’autres pratiquants:"
 REGULAR_FONT="fonts/klavika/regular.ttf"
 BOLD_FONT="fonts/klavika/bold.ttf"
 LIGHT_FONT="fonts/klavika/light.ttf"
@@ -12,7 +12,7 @@ COLOR="pink"
 INPUT_DIR="input/$EDITION"
 OUTPUT_DIR="../hashitalks-assets/2024/$EDITION"
 NEXT="Next"
-LOGO_OFFSET="60"
+LOGO_OFFSET="66"
 TAGLINE_OFFSET="275"
 
 mkdir -p $OUTPUT_DIR
@@ -35,7 +35,7 @@ picasso generate \
 	-t hashitalks/social/email_banner.hcl \
 	--var edition=$EDITION \
 	--var color=$COLOR \
-  --var logo_offset=$LOGO_OFFSET \
+    --var logo_offset=$LOGO_OFFSET \
 	-o $OUTPUT_DIR/social/email_banner.png
 
 # title

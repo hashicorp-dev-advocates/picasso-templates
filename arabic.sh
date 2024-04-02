@@ -26,9 +26,9 @@ picasso generate \
 	--var edition=$EDITION \
 	--var tagline="$TAGLINE" \
 	--var color=$COLOR \
-    --var tagline_offset=$TAGLINE_OFFSET \
-	--var url=$URL \
+  --var tagline_offset=$TAGLINE_OFFSET \
 	--var date="$DATE" \
+	--var url=$URL \
   -o $OUTPUT_DIR/social/twitter_card.png
 
 picasso generate \
