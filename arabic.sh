@@ -1,19 +1,20 @@
 #!/bin/bash
-EDITION="TEMPLATE"
-DATE="APRIL 27, 2024"
-URL="hashi.co/hashitalks-template"
+EDITION="العربية"
+DATE="16/05/2024"
+URL="hashi.co/hashitalks-arabic"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
-TAGLINE="Hear from and learn with fellow practitioners:"
-REGULAR_FONT="fonts/klavika/regular.ttf"
-BOLD_FONT="fonts/klavika/bold.ttf"
-LIGHT_FONT="fonts/klavika/light.ttf"
+TAGLINE="الاستماع من والتعلم مع زملائه الممارسين:"
+REGULAR_FONT="fonts/klavika/regular.ttf,fonts/notosansarabic/regular.ttf"
+BOLD_FONT="fonts/klavika/bold.ttf,fonts/notosansarabic/bold.ttf"
+LIGHT_FONT="fonts/klavika/light.ttf,fonts/notosansarabic/light.ttf"
+EDITION_FONT="fonts/metro/light.ttf,fonts/notosansarabic/light.ttf"
 COLOR="pink"
 INPUT_DIR="input/$EDITION"
 OUTPUT_DIR="../hashitalks-assets/2024/$EDITION"
 NEXT="Next"
 LOGO_OFFSET="60"
-TAGLINE_OFFSET="275"
+TAGLINE_OFFSET="300"
 
 mkdir -p $OUTPUT_DIR
 mkdir -p $OUTPUT_DIR/speakers
@@ -26,16 +27,23 @@ picasso generate \
 	--var edition=$EDITION \
 	--var tagline="$TAGLINE" \
 	--var color=$COLOR \
-  --var tagline_offset=$TAGLINE_OFFSET \
+    --var tagline_offset=$TAGLINE_OFFSET \
 	--var date="$DATE" \
 	--var url=$URL \
+	--var regular_font=$REGULAR_FONT \
+	--var bold_font=$BOLD_FONT \
+	--var light_font=$LIGHT_FONT \
+	--var edition_font="fonts/metro/light.ttf" \
   -o $OUTPUT_DIR/social/twitter_card.png
 
 picasso generate \
 	-t hashitalks/social/email_banner.hcl \
 	--var edition=$EDITION \
 	--var color=$COLOR \
-  --var logo_offset=$LOGO_OFFSET \
+    --var logo_offset=$LOGO_OFFSET \
+	--var regular_font=$REGULAR_FONT \
+	--var bold_font=$BOLD_FONT \
+	--var light_font=$LIGHT_FONT \
 	-o $OUTPUT_DIR/social/email_banner.png
 
 # title
