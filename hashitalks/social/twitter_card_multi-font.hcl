@@ -36,12 +36,12 @@ variable "y_axis" {
 
 variable "logo_medium_font" {
   type    = "string"
-  default = "fonts/klavika/medium.ttf"
+  default = "fonts/hashicorpsans/medium.ttf"
 }
 
 variable "logo_light_font" {
   type    = "string"
-  default = "fonts/klavika/light.ttf"
+  default = "fonts/hashicorpsans/light.ttf"
 }
 
 variable "regular_font" {

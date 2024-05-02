@@ -1,13 +1,13 @@
 #!/bin/bash
-EDITION="TEMPLATE"
-DATE="APRIL 27, 2024"
+EDITION="Template"
+DATE="Month day, year"
 URL="hashi.co/hashitalks-template"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
-TAGLINE="Hear from and learn with fellow practitioners:"
-REGULAR_FONT="fonts/klavika/regular.ttf"
-BOLD_FONT="fonts/klavika/bold.ttf"
-LIGHT_FONT="fonts/klavika/light.ttf"
+TAGLINE="Hear from and learn with fellow practitioners."
+REGULAR_FONT="fonts/hashicorpsans/regular.ttf"
+BOLD_FONT="fonts/hashicorpsans/bold.ttf"
+LIGHT_FONT="fonts/hashicorpsans/light.ttf"
 COLOR="pink"
 INPUT_DIR="input/$EDITION"
 OUTPUT_DIR="../hashitalks-assets/2024/$EDITION"

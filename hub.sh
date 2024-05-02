@@ -1,15 +1,15 @@
 #!/bin/bash
-EDITION="HUB"
+EDITION="Hub"
 DATE="Virtual community events, delivered in local languages."
 URL="hashi.co/hashitalks-hub"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
-REGULAR_FONT="fonts/klavika/regular.ttf"
-BOLD_FONT="fonts/klavika/bold.ttf"
-LIGHT_FONT="fonts/klavika/light.ttf"
+REGULAR_FONT="fonts/metro/regular.ttf"
+BOLD_FONT="fonts/metro/bold.ttf"
+LIGHT_FONT="fonts/metro/light.ttf"
 COLOR="blue"
 INPUT_DIR="input/hub"
-OUTPUT_DIR="output/fy2023/hub"
+OUTPUT_DIR="output/fy2024/hub"
 NEXT="Next"
 LOGO_OFFSET="90"
 

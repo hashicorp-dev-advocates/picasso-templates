@@ -27,17 +27,17 @@ variable "url" {
 
 variable "regular_font" {
   type    = "string"
-  default = "fonts/klavika/regular.ttf"
+  default = "fonts/metro/regular.ttf"
 }
 
 variable "bold_font" {
   type    = "string"
-  default = "fonts/klavika/bold.ttf"
+  default = "fonts/metro/bold.ttf"
 }
 
 variable "light_font" {
   type    = "string"
-  default = "fonts/klavika/light.ttf"
+  default = "fonts/metro/light.ttf"
 }
 
 layer "rectangle" "background" {
@@ -79,33 +79,33 @@ layer "image" "lines" {
 
 layer "image" "logo" {
   content = "${file(logo)}"
-  x       = 190 + 1200
-  y       = 315 - 260
+  x       = 1390
+  y       = 55
   width   = 120
 }
 
 layer "text" "hashi" {
   content = "Hashi"
-  x       = 330 - 250
-  y       = 290 - 250
+  x       = 80
+  y       = 40
   size    = 132
-  font    = "fonts/klavika/bold.ttf"
+  font    = "fonts/hashicorpsans/bold.ttf"
 }
 
 layer "text" "t" {
   content = "T"
-  x       = 650 - 250
-  y       = 290 - 250
+  x       = 400 - 250
+  y       = 40
   size    = 132
-  font    = "fonts/klavika/light.ttf"
+  font    = "fonts/hashicorpsans/light.ttf"
 }
 
 layer "text" "alks" {
   content = "alks"
-  x       = 705 - 250
-  y       = 290 - 250
+  x       = 455
+  y       = 40
   size    = 132
-  font    = "fonts/klavika/light.ttf"
+  font    = "fonts/hashicorpsans/light.ttf"
 }
 
 # layer "text" "edition" {
@@ -120,7 +120,7 @@ layer "text" "date" {
   content = "${date}"
   anchor  = "TOP_LEFT"
   x       = 250 + "${text_offset}"
-  y       = 380 - 136
+  y       = 244
   width   = 1920 - 400 * 2 + "${text_offset}" * 2
   size    = 72
   font    = "${regular_font}"
@@ -129,7 +129,7 @@ layer "text" "date" {
 layer "text" "url" {
   content = "${url}"
   x       = 250
-  y       = 750 - 300 + 85
+  y       = 535
   size    = 72
-  font    = "fonts/klavika/bold.ttf"
+  font    = "fonts/metro/bold.ttf"
 }

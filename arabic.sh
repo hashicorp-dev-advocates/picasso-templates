@@ -13,7 +13,7 @@ COLOR="pink"
 INPUT_DIR="input/$EDITION"
 OUTPUT_DIR="../hashitalks-assets/2024/$EDITION"
 NEXT="Next"
-LOGO_OFFSET="60"
+LOGO_OFFSET="100"
 TAGLINE_OFFSET="300"
 
 mkdir -p $OUTPUT_DIR

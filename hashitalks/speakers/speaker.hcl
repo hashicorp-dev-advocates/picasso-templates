@@ -61,17 +61,17 @@ variable "y_axis" {
 
 variable "logo_medium_font" {
   type    = "string"
-  default = "fonts/klavika/medium.ttf"
+  default = "fonts/hashicorpsans/medium.ttf"
 }
 
 variable "logo_light_font" {
   type    = "string"
-  default = "fonts/klavika/light.ttf"
+  default = "fonts/hashicorpsans/light.ttf"
 }
 
 variable "title_bold_font" {
   type    = "string"
-  default = "fonts/gilmer/bold.ttf"
+  default = "fonts/hashicorpsans/bold.ttf"
 }
 
 variable "regular_font" {
@@ -147,7 +147,7 @@ layer "text" "2_point" {
   x       = 105+10
   y       = "${y_axis}"+10
   size    = 45
-  font    = "fonts/klavika/light.ttf"
+  font    = "fonts/hashicorpsans/light.ttf"
 }
 
 layer "text" "hashi" {
@@ -155,7 +155,7 @@ layer "text" "hashi" {
   x       = 140+10
   y       = "${y_axis}"
   size    = 64
-  font    = "fonts/klavika/medium.ttf"
+  font    = "fonts/hashicorpsans/medium.ttf"
 }
 
 layer "text" "t" {
@@ -163,7 +163,7 @@ layer "text" "t" {
   x       = 295+9
   y       = "${y_axis}"
   size    = 64
-  font    = "fonts/klavika/light.ttf"
+  font    = "fonts/hashicorpsans/light.ttf"
 }
 
 layer "text" "alks" {
@@ -171,7 +171,7 @@ layer "text" "alks" {
   x       = 320+9
   y       = "${y_axis}"
   size    = 64
-  font    = "fonts/klavika/light.ttf"
+  font    = "fonts/hashicorpsans/light.ttf"
 }
 
 layer "text" "edition" {

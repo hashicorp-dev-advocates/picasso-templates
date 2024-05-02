@@ -14,12 +14,12 @@ variable "edition" {
 
 variable "logo_medium_font" {
   type    = "string"
-  default = "fonts/klavika/medium.ttf"
+  default = "fonts/hashicorpsans/medium.ttf"
 }
 
 variable "logo_light_font" {
   type    = "string"
-  default = "fonts/klavika/light.ttf"
+  default = "fonts/hashicorpsans/light.ttf"
 }
 
 variable "regular_font" {
@@ -100,24 +100,24 @@ layer "text" "hashi" {
 
 layer "text" "t" {
   content = "T"
-  x       = 620
+  x       = 640+10
   y       = 120
   size    = 132
-  font    = "${logo_light_font}"
+  font    = "${logo_medium_font}"
 }
 
 layer "text" "alks" {
   content = "alks"
-  x       = 670
+  x       = 700+15
   y       = 120
   size    = 132
-  font    = "${logo_light_font}"
+  font    = "${logo_medium_font}"
 }
 
 layer "text" "edition" {
   content = "${edition}"
-  x       = 580 + "${logo_offset}"
+  x       = 300 + "${logo_offset}"
   y       = 253
   size    = 60
-  font    = "${regular_font}"
+  font    = "${logo_light_font}"
 }

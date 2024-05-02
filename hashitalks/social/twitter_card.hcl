@@ -36,17 +36,17 @@ variable "y_axis" {
 
 variable "logo_medium_font" {
   type    = "string"
-  default = "fonts/klavika/medium.ttf"
+  default = "fonts/hashicorpsans/medium.ttf"
 }
 
 variable "logo_light_font" {
   type    = "string"
-  default = "fonts/klavika/light.ttf"
+  default = "fonts/hashicorpsans/light.ttf"
 }
 
 variable "regular_font" {
   type    = "string"
-  default = "fonts/metro/regular.ttf"
+  default = "fonts/hashicorpsans/regular.ttf"
 }
 
 variable "bold_font" {
@@ -117,55 +117,55 @@ layer "text" "hashi" {
   content = "Hashi"
   x       = "${x_axis}"
   y       = "${y_axis}"
-  size    = 145-5
+  size    = 140
   font    = "${logo_medium_font}"
 }
 
 layer "text" "t" {
   content = "T"
-  x       = "${x_axis}"+345
+  x       = "${x_axis}"+360+10
   y       = "${y_axis}"
-  size    = 145-5
-  font    = "${logo_light_font}"
+  size    = 140
+  font    = "${logo_medium_font}"
 }
 
 layer "text" "alks" {
   content = "alks"
-  x       = "${x_axis}"+400
+  x       = "${x_axis}"+415+25
   y       = "${y_axis}"
-  size    = 145-5
-  font    = "${logo_light_font}"
+  size    = 140
+  font    = "${logo_medium_font}"
 }
 
 layer "text" "edition" {
   content = "${edition}"
-  x       = "${x_axis}"+660
+  x       = "${x_axis}"+695+25
   y       = "${y_axis}"+75
-  size    = 70-5
-  font    = "${light_font}"
+  size    = 65
+  font    = "${logo_light_font}"
 }
 
 layer "text" "tagline" {
   content = "${tagline}"
   x       = "${x_axis}"
-  y       = "${y_axis}"+150
+  y       = "${y_axis}"+150+65
   width   = "750"
-  size    = 45
-  font    = "${bold_font}"
+  size    = 45+15
+  font    = "${logo_medium_font}"
 }
 
 layer "text" "url" {
   content = "${url}"
-  x       = "${x_axis}"+"${tagline_offset}"
-  y       = "${y_axis}"+263
+  x       = "${x_axis}"
+  y       = "${y_axis}"+500
   size    = 45
-  font    = "${regular_font}"
+  font    = "${bold_font}"
 }
 
 layer "text" "date" {
   content = "${date}"
   x       = "${x_axis}"
-  y       = "${y_axis}"+500
+  y       = "${y_axis}"+175
   size    = 45
-  font    = "${light_font}"
+  font    = "${regular_font}"
 }
