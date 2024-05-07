@@ -91,7 +91,7 @@ layer "image" "logo" {
 }
 
 layer "text" "hashi" {
-  content = "Hashi"
+  content = "Hash\u0069"
   x       = 300
   y       = 120
   size    = 132
