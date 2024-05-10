@@ -64,11 +64,6 @@ variable "light_font" {
   default = "fonts/metro/light.ttf"
 }
 
-variable "edition_font" {
-  type    = "string"
-  default = "fonts/hashicorpsans/light.ttf"
-}
-
 variable "tagline_offset" {
   type    = "string"
   default = "0"
@@ -136,7 +131,7 @@ layer "text" "edition" {
   x       = "${x_axis}"+740
   y       = "${y_axis}"+45
   size    = 95
-  font    = "${edition_font}"
+  font    = "${logo_light_font}"
 }
 
 layer "text" "tagline" {

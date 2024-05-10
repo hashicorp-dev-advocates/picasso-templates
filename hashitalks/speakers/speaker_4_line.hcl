@@ -89,6 +89,11 @@ variable "light_font" {
   default = "fonts/metro/light.ttf"
 }
 
+variable "edition_font" {
+  type    = "string"
+  default = "fonts/hashicorpsans/light.ttf"
+}
+
 layer "rectangle" "background" {
   x      = 0
   y      = 0
