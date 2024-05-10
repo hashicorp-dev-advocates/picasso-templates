@@ -8,11 +8,6 @@ variable "logo" {
   default = "images/h.png"
 }
 
-variable "hashitalks" {
-  type    = "string"
-  default = "images/hashitalks.png"
-}
-
 variable "edition" {
   type = "string"
 }
@@ -66,7 +61,7 @@ variable "light_font" {
 
 variable "edition_font" {
   type    = "string"
-  default = "fonts/hashicorpsans/light.ttf"
+  default = "fonts/metro/light.ttf"
 }
 
 layer "rectangle" "background" {
@@ -118,19 +113,35 @@ layer "image" "logo" {
   height  = 85
 }
 
-layer "image" "hashitalks" {
-  content = "${file(hashitalks)}"
+layer "text" "hashi" {
+  content = "Hashi"
   x       = "${x_axis}"
-  y       = "${y_axis}"+36
-  width   = 700+5
-  height  = 106
+  y       = "${y_axis}"
+  size    = 145-5
+  font    = "${logo_medium_font}"
+}
+
+layer "text" "t" {
+  content = "T"
+  x       = "${x_axis}"+345
+  y       = "${y_axis}"
+  size    = 145-5
+  font    = "${logo_light_font}"
+}
+
+layer "text" "alks" {
+  content = "alks"
+  x       = "${x_axis}"+400
+  y       = "${y_axis}"
+  size    = 145-5
+  font    = "${logo_light_font}"
 }
 
 layer "text" "edition" {
   content = "${edition}"
-  x       = "${x_axis}"+740
-  y       = "${y_axis}"+45
-  size    = 95
+  x       = "${x_axis}"+660
+  y       = "${y_axis}"+75
+  size    = 70-5
   font    = "${edition_font}"
 }
 
@@ -140,7 +151,7 @@ layer "text" "tagline" {
   y       = "${y_axis}"+150
   width   = "900"
   size    = 45
-  font    = "${logo_medium_font}"
+  font    = "${bold_font}"
 }
 
 layer "text" "url" {

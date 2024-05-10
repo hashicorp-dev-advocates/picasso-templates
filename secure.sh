@@ -46,39 +46,39 @@ picasso generate \
 #   --var color=$COLOR \
 
 # speakers
-picasso generate \
-  -t hashitalks/speakers/speaker.hcl \
-  -o $OUTPUT_DIR/speakers/ \
-  --var color=$COLOR \
-  --var edition=$EDITION \
-  --csv $INPUT_DIR/csv/speakers.csv \
-  --csv-var speaker
+#picasso generate \
+#  -t hashitalks/speakers/speaker.hcl \
+#  -o $OUTPUT_DIR/speakers/ \
+#  --var color=$COLOR \
+#  --var edition=$EDITION \
+#  --csv $INPUT_DIR/csv/speakers.csv \
+#  --csv-var speaker
 
 # speakers 2_speakers
-picasso generate \
-  -t hashitalks/speakers/speaker_two_speakers.hcl \
-  -o $OUTPUT_DIR/speakers/ \
-  --var edition=$EDITION \
-  --csv $INPUT_DIR/csv/speakers_two_speakers.csv \
-  --csv-var speaker
+#picasso generate \
+#  -t hashitalks/speakers/speaker_two_speakers.hcl \
+#  -o $OUTPUT_DIR/speakers/ \
+#  --var edition=$EDITION \
+#  --csv $INPUT_DIR/csv/speakers_two_speakers.csv \
+#  --csv-var speaker
 
   # speakers 2_speakers 3_line
-picasso generate \
-  -t hashitalks/speakers/speaker_two_speakers_4_line.hcl \
-  -o $OUTPUT_DIR/speakers/ \
-  --var color=$COLOR \
-  --var edition=$EDITION \
-  --csv $INPUT_DIR/csv/speakers_two_speakers_4_line.csv \
-  --csv-var speaker
+#picasso generate \
+#  -t hashitalks/speakers/speaker_two_speakers_4_line.hcl \
+#  -o $OUTPUT_DIR/speakers/ \
+#  --var color=$COLOR \
+#  --var edition=$EDITION \
+#  --csv $INPUT_DIR/csv/speakers_two_speakers_4_line.csv \
+#  --csv-var speaker
 
 # speakers 1_line
-picasso generate \
-  -t hashitalks/speakers/speaker_1_line.hcl \
-  -o $OUTPUT_DIR/speakers/ \
-  --var color=$COLOR \
-  --var edition=$EDITION \
-  --csv $INPUT_DIR/csv/speakers_1_line.csv \
-  --csv-var speaker
+#picasso generate \
+#  -t hashitalks/speakers/speaker_1_line.hcl \
+#  -o $OUTPUT_DIR/speakers/ \
+#  --var color=$COLOR \
+#  --var edition=$EDITION \
+#  --csv $INPUT_DIR/csv/speakers_1_line.csv \
+#  --csv-var speaker
 
 # speakers 2_line
 #picasso generate \
@@ -90,13 +90,13 @@ picasso generate \
 #  --csv-var speaker
 
  # speakers 3_line
-picasso generate \
-  -t hashitalks/speakers/speaker_3_line.hcl \
-  -o $OUTPUT_DIR/speakers/ \
-  --var color=$COLOR \
-  --var edition=$EDITION \
-  --csv $INPUT_DIR/csv/speakers_3_line.csv \
-  --csv-var speaker
+#picasso generate \
+#  -t hashitalks/speakers/speaker_3_line.hcl \
+#  -o $OUTPUT_DIR/speakers/ \
+#  --var color=$COLOR \
+#  --var edition=$EDITION \
+#  --csv $INPUT_DIR/csv/speakers_3_line.csv \
+#  --csv-var speaker
 
 # speakers 4_line
 # picasso generate \

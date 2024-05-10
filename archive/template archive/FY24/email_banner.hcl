@@ -8,11 +8,6 @@ variable "logo" {
   default = "images/h.png"
 }
 
-variable "hashitalks" {
-  type    = "string"
-  default = "images/hashitalks.png"
-}
-
 variable "edition" {
   type = "string"
 }
@@ -40,11 +35,6 @@ variable "bold_font" {
 variable "light_font" {
   type    = "string"
   default = "fonts/metro/light.ttf"
-}
-
-variable "edition_font" {
-  type    = "string"
-  default = "fonts/hashicorpsans/light.ttf"
 }
 
 variable "logo_offset" {
@@ -100,12 +90,28 @@ layer "image" "logo" {
   width   = 65
 }
 
-layer "image" "hashitalks" {
-  content = "${file(hashitalks)}"
+layer "text" "hashi" {
+  content = "Hash\u0069"
   x       = 300
-  y       = 120+35
-  width   = 660
-  height  = 100
+  y       = 120
+  size    = 132
+  font    = "${logo_medium_font}"
+}
+
+layer "text" "t" {
+  content = "T"
+  x       = 640+10
+  y       = 120
+  size    = 132
+  font    = "${logo_medium_font}"
+}
+
+layer "text" "alks" {
+  content = "alks"
+  x       = 700+15
+  y       = 120
+  size    = 132
+  font    = "${logo_medium_font}"
 }
 
 layer "text" "edition" {
@@ -113,5 +119,5 @@ layer "text" "edition" {
   x       = 300 + "${logo_offset}"
   y       = 253
   size    = 60
-  font    = "${edition_font}"
+  font    = "${logo_light_font}"
 }

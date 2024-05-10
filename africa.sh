@@ -12,7 +12,7 @@ COLOR="pink"
 INPUT_DIR="input/$EDITION"
 OUTPUT_DIR="../hashitalks-assets/2024/$EDITION"
 NEXT="Next"
-LOGO_OFFSET="135"
+LOGO_OFFSET="0"
 TAGLINE_OFFSET="275"
 
 mkdir -p $OUTPUT_DIR
@@ -22,7 +22,7 @@ mkdir -p $OUTPUT_DIR/social
 
 # social
 picasso generate \
-	-t hashitalks/social/twitter_card.hcl \
+	-t hashitalks/social/twitter_card_multi_font.hcl \
 	--var edition=$EDITION \
 	--var tagline="$TAGLINE" \
 	--var color=$COLOR \

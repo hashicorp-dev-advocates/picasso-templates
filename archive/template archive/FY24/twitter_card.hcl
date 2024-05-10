@@ -8,11 +8,6 @@ variable "logo" {
   default = "images/h.png"
 }
 
-variable "hashitalks" {
-  type    = "string"
-  default = "images/hashitalks.png"
-}
-
 variable "edition" {
   type = "string"
 }
@@ -51,7 +46,7 @@ variable "logo_light_font" {
 
 variable "regular_font" {
   type    = "string"
-  default = "fonts/metro/regular.ttf"
+  default = "fonts/hashicorpsans/regular.ttf"
 }
 
 variable "bold_font" {
@@ -64,9 +59,9 @@ variable "light_font" {
   default = "fonts/metro/light.ttf"
 }
 
-variable "edition_font" {
+variable "tagline_offset" {
   type    = "string"
-  default = "fonts/hashicorpsans/light.ttf"
+  default = "0"
 }
 
 layer "rectangle" "background" {
@@ -118,43 +113,59 @@ layer "image" "logo" {
   height  = 85
 }
 
-layer "image" "hashitalks" {
-  content = "${file(hashitalks)}"
+layer "text" "hashi" {
+  content = "Hash\u0069"
   x       = "${x_axis}"
-  y       = "${y_axis}"+36
-  width   = 700+5
-  height  = 106
+  y       = "${y_axis}"
+  size    = 140
+  font    = "${logo_medium_font}"
+}
+
+layer "text" "t" {
+  content = "T"
+  x       = "${x_axis}"+360+10
+  y       = "${y_axis}"
+  size    = 140
+  font    = "${logo_medium_font}"
+}
+
+layer "text" "alks" {
+  content = "alks"
+  x       = "${x_axis}"+415+25
+  y       = "${y_axis}"
+  size    = 140
+  font    = "${logo_medium_font}"
 }
 
 layer "text" "edition" {
   content = "${edition}"
-  x       = "${x_axis}"+740
-  y       = "${y_axis}"+45
-  size    = 95
-  font    = "${edition_font}"
+  x       = "${x_axis}"+695+25
+  y       = "${y_axis}"+75
+  size    = 65
+  font    = "${logo_light_font}"
 }
 
 layer "text" "tagline" {
   content = "${tagline}"
   x       = "${x_axis}"
-  y       = "${y_axis}"+150
-  width   = "900"
-  size    = 45
+  y       = "${y_axis}"+150+65
+  width   = "750"
+  size    = 45+15
   font    = "${logo_medium_font}"
 }
 
 layer "text" "url" {
   content = "${url}"
-  x       = "${x_axis}"+"${tagline_offset}"
-  y       = "${y_axis}"+263
+  x       = "${x_axis}"
+  y       = "${y_axis}"+500
   size    = 45
-  font    = "${regular_font}"
+  font    = "${bold_font}"
 }
 
 layer "text" "date" {
   content = "${date}"
   x       = "${x_axis}"
-  y       = "${y_axis}"+500
+  y       = "${y_axis}"+175
   size    = 45
-  font    = "${light_font}"
+  font    = "${regular_font}"
 }

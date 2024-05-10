@@ -5,15 +5,16 @@ URL="hashi.co/hashitalks-arabic"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
 TAGLINE="الاستماع من والتعلم مع زملائه الممارسين"
-REGULAR_FONT="fonts/klavika/regular.ttf,fonts/notosansarabic/regular.ttf"
-BOLD_FONT="fonts/klavika/bold.ttf,fonts/notosansarabic/bold.ttf"
-LIGHT_FONT="fonts/klavika/light.ttf,fonts/notosansarabic/light.ttf"
-EDITION_FONT="fonts/metro/light.ttf,fonts/notosansarabic/light.ttf"
+REGULAR_FONT="fonts/metro/regular.ttf,fonts/notosansarabic/regular.ttf"
+BOLD_FONT="fonts/metro/bold.ttf,fonts/notosansarabic/bold.ttf"
+LIGHT_FONT="fonts/metro/light.ttf,fonts/notosansarabic/light.ttf"
+EDITION_FONT="fonts/hashicorpsans/light.ttf,fonts/notosansarabic/light.ttf"
+LOGO_MEDIUM_FONT="fonts/hashicorpsans/medium.ttf,fonts/notosansarabic/bold.ttf"
 COLOR="pink"
 INPUT_DIR="input/$EDITION"
 OUTPUT_DIR="../hashitalks-assets/2024/$EDITION"
 NEXT="Next"
-LOGO_OFFSET="100"
+LOGO_OFFSET="0"
 TAGLINE_OFFSET="300"
 
 mkdir -p $OUTPUT_DIR
@@ -33,7 +34,8 @@ picasso generate \
 	--var regular_font=$REGULAR_FONT \
 	--var bold_font=$BOLD_FONT \
 	--var light_font=$LIGHT_FONT \
-	--var edition_font="fonts/metro/light.ttf" \
+	--var edition_font="fonts/notosansarabic/light.ttf" \
+	--var logo_medium_font="fonts/notosansarabic/bold.ttf" \
   -o $OUTPUT_DIR/social/twitter_card.png
 
 picasso generate \
@@ -44,6 +46,7 @@ picasso generate \
 	--var regular_font=$REGULAR_FONT \
 	--var bold_font=$BOLD_FONT \
 	--var light_font=$LIGHT_FONT \
+	--var edition_font="fonts/notosansarabic/light.ttf" \
 	-o $OUTPUT_DIR/social/email_banner.png
 
 # title
