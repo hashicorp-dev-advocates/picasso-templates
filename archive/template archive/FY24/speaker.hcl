@@ -25,11 +25,6 @@ variable "logo" {
   default = "images/h.png"
 }
 
-variable "hashitalks" {
-  type    = "string"
-  default = "images/hashitalks.png"
-}
-
 variable "edition" {
   type = "string"
 }
@@ -39,6 +34,10 @@ variable "speaker" {
 }
 
 variable "title" {
+  type = "string"
+}
+
+variable "photo" {
   type = "string"
 }
 
@@ -138,7 +137,7 @@ layer "image" "sun" {
 layer "image" "logo" {
   content = "${file(logo)}"
   x       = "${x_axis}"
-  y       = "${y_axis}"+17
+  y       = "${y_axis}"+20-3
   width   = 48
   height  = 48
 }
@@ -151,44 +150,52 @@ layer "text" "2_point" {
   font    = "fonts/hashicorpsans/light.ttf"
 }
 
-layer "image" "hashitalks" {
-  content = "${file(hashitalks)}"
-  x       = "${x_axis}"+116
-  y       = "${y_axis}"+17
-  width   = 298-2
-  height  = 48-1
+layer "text" "hashi" {
+  content = "Hashi"
+  x       = 150
+  y       = "${y_axis}"
+  size    = 64
+  font    = "fonts/hashicorpsans/medium.ttf"
+}
+
+layer "text" "t" {
+  content = "T"
+  x       = 304+15
+  y       = "${y_axis}"
+  size    = 64
+  font    = "fonts/hashicorpsans/medium.ttf"
+}
+
+layer "text" "alks" {
+  content = "alks"
+  x       = 329+15
+  y       = "${y_axis}"
+  size    = 64
+  font    = "fonts/hashicorpsans/medium.ttf"
 }
 
 layer "text" "edition" {
   content = "${edition}"
-  x       = 445+25
-  y       = "${y_axis}"+18
-  size    = 46
+  x       = 445+30
+  y       = "${y_axis}"+20+9
+  size    = 35
   font    = "${edition_font}"
 }
 
 layer "image" "photo" {
   content = "${file(photo)}"
   x       = 790
-  y       = 165-115
-  width   = 375-100
-  height  = 375-100
-}
-
-layer "image" "photo1" {
-  content = "${file(photo1)}"
-  x       = 790
-  y       = 165+190
-  width   = 375-100
-  height  = 375-100
+  y       = 165
+  width   = 375
+  height  = 375
 }
 
 layer "text" "title" {
   content = "${title}"
-  width   = 650
+  width   = 675+25
   x       = "${x_axis}"
-  y       = 245
-  size    = 42
+  y       = 175+70
+  size    = 40
   font    = "${title_bold_font}"
 }
 
@@ -196,7 +203,7 @@ layer "text" "speaker" {
   content = "${speaker}"
   x       = "${x_axis}"
   y       = 477
-  size    = 30
+  size    = 28
   font    = "${bold_font}"
 }
 
@@ -204,6 +211,6 @@ layer "text" "date" {
   content = "${date}"
   x       = "${x_axis}"
   y       = 517
-  size    = 30
+  size    = 28
   font    = "${regular_font}"
 }

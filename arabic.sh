@@ -4,7 +4,7 @@ DATE="16/05/2024"
 URL="hashi.co/hashitalks-arabic"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
-TAGLINE="الاستماع من والتعلم مع زملائه الممارسين:"
+TAGLINE="الاستماع من والتعلم مع زملائه الممارسين"
 REGULAR_FONT="fonts/klavika/regular.ttf,fonts/notosansarabic/regular.ttf"
 BOLD_FONT="fonts/klavika/bold.ttf,fonts/notosansarabic/bold.ttf"
 LIGHT_FONT="fonts/klavika/light.ttf,fonts/notosansarabic/light.ttf"

@@ -1,10 +1,10 @@
 #!/bin/bash
-EDITION="BUILD"
-DATE="JULY 24-25, 2024"
+EDITION="Build"
+DATE="July 24-25, 2024"
 URL="hashi.co/build"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
-TAGLINE="Hear from and learn with fellow practitioners:"
+TAGLINE="Hear from and learn with fellow practitioners."
 REGULAR_FONT="fonts/klavika/regular.ttf"
 BOLD_FONT="fonts/klavika/bold.ttf"
 LIGHT_FONT="fonts/klavika/light.ttf"

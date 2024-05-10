@@ -42,6 +42,10 @@ variable "title" {
   type = "string"
 }
 
+variable "photo" {
+  type = "string"
+}
+
 variable "date" {
   type = "string"
 }
@@ -170,24 +174,16 @@ layer "text" "edition" {
 layer "image" "photo" {
   content = "${file(photo)}"
   x       = 790
-  y       = 165-115
-  width   = 375-100
-  height  = 375-100
-}
-
-layer "image" "photo1" {
-  content = "${file(photo1)}"
-  x       = 790
-  y       = 165+190
-  width   = 375-100
-  height  = 375-100
+  y       = 165
+  width   = 375
+  height  = 375
 }
 
 layer "text" "title" {
   content = "${title}"
   width   = 650
   x       = "${x_axis}"
-  y       = 245
+  y       = 175+100
   size    = 42
   font    = "${title_bold_font}"
 }

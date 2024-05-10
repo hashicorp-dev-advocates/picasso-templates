@@ -25,6 +25,11 @@ variable "logo" {
   default = "images/h.png"
 }
 
+variable "hashitalks" {
+  type    = "string"
+  default = "images/hashitalks.png"
+}
+
 variable "edition" {
   type = "string"
 }
@@ -42,10 +47,6 @@ variable "photo" {
 }
 
 variable "date" {
-  type = "string"
-}
-
-variable "url" {
   type = "string"
 }
 
@@ -137,7 +138,7 @@ layer "image" "sun" {
 layer "image" "logo" {
   content = "${file(logo)}"
   x       = "${x_axis}"
-  y       = "${y_axis}"+20-3
+  y       = "${y_axis}"+17
   width   = 48
   height  = 48
 }
@@ -150,35 +151,19 @@ layer "text" "2_point" {
   font    = "fonts/hashicorpsans/light.ttf"
 }
 
-layer "text" "hashi" {
-  content = "Hashi"
-  x       = 140+10
-  y       = "${y_axis}"
-  size    = 64
-  font    = "fonts/hashicorpsans/medium.ttf"
-}
-
-layer "text" "t" {
-  content = "T"
-  x       = 295+9
-  y       = "${y_axis}"
-  size    = 64
-  font    = "fonts/hashicorpsans/light.ttf"
-}
-
-layer "text" "alks" {
-  content = "alks"
-  x       = 320+9
-  y       = "${y_axis}"
-  size    = 64
-  font    = "fonts/hashicorpsans/light.ttf"
+layer "image" "hashitalks" {
+  content = "${file(hashitalks)}"
+  x       = "${x_axis}"+116
+  y       = "${y_axis}"+17
+  width   = 298-2
+  height  = 48-1
 }
 
 layer "text" "edition" {
   content = "${edition}"
-  x       = 435+10
-  y       = "${y_axis}"+20+9
-  size    = 35
+  x       = 445+25
+  y       = "${y_axis}"+18
+  size    = 46
   font    = "${edition_font}"
 }
 
@@ -192,10 +177,10 @@ layer "image" "photo" {
 
 layer "text" "title" {
   content = "${title}"
-  width   = 675+25
+  width   = 600
   x       = "${x_axis}"
-  y       = 175+70
-  size    = 40
+  y       = 245
+  size    = 42
   font    = "${title_bold_font}"
 }
 
@@ -203,7 +188,7 @@ layer "text" "speaker" {
   content = "${speaker}"
   x       = "${x_axis}"
   y       = 477
-  size    = 28
+  size    = 30
   font    = "${bold_font}"
 }
 
@@ -211,6 +196,6 @@ layer "text" "date" {
   content = "${date}"
   x       = "${x_axis}"
   y       = 517
-  size    = 28
+  size    = 30
   font    = "${regular_font}"
 }

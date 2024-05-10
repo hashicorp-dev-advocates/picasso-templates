@@ -1,5 +1,5 @@
 #!/bin/bash
-EDITION="JAPAN"
+EDITION="Japan"
 DATE="2024 年 11 月 14 日"
 URL="hashi.co/hashitalks-japan"
 

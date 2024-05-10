@@ -1,10 +1,10 @@
 #!/bin/bash
-EDITION="FRANCE"
-DATE="12 SEPTEMBRE 2024"
+EDITION="France"
+DATE="12 Septembre 2024"
 URL="hashi.co/hashitalks-france"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
-TAGLINE="Écoutez et apprenez avec d’autres pratiquants:"
+TAGLINE="Écoutez et apprenez avec d’autres pratiquants."
 REGULAR_FONT="fonts/klavika/regular.ttf"
 BOLD_FONT="fonts/klavika/bold.ttf"
 LIGHT_FONT="fonts/klavika/light.ttf"
