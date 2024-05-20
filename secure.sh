@@ -99,11 +99,11 @@ picasso generate \
   --csv-var speaker
 
 # speakers 4_line
-# picasso generate \
-#  -t hashitalks/speakers/speaker_4_line.hcl \
-#  -o $OUTPUT_DIR/speakers/ \
-#  --var color=$COLOR \
-#  --var edition=$EDITION \
-#  --csv $INPUT_DIR/csv/speakers_4_line.csv \
-#  --csv-var speaker
+picasso generate \
+ -t hashitalks/speakers/speaker_4_line.hcl \
+ -o $OUTPUT_DIR/speakers/ \
+ --var color=$COLOR \
+ --var edition=$EDITION \
+ --csv $INPUT_DIR/csv/speakers_4_line.csv \
+ --csv-var speaker
 
