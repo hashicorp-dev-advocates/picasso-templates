@@ -142,7 +142,7 @@ layer "image" "sun" {
 layer "image" "logo" {
   content = "${file(logo)}"
   x       = "${x_axis}"
-  y       = "${y_axis}"+20-3
+  y       = "${y_axis}"+17
   width   = 48
   height  = 48
 }
@@ -181,10 +181,10 @@ layer "image" "photo" {
 
 layer "text" "title" {
   content = "${title}"
-  width   = 675+25
+  width   = 700
   x       = "${x_axis}"
-  y       = 165+35
-  size    = 40
+  y       = 200
+  size    = 42
   font    = "${title_bold_font}"
 }
 
@@ -192,7 +192,7 @@ layer "text" "speaker" {
   content = "${speaker}"
   x       = "${x_axis}"
   y       = 477
-  size    = 28
+  size    = 30
   font    = "${bold_font}"
 }
 
@@ -200,6 +200,6 @@ layer "text" "date" {
   content = "${date}"
   x       = "${x_axis}"
   y       = 517
-  size    = 28
+  size    = 30
   font    = "${regular_font}"
 }

@@ -1,6 +1,6 @@
 #!/bin/bash
 EDITION="العربية"
-DATE="16/05/2024"
+DATE="17/07/2024"
 URL="hashi.co/hashitalks-arabic"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
@@ -24,7 +24,7 @@ mkdir -p $OUTPUT_DIR/social
 
 # social
 picasso generate \
-	-t hashitalks/social/twitter_card.hcl \
+	-t hashitalks/social/twitter_card_multi-font.hcl \
 	--var edition=$EDITION \
 	--var tagline="$TAGLINE" \
 	--var color=$COLOR \
@@ -34,7 +34,7 @@ picasso generate \
 	--var regular_font=$REGULAR_FONT \
 	--var bold_font=$BOLD_FONT \
 	--var light_font=$LIGHT_FONT \
-	--var edition_font="fonts/notosansarabic/light.ttf" \
+	--var edition_font=$EDITION_FONT \
 	--var logo_medium_font="fonts/notosansarabic/bold.ttf" \
   -o $OUTPUT_DIR/social/twitter_card.png
 

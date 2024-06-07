@@ -137,24 +137,24 @@ layer "text" "edition" {
 layer "text" "tagline" {
   content = "${tagline}"
   x       = "${x_axis}"
-  y       = "${y_axis}"+150
-  width   = "900"
-  size    = 45
+  y       = "${y_axis}"+150+65
+  width   = "750"
+  size    = 45+15
   font    = "${logo_medium_font}"
 }
 
 layer "text" "url" {
   content = "${url}"
-  x       = "${x_axis}"+"${tagline_offset}"
-  y       = "${y_axis}"+263
+  x       = "${x_axis}"
+  y       = "${y_axis}"+500
   size    = 45
-  font    = "${regular_font}"
+  font    = "${bold_font}"
 }
 
 layer "text" "date" {
   content = "${date}"
   x       = "${x_axis}"
-  y       = "${y_axis}"+500
+  y       = "${y_axis}"+175
   size    = 45
-  font    = "${light_font}"
+  font    = "${regular_font}"
 }
