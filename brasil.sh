@@ -5,9 +5,9 @@ URL="hashi.co/hashitalks-brasil"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
 TAGLINE="Aprender com profissionais como você."
-REGULAR_FONT="fonts/klavika/regular.ttf"
-BOLD_FONT="fonts/klavika/bold.ttf"
-LIGHT_FONT="fonts/klavika/light.ttf"
+REGULAR_FONT="fonts/hashicorpsans/regular.ttf"
+BOLD_FONT="fonts/hashicorpsans/bold.ttf"
+LIGHT_FONT="fonts/hashicorpsans/light.ttf"
 COLOR="pink"
 INPUT_DIR="input/$EDITION"
 OUTPUT_DIR="../hashitalks-assets/2024/$EDITION"
@@ -22,21 +22,21 @@ mkdir -p $OUTPUT_DIR/social
 
 # social
 picasso generate \
-	-t hashitalks/social/twitter_card.hcl \
-	--var edition=$EDITION \
-	--var tagline="$TAGLINE" \
-	--var color=$COLOR \
+  -t hashitalks/social/twitter_card.hcl \
+  --var edition=$EDITION \
+  --var tagline="$TAGLINE" \
+  --var color=$COLOR \
   --var tagline_offset=$TAGLINE_OFFSET \
-	--var date="$DATE" \
-	--var url=$URL \
+  --var date="$DATE" \
+  --var url=$URL \
   -o $OUTPUT_DIR/social/twitter_card.png
 
 picasso generate \
-	-t hashitalks/social/email_banner.hcl \
-	--var edition=$EDITION \
-	--var color=$COLOR \
+  -t hashitalks/social/email_banner.hcl \
+  --var edition=$EDITION \
+  --var color=$COLOR \
   --var logo_offset=$LOGO_OFFSET \
-	-o $OUTPUT_DIR/social/email_banner.png
+  -o $OUTPUT_DIR/social/email_banner.png
 
 # title
 # picasso generate \

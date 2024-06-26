@@ -69,28 +69,20 @@ layer "image" "background" {
   height = 467
 }
 
-layer "image" "top" {
-  content = "${file("images/top.png")}"
-  x       = 1150
+ layer "image" "top" {
+  content = "${file("images/lines.png")}"
+  x       = 1150-700
   y       = 0
-  width   = 540
-  height  = 283
-}
-
-layer "image" "bottom" {
-  content = "${file("images/bottom.png")}"
-  x       = 1150
-  y       = 250
-  width   = 540
-  height  = 283
-}
+  width   = 540+500
+  height  = 283+500
+ }
 
 layer "image" "sun" {
   content = "${file("images/sun.png")}"
-  x       = 1110
+  x       = 1110-500-50
   y       = 0
-  width   = 490
-  height  = 570
+  width   = 490+500+50
+  height  = 570-70+20
 }
 
 layer "image" "logo" {

@@ -1,6 +1,6 @@
 output "png" {
   width  = 1600
-  height = 900
+  height = 467
 }
 
 variable "logo" {
@@ -15,28 +15,6 @@ variable "hashitalks" {
 
 variable "edition" {
   type = "string"
-}
-
-variable "title" {
-  type = "string"
-}
-
-variable "date" {
-  type = "string"
-}
-
-variable "url" {
-  type = "string"
-}
-
-variable "x_axis" {
-  type = "string"
-  default = "75"
-}
-
-variable "y_axis" {
-  type = "string"
-  default = "260"
 }
 
 variable "logo_medium_font" {
@@ -69,11 +47,16 @@ variable "edition_font" {
   default = "fonts/hashicorpsans/light.ttf"
 }
 
+variable "logo_offset" {
+  type    = "string"
+  default = "0"
+}
+
 layer "rectangle" "background" {
   x      = 0
   y      = 0
   width  = 1600
-  height = 900
+  height = 467
 
   color = "#000000"
 }
@@ -83,70 +66,52 @@ layer "image" "background" {
   x      = 0
   y      = 0
   width  = 1600
-  height = 900
+  height = 467
 }
 
-layer "image" "top" {
-  content = "${file("images/lines.png")}"
-  x       = 1050
-  y       = 0
-  width   = 775
-  height  = 406
+# layer "image" "top" {
+#  content = "${file("images/top.png")}"
+#  x       = 1150
+#  y       = 0
+#  width   = 540
+#  height  = 283
+# }
+
+layer "image" "bottom" {
+  content = "${file("images/bottom.png")}"
+  x       = 1150
+  y       = 250
+  width   = 540
+  height  = 283
 }
 
 layer "image" "sun" {
   content = "${file("images/sun.png")}"
-  x       = 825
+  x       = 1110
   y       = 0
-  width   = 775
-  height  = 901
+  width   = 490
+  height  = 570
 }
 
 layer "image" "logo" {
   content = "${file(logo)}"
-  x       = "${x_axis}"
-  y       = "85"
-  width   = 85
-  height  = 85
+  x       = 65
+  y       = 50
+  width   = 65
 }
 
 layer "image" "hashitalks" {
   content = "${file(hashitalks)}"
-  x       = "${x_axis}"
-  y       = "${y_axis}"+36
-  width   = 700+5
-  height  = 106
+  x       = 300
+  y       = 120+35
+  width   = 660
+  height  = 100
 }
 
 layer "text" "edition" {
   content = "${edition}"
-  x       = "${x_axis}"+740
-  y       = "${y_axis}"+45
-  size    = 95
+  x       = 300 + "${logo_offset}"
+  y       = 253
+  size    = 60
   font    = "${edition_font}"
-}
-
-layer "text" "tagline" {
-  content = "${tagline}"
-  x       = "${x_axis}"
-  y       = "${y_axis}"+150+65
-  width   = "750"
-  size    = 45+15
-  font    = "${logo_medium_font}"
-}
-
-layer "text" "url" {
-  content = "${url}"
-  x       = "${x_axis}"
-  y       = "${y_axis}"+500
-  size    = 45
-  font    = "${bold_font}"
-}
-
-layer "text" "date" {
-  content = "${date}"
-  x       = "${x_axis}"
-  y       = "${y_axis}"+175
-  size    = 45
-  font    = "${regular_font}"
 }

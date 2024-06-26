@@ -5,9 +5,9 @@ URL="hashi.co/hashitalks-arabic"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
 TAGLINE="الاستماع من والتعلم مع زملائه الممارسين"
-REGULAR_FONT="fonts/metro/regular.ttf,fonts/notosansarabic/regular.ttf"
-BOLD_FONT="fonts/metro/bold.ttf,fonts/notosansarabic/bold.ttf"
-LIGHT_FONT="fonts/metro/light.ttf,fonts/notosansarabic/light.ttf"
+REGULAR_FONT="fonts/hashicorpsans/regular.ttf,fonts/notosansarabic/regular.ttf"
+BOLD_FONT="fonts/hashicorpsans/bold.ttf,fonts/notosansarabic/bold.ttf"
+LIGHT_FONT="fonts/hashicorpsans/light.ttf,fonts/notosansarabic/light.ttf"
 EDITION_FONT="fonts/hashicorpsans/light.ttf,fonts/notosansarabic/light.ttf"
 LOGO_MEDIUM_FONT="fonts/hashicorpsans/medium.ttf,fonts/notosansarabic/bold.ttf"
 COLOR="pink"

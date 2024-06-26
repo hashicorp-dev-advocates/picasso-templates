@@ -87,17 +87,9 @@ layer "image" "background" {
 }
 
 layer "image" "top" {
-  content = "${file("images/top.png")}"
+  content = "${file("images/lines.png")}"
   x       = 1050
   y       = 0
-  width   = 775
-  height  = 406
-}
-
-layer "image" "bottom" {
-  content = "${file("images/bottom.png")}"
-  x       = 1050
-  y       = 500
   width   = 775
   height  = 406
 }

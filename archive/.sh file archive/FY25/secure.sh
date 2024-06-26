@@ -23,7 +23,7 @@ mkdir -p $OUTPUT_DIR/social
 # social
 picasso generate \
 	-t hashitalks/social/twitter_card.hcl \
-	--var edition=$EDITION \
+  --var edition=$EDITION \
 	--var tagline="$TAGLINE" \
 	--var color=$COLOR \
   --var tagline_offset=$TAGLINE_OFFSET \

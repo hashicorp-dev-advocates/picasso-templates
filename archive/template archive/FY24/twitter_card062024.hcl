@@ -51,7 +51,7 @@ variable "logo_light_font" {
 
 variable "regular_font" {
   type    = "string"
-  default = "fonts/metro/regular.ttf"
+  default = "fonts/hashicorpsans/regular.ttf"
 }
 
 variable "bold_font" {
@@ -64,9 +64,9 @@ variable "light_font" {
   default = "fonts/metro/light.ttf"
 }
 
-variable "edition_font" {
+variable "tagline_offset" {
   type    = "string"
-  default = "fonts/hashicorpsans/light.ttf"
+  default = "0"
 }
 
 layer "rectangle" "background" {
@@ -87,9 +87,17 @@ layer "image" "background" {
 }
 
 layer "image" "top" {
-  content = "${file("images/lines.png")}"
+  content = "${file("images/top.png")}"
   x       = 1050
   y       = 0
+  width   = 775
+  height  = 406
+}
+
+layer "image" "bottom" {
+  content = "${file("images/bottom.png")}"
+  x       = 1050
+  y       = 500
   width   = 775
   height  = 406
 }
@@ -123,7 +131,7 @@ layer "text" "edition" {
   x       = "${x_axis}"+740
   y       = "${y_axis}"+45
   size    = 95
-  font    = "${edition_font}"
+  font    = "${logo_light_font}"
 }
 
 layer "text" "tagline" {

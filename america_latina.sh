@@ -1,7 +1,7 @@
 #!/bin/bash
-EDITION="Africa"
-DATE="19 September 2024"
-URL="hashi.co/hashitalks-africa"
+EDITION="América Latina"
+DATE="16 de enero 2025"
+URL="hashi.co/hashitalks-america-latina"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
 TAGLINE="Hear from and learn with fellow practitioners."
@@ -10,7 +10,7 @@ BOLD_FONT="fonts/hashicorpsans/bold.ttf"
 LIGHT_FONT="fonts/hashicorpsans/light.ttf"
 COLOR="pink"
 INPUT_DIR="input/$EDITION"
-OUTPUT_DIR="../hashitalks-assets/2024/$EDITION"
+OUTPUT_DIR="../hashitalks-assets/2024/AMERICA_LATINA"
 NEXT="Next"
 LOGO_OFFSET="0"
 TAGLINE_OFFSET="275"
@@ -33,7 +33,7 @@ picasso generate \
 
 picasso generate \
   -t hashitalks/social/email_banner.hcl \
-  --var edition=$EDITION \
+  --var edition="América Latina" \
   --var color=$COLOR \
   --var logo_offset=$LOGO_OFFSET \
   -o $OUTPUT_DIR/social/email_banner.png
@@ -51,21 +51,34 @@ picasso generate \
 #   -o $OUTPUT_DIR/speakers/ \
 #   --var color=$COLOR \
 #   --var edition=$EDITION \
-#   --var date="February 16, 2023" \
-#   --var url=$URL \
 #   --csv $INPUT_DIR/csv/speakers.csv \
 #   --csv-var speaker
 
+# speakers 2_speakers
+# picasso generate \
+#   -t hashitalks/speakers/speaker_two_speakers.hcl \
+#   -o $OUTPUT_DIR/speakers/ \
+#   --var edition=$EDITION \
+#   --csv $INPUT_DIR/csv/speakers_two_speakers.csv \
+#   --csv-var speaker
+
+  # speakers 2_speakers 3_line
+# picasso generate \
+#   -t hashitalks/speakers/speaker_two_speakers_4_line.hcl \
+#   -o $OUTPUT_DIR/speakers/ \
+#   --var color=$COLOR \
+#   --var edition=$EDITION \
+#   --csv $INPUT_DIR/csv/speakers_two_speakers_4_line.csv \
+#   --csv-var speaker
+
 # speakers 1_line
-#picasso generate \
-#  -t hashitalks/speakers/speaker_1_line.hcl \
-#  -o $OUTPUT_DIR/speakers/ \
-#  --var color=$COLOR \
-#  --var edition=$EDITION \
-#  --var date="February 15, 2024" \
-#  --var url=$URL \
-#  --csv $INPUT_DIR/csv/speakers_1_line.csv \
-#  --csv-var speaker
+# picasso generate \
+#   -t hashitalks/speakers/speaker_1_line.hcl \
+#   -o $OUTPUT_DIR/speakers/ \
+#   --var color=$COLOR \
+#   --var edition=$EDITION \
+#   --csv $INPUT_DIR/csv/speakers_1_line.csv \
+#   --csv-var speaker
 
 # speakers 2_line
 #picasso generate \
@@ -73,8 +86,6 @@ picasso generate \
 #  -o $OUTPUT_DIR/speakers/ \
 #  --var color=$COLOR \
 #  --var edition=$EDITION \
-#  --var date="February 15, 2024" \
-#  --var url=$URL \
 #  --csv $INPUT_DIR/csv/speakers_2_line.csv \
 #  --csv-var speaker
 
@@ -84,26 +95,14 @@ picasso generate \
 #   -o $OUTPUT_DIR/speakers/ \
 #   --var color=$COLOR \
 #   --var edition=$EDITION \
-#   --var date="February 15, 2024" \
-#   --var url=$URL \
 #   --csv $INPUT_DIR/csv/speakers_3_line.csv \
 #   --csv-var speaker
 
-  # speakers 4_line
+# speakers 4_line
 # picasso generate \
-#   -t hashitalks/speakers/speaker_4_line.hcl \
-#   -o $OUTPUT_DIR/speakers/ \
-#   --var color=$COLOR \
-#   --var edition=$EDITION \
-#   --var date="February 15, 2024" \
-#   --var url=$URL \
-#   --csv $INPUT_DIR/csv/speakers_4_line.csv \
-#   --csv-var speaker
-
-  # speakers 2_speakers
-# picasso generate \
-#   -t hashitalks/speakers/speaker_two_speakers.hcl \
-#   -o $OUTPUT_DIR/speakers/ \
-#   --var edition=$EDITION \
-#   --csv $INPUT_DIR/csv/speakers_two_speakers.csv \
-#   --csv-var speaker
+#  -t hashitalks/speakers/speaker_4_line.hcl \
+#  -o $OUTPUT_DIR/speakers/ \
+#  --var color=$COLOR \
+#  --var edition=$EDITION \
+#  --csv $INPUT_DIR/csv/speakers_4_line.csv \
+#  --csv-var speaker
