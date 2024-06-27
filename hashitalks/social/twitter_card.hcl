@@ -88,10 +88,10 @@ layer "image" "background" {
 
 layer "image" "top" {
   content = "${file("images/lines.png")}"
-  x       = 1050
+  x       = 1050-1000-75
   y       = 0
-  width   = 775
-  height  = 406
+  width   = 775+775+50
+  height  = 406+406+100+25
 }
 
 layer "image" "sun" {

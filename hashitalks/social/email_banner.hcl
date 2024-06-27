@@ -79,10 +79,10 @@ layer "image" "background" {
 
 layer "image" "sun" {
   content = "${file("images/sun.png")}"
-  x       = 1110-500-50
+  x       = 1110
   y       = 0
-  width   = 490+500+50
-  height  = 570-70+20
+  width   = 490
+  height  = 570
 }
 
 layer "image" "logo" {

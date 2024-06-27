@@ -10,6 +10,7 @@ BOLD_FONT="fonts/hashicorpsans/bold.ttf,fonts/meiryo/bold.ttf"
 LIGHT_FONT="fonts/hashicorpsans/light.ttf,fonts/meiryo/light.ttf"
 TITLE_BOLD_FONT="fonts/hashicorpsans/bold.ttf,fonts/meiryo/bold.ttf"
 EDITION_FONT="fonts/metro/light.ttf,fonts/meiryo/light.ttf"
+LOGO_MEDIUM_FONT="fonts/hashicorpsans/bold.ttf,fonts/meiryo/bold.ttf"
 COLOR="pink"
 INPUT_DIR="input/$EDITION"
 OUTPUT_DIR="../hashitalks-assets/2024/$EDITION"
@@ -35,6 +36,7 @@ picasso generate \
 	--var bold_font=$BOLD_FONT \
 	--var light_font=$LIGHT_FONT \
 	--var edition_font="fonts/metro/light.ttf" \
+	--var logo_medium_font=$LOGO_MEDIUM_FONT \
     -o $OUTPUT_DIR/social/twitter_card.png
 
 picasso generate \
