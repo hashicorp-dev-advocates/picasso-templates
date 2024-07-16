@@ -4,12 +4,12 @@ DATE="17/07/2024"
 URL="hashi.co/hashitalks-arabic"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
-TAGLINE="الاستماع من والتعلم مع زملائه الممارسين"
+TAGLINE=""
 REGULAR_FONT="fonts/hashicorpsans/regular.ttf,fonts/notosansarabic/regular.ttf"
 BOLD_FONT="fonts/hashicorpsans/bold.ttf,fonts/notosansarabic/bold.ttf"
 LIGHT_FONT="fonts/hashicorpsans/light.ttf,fonts/notosansarabic/light.ttf"
 EDITION_FONT="fonts/hashicorpsans/light.ttf,fonts/notosansarabic/light.ttf"
-LOGO_MEDIUM_FONT="fonts/hashicorpsans/medium.ttf,fonts/notosansarabic/bold.ttf"
+LOGO_MEDIUM_FONT="fonts/hashicorpsans/medium.ttf,fonts/notosansarabic/regular.ttf"
 COLOR="pink"
 INPUT_DIR="input/$EDITION"
 OUTPUT_DIR="../hashitalks-assets/2024/$EDITION"
@@ -25,7 +25,7 @@ mkdir -p $OUTPUT_DIR/social
 # social
 picasso generate \
 	-t hashitalks/social/twitter_card_multi-font.hcl \
-	--var edition=$EDITION \
+	--var edition="" \
 	--var tagline="$TAGLINE" \
 	--var color=$COLOR \
     --var tagline_offset=$TAGLINE_OFFSET \
@@ -35,7 +35,7 @@ picasso generate \
 	--var bold_font=$BOLD_FONT \
 	--var light_font=$LIGHT_FONT \
 	--var edition_font=$EDITION_FONT \
-	--var logo_medium_font="fonts/notosansarabic/bold.ttf" \
+	--var logo_medium_font="fonts/notosansarabic/regular.ttf" \
   -o $OUTPUT_DIR/social/twitter_card.png
 
 picasso generate \

@@ -114,15 +114,15 @@ layer "image" "hashitalks" {
   content = "${file(hashitalks)}"
   x       = "${x_axis}"
   y       = "${y_axis}"+36
-  width   = 700+5
-  height  = 106
+  width   = 705-25-20
+  height  = 106-4-3
 }
 
 layer "text" "edition" {
   content = "${edition}"
-  x       = "${x_axis}"+740
+  x       = "${x_axis}"+740-40-20-8
   y       = "${y_axis}"+45
-  size    = 95
+  size    = 95-15
   font    = "${edition_font}"
 }
 
