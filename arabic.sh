@@ -40,7 +40,7 @@ picasso generate \
 
 picasso generate \
 	-t hashitalks/social/email_banner.hcl \
-	--var edition=$EDITION \
+	--var edition="" \
 	--var color=$COLOR \
     --var logo_offset=$LOGO_OFFSET \
 	--var regular_font=$REGULAR_FONT \
