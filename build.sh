@@ -98,9 +98,9 @@ picasso generate \
    --csv-var speaker
 
   # speakers 2_speakers
-# picasso generate \
-#   -t hashitalks/speakers/speaker_two_speakers.hcl \
-#   -o $OUTPUT_DIR/speakers/ \
-#   --var edition=$EDITION \
-#   --csv $INPUT_DIR/csv/speakers_two_speakers.csv \
-#   --csv-var speaker
+picasso generate \
+  -t hashitalks/speakers/speaker_two_speakers.hcl \
+  -o $OUTPUT_DIR/speakers/ \
+  --var edition=$EDITION \
+  --csv $INPUT_DIR/csv/speakers_two_speakers.csv \
+  --csv-var speaker
