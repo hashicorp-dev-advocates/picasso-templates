@@ -1,7 +1,7 @@
 #!/bin/bash
-EDITION="Template"
-DATE="Month day, year"
-URL="hashi.co/hashitalks-template"
+EDITION="2025"
+DATE="February 20, 2025"
+URL="hashi.co/hashitalks-2025"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
 TAGLINE="Hear from and learn with fellow practitioners."
@@ -10,7 +10,7 @@ BOLD_FONT="fonts/hashicorpsans/bold.ttf"
 LIGHT_FONT="fonts/hashicorpsans/light.ttf"
 COLOR="pink"
 INPUT_DIR="input/$EDITION"
-OUTPUT_DIR="../hashitalks-assets/2024/$EDITION"
+OUTPUT_DIR="../hashitalks-assets/2025/$EDITION"
 NEXT="Next"
 LOGO_OFFSET="0"
 TAGLINE_OFFSET="275"

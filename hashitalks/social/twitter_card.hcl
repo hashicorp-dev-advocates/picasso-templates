@@ -88,7 +88,7 @@ layer "image" "background" {
 
 layer "image" "top" {
   content = "${file("images/lines.png")}"
-  x       = 1050-1000-75
+  x       = 1050-1000-75+40
   y       = 0
   width   = 775+775+50
   height  = 406+406+100+25
@@ -96,7 +96,7 @@ layer "image" "top" {
 
 layer "image" "sun" {
   content = "${file("images/sun.png")}"
-  x       = 825
+  x       = 825+25
   y       = 0
   width   = 775
   height  = 901
@@ -120,7 +120,7 @@ layer "image" "hashitalks" {
 
 layer "text" "edition" {
   content = "${edition}"
-  x       = "${x_axis}"+740
+  x       = "${x_axis}"+740-8
   y       = "${y_axis}"+45
   size    = 95
   font    = "${logo_light_font}"
