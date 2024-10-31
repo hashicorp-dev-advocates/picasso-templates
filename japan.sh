@@ -49,11 +49,11 @@ picasso generate \
 	--var light_font=$LIGHT_FONT \
 	-o $OUTPUT_DIR/social/email_banner.png
 
-# # background
-#  picasso generate \
-#   -t hashitalks/streamyard/background/default.hcl \
-#   -o $OUTPUT_DIR/streaming/default_background.png \
-#   --var color=$COLOR
+# background
+ picasso generate \
+  -t hashitalks/streamyard/background/default.hcl \
+  -o $OUTPUT_DIR/streaming/default_background.png \
+  --var color=$COLOR
 
 # # title
 # picasso generate \
@@ -62,47 +62,47 @@ picasso generate \
 #  --var edition=$EDITION \
 #  --var color=$COLOR \
 
-# # speakers
-# picasso generate \
-#  -t hashitalks/speakers/speaker.hcl \
-#  -o $OUTPUT_DIR/speakers/ \
-#  --var edition=$EDITION \
-#  --var url=$URL \
-#  --var bold_font=$BOLD_FONT \
-#  --var light_font=$LIGHT_FONT \
-#  --var regular_font=$REGULAR_FONT \
-#  --var title_bold_font=$TITLE_BOLD_FONT \
-#  --var edition_font=$EDITION_FONT \
-#  --csv $INPUT_DIR/csv/speakers.csv \
-#  --csv-var speaker
+# speakers
+picasso generate \
+ -t hashitalks/speakers/speaker.hcl \
+ -o $OUTPUT_DIR/speakers/ \
+ --var edition=$EDITION \
+ --var url=$URL \
+ --var bold_font=$BOLD_FONT \
+ --var light_font=$LIGHT_FONT \
+ --var regular_font=$REGULAR_FONT \
+ --var title_bold_font=$TITLE_BOLD_FONT \
+ --var edition_font=$EDITION_FONT \
+ --csv $INPUT_DIR/csv/speakers.csv \
+ --csv-var speaker
 
-# # speakers no_space
-# picasso generate \
-#  -t hashitalks/speakers/speaker_no_space.hcl \
-#  -o $OUTPUT_DIR/speakers/ \
-#  --var edition=$EDITION \
-#  --var url=$URL \
-#  --var bold_font=$BOLD_FONT \
-#  --var light_font=$LIGHT_FONT \
-#  --var regular_font=$REGULAR_FONT \
-#  --var title_bold_font=$TITLE_BOLD_FONT \
-#  --var edition_font=$EDITION_FONT \
-#  --csv $INPUT_DIR/csv/speakers_no_space.csv \
-#  --csv-var speaker
+# speakers no_space
+picasso generate \
+ -t hashitalks/speakers/speaker_no_space.hcl \
+ -o $OUTPUT_DIR/speakers/ \
+ --var edition=$EDITION \
+ --var url=$URL \
+ --var bold_font=$BOLD_FONT \
+ --var light_font=$LIGHT_FONT \
+ --var regular_font=$REGULAR_FONT \
+ --var title_bold_font=$TITLE_BOLD_FONT \
+ --var edition_font=$EDITION_FONT \
+ --csv $INPUT_DIR/csv/speakers_no_space.csv \
+ --csv-var speaker
 
-# # speakers 2_speakers
-# picasso generate \
-#  -t hashitalks/speakers/speaker_two_speakers.hcl \
-#  -o $OUTPUT_DIR/speakers/ \
-#  --var edition=$EDITION \
-#  --var url=$URL \
-#  --var bold_font=$BOLD_FONT \
-#  --var light_font=$LIGHT_FONT \
-#  --var regular_font=$REGULAR_FONT \
-#  --var title_bold_font=$TITLE_BOLD_FONT \
-#  --var edition_font=$EDITION_FONT \
-#  --csv $INPUT_DIR/csv/speakers_two_speakers.csv \
-#  --csv-var speaker
+# speakers 2_speakers
+picasso generate \
+ -t hashitalks/speakers/speaker_two_speakers.hcl \
+ -o $OUTPUT_DIR/speakers/ \
+ --var edition=$EDITION \
+ --var url=$URL \
+ --var bold_font=$BOLD_FONT \
+ --var light_font=$LIGHT_FONT \
+ --var regular_font=$REGULAR_FONT \
+ --var title_bold_font=$TITLE_BOLD_FONT \
+ --var edition_font=$EDITION_FONT \
+ --csv $INPUT_DIR/csv/speakers_two_speakers.csv \
+ --csv-var speaker
 
 # # speakers 2_speakers_no_space
 #picasso generate \
@@ -118,16 +118,30 @@ picasso generate \
 #  --csv $INPUT_DIR/csv/speakers_two_speakers_no_space.csv \
 #  --csv-var speaker
 
+# speakers 1_line
+picasso generate \
+ -t hashitalks/speakers/speaker_1_line.hcl \
+ -o $OUTPUT_DIR/speakers/ \
+ --var color=$COLOR \
+ --var edition=$EDITION \
+ --var bold_font=$BOLD_FONT \
+ --var light_font=$LIGHT_FONT \
+ --var regular_font=$REGULAR_FONT \
+ --var title_bold_font=$TITLE_BOLD_FONT \
+ --var edition_font=$EDITION_FONT \
+ --csv $INPUT_DIR/csv/speakers_1_line.csv \
+ --csv-var speaker
+
 # new speakers 2023_3_line
-# picasso generate \
-#  -t hashitalks/speakers/speaker_3_line.hcl \
-#  -o $OUTPUT_DIR/speakers/ \
-#  --var edition=$EDITION \
-#  --var url=$URL \
-#  --var bold_font=$BOLD_FONT \
-#  --var light_font=$LIGHT_FONT \
-#  --var regular_font=$REGULAR_FONT \
-#  --var title_bold_font=$TITLE_BOLD_FONT \
-#  --var edition_font=$EDITION_FONT \
-#  --csv $INPUT_DIR/csv/speakers_3_line.csv \
-#  --csv-var speaker
+picasso generate \
+ -t hashitalks/speakers/speaker_3_line.hcl \
+ -o $OUTPUT_DIR/speakers/ \
+ --var edition=$EDITION \
+ --var url=$URL \
+ --var bold_font=$BOLD_FONT \
+ --var light_font=$LIGHT_FONT \
+ --var regular_font=$REGULAR_FONT \
+ --var title_bold_font=$TITLE_BOLD_FONT \
+ --var edition_font=$EDITION_FONT \
+ --csv $INPUT_DIR/csv/speakers_3_line.csv \
+ --csv-var speaker
