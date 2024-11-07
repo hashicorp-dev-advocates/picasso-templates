@@ -1,8 +1,0 @@
-speaker,title,output
-Tetsuya Tsuji,"Terraformを使って、Volterra vK8sを構築してみよう！",speaker_2
-Takamichi Asai,"Terraform と FortiGateで「Secure & Agile Hybrid Cloud",speaker_4
-Yuki Maeno,"Terraform SentinelとSnykで実現する IaC ガバナンス & セキュリティ フロー",speaker_8
-Etsuo Kurose,"Terraform Cloud をより便利に利用するために取り組んだこと",speaker_9
-Ryusuke Sato,"Terraform workspace と Terraform Cloud を用いたDRYでシンプルな運用フロー",speaker_11
-Katsutomo Uekusa,"DevOpsの3.5 次元的解釈に基づく CI/CD パイプライン設計",speaker_14
-Tugrul Acikgoz & Haruki Nakamura,"クラウドだけじゃない！ 簡単 DC プロビジョニング with Terraform",speaker_18

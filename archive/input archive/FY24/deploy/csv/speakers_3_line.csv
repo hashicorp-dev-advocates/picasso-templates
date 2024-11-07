@@ -1,0 +1,13 @@
+speaker,title,date,photo
+Max Fröhlich,Keep your complex Nomad jobs sane & simple with the Nomad Admission Control Proxy,December 6 | 10:05,input/deploy/images/Max_Frohlich.jpg
+Neel Shah,How to implement automated deployment pipelines for your DevOps projects,December 6 | 10:35,input/deploy/images/Neel_Shah.png
+Eric Evans,Achieving regulatory compliance in multi-cloud deployments with Terraform,December 6 | 11:20,input/deploy/images/Eric_Evans.jpg
+Adam Keller,Beyond HCL and JSON: writing Terraform configurations using the CDK for Terraform,December 6 | 13:00,input/deploy/images/Adam_Keller.jpeg
+Ramesh Mathikumar,Performing validations with Terraform using Terraform Test Framework,December 6 | 13:30,input/deploy/images/Ramesh_Mathikumar.jpg
+Jeferson Fernando,Platform Engineering: delivering infrastructure as a product with Terraform,December 7 | 10:05,input/deploy/images/Jeferson_Fernando.png
+Eric Evans,From secure containers to optimized Kubernetes deployments using Waypoint,December 7 | 10:35,input/deploy/images/Eric_Evans.jpg
+Dwayne McDaniel,Who goes there? Actively detecting intruders with cyber deception tools,December 7 | 12:05,input/deploy/images/Dwayne_McDaniel.png
+Rotem Tamir,Avoid toll roads: deploying declarative database schema changes,December 7 | 12:45,input/deploy/images/Rotem_Tamir.jpg
+Amarnath Ravikumar,Ephemeral developer preview environments with Consul Service Mesh,December 7 | 13:15,input/deploy/images/Amarnath_Ravikumar.jpg
+Madhu Kumar Yeluri,Simplify EKS deployment with Terraform: unlock the power of automation,December 7 | 15:25,input/deploy/images/Madhu_Kumar_Yeluri.png
+David Min,Generative AI Terraform companion PoC using open source models,December 7 | 15:55,input/deploy/images/David_Min.png

@@ -18,17 +18,17 @@ variable "edition" {
 
 variable "regular_font" {
   type    = "string"
-  default = "fonts/arial/regular.ttf"
+  default = "fonts/metro/regular.ttf"
 }
 
 variable "bold_font" {
   type    = "string"
-  default = "fonts/arial/bold.ttf"
+  default = "fonts/hashicorpsans/bold.ttf"
 }
 
 variable "light_font" {
   type    = "string"
-  default = "fonts/arial/light.ttf"
+  default = "fonts/hashicorpsans/light.ttf"
 }
 
 layer "image" "logo" {
@@ -43,7 +43,7 @@ layer "text" "hashi" {
   x       = 65
   y       = 22
   size    = 76
-  font    = "fonts/klavika/bold.ttf"
+  font    = "fonts/hashicorpsans/bold.ttf"
 }
 
 layer "text" "t" {
@@ -51,7 +51,7 @@ layer "text" "t" {
   x       = 250
   y       = 22
   size    = 76
-  font    = "fonts/klavika/light.ttf"
+  font    = "fonts/hashicorpsans/light.ttf"
 }
 
 layer "text" "alks" {
@@ -59,7 +59,7 @@ layer "text" "alks" {
   x       = 280
   y       = 22
   size    = 76
-  font    = "fonts/klavika/light.ttf"
+  font    = "fonts/hashicorpsans/light.ttf"
 }
 
 layer "text" "edition" {
@@ -67,5 +67,5 @@ layer "text" "edition" {
   x       = 420
   y       = 74
   size    = 24
-  font    = "fonts/klavika/regular.ttf"
+  font    = "${regular_font}"
 }

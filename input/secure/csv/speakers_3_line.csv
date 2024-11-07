@@ -1,0 +1,9 @@
+speaker,title,date,photo
+Anupam Phoghat,Integrating DevSecOps with HashiCorp: A practical guide to securing your infrastructure,23 May 2024 | 11:50 AM,input/secure/images/anupam_phoghat.png
+Cédric Derue,Fortressing the critical: Achieving NIS2 compliance with HashiCorp Vault and Boundary,22 May 2024 | 10:35 AM,input/secure/images/cedric_derue.png
+Hila Fish,Extension unlocked: Granular secret (service) distribution with HashiCorp Vault,22 May 2024 | 10:05 AM,input/secure/images/hila_fish.jpg
+Max Fröhlich,DevSecOpsify your Nomad deployments with NACP and the Notary project,22 May 2024 | 10:20 AM,input/secure/images/max_frohlich.jpg
+Mattias Fjellström,Unlocking privileged access management: HCP Boundary with Terraform,22 May 2024 | 11:05 AM,input/secure/images/mattias_fjellstrom.jpg
+Michael Kosir,Decoupling Python web applications with Vault Agent/Proxy,22 May 2024 | 11:35 AM,input/secure/images/michael_kosir.png
+Renaldi Gondosubroto,Integrating generative AI in zero-trust security with HashiCorp tools,23 May 2024 | 12:35 PM,input/secure/images/renaldi_gondosubroto.png
+Scott Ford,Building end-to-end secure workflows for Terraform deployments from code to runtime,23 May 2024 | 10:50 AM,input/secure/images/scott_ford.png

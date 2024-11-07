@@ -21,6 +21,36 @@ variable "edition" {
   type = "string"
 }
 
+variable "x_axis" {
+  type = "string"
+  default = "85"
+}
+
+variable "logo_medium_font" {
+  type    = "string"
+  default = "fonts/hashicorpsans/medium.ttf"
+}
+
+variable "logo_light_font" {
+  type    = "string"
+  default = "fonts/hashicorpsans/light.ttf"
+}
+
+variable "regular_font" {
+  type    = "string"
+  default = "fonts/metro/regular.ttf"
+}
+
+variable "bold_font" {
+  type    = "string"
+  default = "fonts/metro/bold.ttf"
+}
+
+variable "light_font" {
+  type    = "string"
+  default = "fonts/metro/light.ttf"
+}
+
 layer "rectangle" "background" {
   x      = 0
   y      = 0
@@ -29,69 +59,74 @@ layer "rectangle" "background" {
   color  = "#000000"
 }
 
-layer "image" "dots_left" {
-  content = "${file("images/dots_${color}.png")}"
-  x       = 0
-  y       = 1080 - (300)
-  height  = 300
+layer "image" "background" {
+  content = "${file("images/background_${color}.png")}"
+  x      = 0
+  y      = 0
+  width  = 1920
+  height = 1080
 }
 
-layer "image" "dots_right" {
-  content = "${file("images/dots_${color}.png")}"
-  x       = 340
-  y       = 1080 - (300)
-  height  = 300
+layer "image" "top" {
+  content = "${file("images/top.png")}"
+  x       = 1325
+  y       = 0
+  width   = 775
+  height  = 406
 }
 
-layer "image" "lines_mask" {
-  content = "${file("images/lines_mask.png")}"
-  x       = 0 + 3
-  y       = 1080 - (300)
-  height  = 300
+layer "image" "bottom" {
+  content = "${file("images/bottom.png")}"
+  x       = 1325
+  y       = 675
+  width   = 775
+  height  = 406
 }
 
-layer "image" "lines" {
-  content = "${file("images/lines_${color}.png")}"
-  x       = 0
-  y       = 1080 - (300)
-  height  = 300
+layer "image" "sun" {
+  content = "${file("images/sun.png")}"
+  x       = 975
+  y       = -20
+  width   = 946
+  height  = 1100
 }
 
 layer "image" "logo" {
   content = "${file(logo)}"
-  x       = 490
-  y       = 415
-  width   = 120
+  x       = "${x_axis}"
+  y       = "85"
+  width   = 85
+  height  = 85
 }
 
 layer "text" "hashi" {
   content = "Hashi"
-  x       = 630
-  y       = 390
+  x       = 525
+  y       = 425
   size    = 132
-  font    = "fonts/klavika/bold.ttf"
+  font    = "fonts/hashicorpsans/bold.ttf"
 }
 
 layer "text" "t" {
   content = "T"
-  x       = 950
-  y       = 390
+  x       = 845
+  y       = 425
   size    = 132
-  font    = "fonts/klavika/light.ttf"
+  font    = "fonts/hashicorpsans/light.ttf"
 }
 
 layer "text" "alks" {
   content = "alks"
-  x       = 1005
-  y       = 390
+  x       = 900
+  y       = 425
   size    = 132
-  font    = "fonts/klavika/light.ttf"
+  font    = "fonts/hashicorpsans/light.ttf"
 }
 
 layer "text" "edition" {
   content = "${edition}"
-  x       = 1250
-  y       = 473
+  x       = 1145
+  y       = 508
   size    = 48
-  font    = "fonts/klavika/regular.ttf"
+  font    = "${regular_font}"
 }

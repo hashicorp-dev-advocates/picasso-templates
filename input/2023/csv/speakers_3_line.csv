@@ -1,0 +1,12 @@
+speaker,title,date,time,photo
+Aakash Shah | Oak9,Terraform and DevSecOps: Top 10 Lessons Learned for Scaling Terraform,"February 17, 2023",1:35,input/2023/images/Aakash_Shah.jpg
+Abigail Bangser | Syntasso,Providing Waypoint as a Service Across Multi-Cluster Kubernetes,"February 17, 2023",2:35,input/2023/images/Abigail_Bangser.jpg
+Ari Kalfus | DigitalOcean,Building Scalable Enterprise Secrets Management with GitHub OIDC and HashiCorp Vault,"February 16, 2023",17:15,input/2023/images/Ari_Kalfus.png
+Chris van Meer | AT Computing,How to Deploy Your HashiCorp Stack with Ansible in Under 15 Minutes,"February 17, 2023",7:15,input/2023/images/Chris_van_Meer.jpg
+David Alexander | Elevance Health,IRSA Evolved: Transparent AWS Access by Any Kubernetes Workload,"February 17, 2023",2:05,input/2023/images/David_Alexander.jpg
+Felipe Angelo Sgarbi | SigaMeCar,Containerized Infrastructure-as-Code with Immutable Clusters,"February 17, 2023",10:25,input/2023/images/Felipe_Angelo_Sgarbi.png
+Juan Peredo | AWS,Fast-track Your Kubernetes Journey with EKS BluePrints for Terraform and Waypoint,"February 16, 2023",22:55,input/2023/images/Juan_Peredo.jpg
+"Jurnell Cockhren | Civic Hacker, LLC","Defeat the ""Computer Setup Blues"" and Get Coding Faster with Backpack","February 17, 2023",0:35,input/2023/images/Jurnell_Cockhren.jpg
+Liav Yona | Firefly,Everything you Need to Know about *CDK - The Internals: From CDKTF to CDK8s,"February 17, 2023",5:15,input/2023/images/Liav_Yona.png
+Sivamuthu Kumar | Computer Enterprises Inc,Enhancing Platform Teams Workflow with Infrastructure as Code,"February 16, 2023",20:25,input/2023/images/Sivamuthu_Kumar.jpg
+Thomas Kula | HashiCorp,Why You Should Use Vault as Your Consul Certificate Authority,"February 16, 2023",22:25,input/2023/images/Thomas_Kula.jpg

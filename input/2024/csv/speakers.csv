@@ -1,0 +1,29 @@
+speaker,title,date,photo
+Marko Bevc | The Scale Factory,What happened to my Terraform module?,"February 15, 2024 | 12:35 GMT",input/2024/images/Marko_Bevc.jpg
+Andrei Buzoianu | DevOps Consultant,Terraform and beyond: infrastructure end-to-end testing,"February 15, 2024 | 17:45 GMT",input/2024/images/Andrei_Buzoianu.jpg
+Elif Samedin | Senior DevOps Engineer,Terraform and beyond: infrastructure end-to-end testing,"February 15, 2024 | 17:45 GMT",input/2024/images/Elif_Samedin.jpg
+Bram Vogelaar | Seaplane.io,Self scaling multi-cloud Nomad workloads,"February 15, 2024 | 15:05 GMT",input/2024/images/Bram_Vogelaar.png
+Caleb Sutton | H&R Block,How H&R Block uses the Terraform Cloud API to manage workspaces,"February 16, 2024 | 1:05 GMT",input/2024/images/Caleb_Sutton.png
+Cami Martins | Storyblok,Using Terraform to migrate to containers: journey about security,"February 15, 2024 | 17:15 GMT",input/2024/images/Cami_Martins.jpeg
+Femi Taiwo | INITS,Building resilience and security into your app & infrastructure,"February 15, 2024 | 15:35 GMT",input/2024/images/Femi_Taiwo.jpg
+Kyle Penfound | Dagger,Secure and portable CI pipelines with Dagger and Vault,"February 15, 2024 | 14:05 GMT",input/2024/images/Kyle_Penfound.jpg
+Nic Jackson | HashiCorp,Secure and portable CI pipelines with Dagger and Vault,"February 15, 2024 | 14:05 GMT",input/2024/images/Nic_Jackson.jpg
+Mark Tinderholt | Microsoft Azure,Automating AKS with Terraform: best practices from the field,"February 15, 2024 | 16:45 GMT",input/2024/images/Mark_Tinderholt.jpg
+Neelam Koshiya | AWS,Deploy generative AI models on Amazon EKS using Terraform,"February 16, 2024 | 5:45 GMT",input/2024/images/Neelam_Koshiya.jpg
+Yassine Snoussi | Cloud Developer,Using new native testing feature with Terraform 1.6,"February 15, 2024 | 16:15 GMT",input/2024/images/Yassine_Snoussi.jpg
+Marc LeBlanc | ,Edge security: PKI unleashed - the secret handshake,"February 15, 2024 | 18:15 GMT",input/2024/images/Marc_LeBlanc.jpg
+Adriana Villela | Lightstep,KubeNomad: how to run Kubernetes on Nomad,"February 15, 2024 | 19:45 GMT",input/2024/images/Adriana_Villela.jpg
+Connor Brown | 84.51,Automating the module registry with GitOps,"February 15, 2024 | 21:25 GMT",input/2024/images/Connor_Brown.jpg
+Nate Jones | 84.51,Automating the module registry with GitOps,"February 15, 2024 | 21:25 GMT",input/2024/images/Nate_Jones.jpg
+Welly Siauw | AWS,AWSCC documentation with the help of GenAI,"February 15, 2024 | 21:55 GMT",input/2024/images/Welly_Siauw.png
+Yahya Fadhluloh Al Fatih | eFishery,Self-Build CI/CD for Hashicorp stack,"February 15, 2024 | 23:25 GMT",input/2024/images/Yahya_Fadhluloh_Al_Fatih.png
+Robin Rodriguez | AWS,Operating DNS at scale with Terraform,"February 16, 2024 | 0:35 GMT",input/2024/images/Robin_Rodriguez.jpeg
+Riaan Nolan | Servian,A top gun Terraform development environment,"February 16, 2024 | 1:35 GMT",input/2024/images/Riaan_Nolan.jpg
+Pato Arvizu | ASAPP Inc.,HashiCake: stacking all HashiCorp components,"February 16, 2024 | 11:25 GMT",input/2024/images/Pato_Arvizu.jpg
+Aiden Ziegelaar | Cognizant Servian,CDKtf - patterns for security by default,"February 16, 2024 | 2:35 GMT",input/2024/images/Aiden_Ziegelaar.jpg
+Jonathan Hurley | AWS,AWS IAM roles anywhere via Hashicorp Vault,"February 16, 2024 | 3:05 GMT",input/2024/images/Jonathan_Hurley.jpeg
+Chris van Meer | AT Computing,Certificates on the fly: Traefik Enterprise and Vault,"February 15, 2024 | 13:05 GMT",input/2024/images/Chris_van_Meer.jpg
+Hamza Naqi | Cloud Architect,Resiliency with cloud SQL delivered via Terraform,"February 16, 2024 | 9:25 GMT",input/2024/images/Hamza_Naqi.png
+Patrick Koch | AVL List GmbH,Migration of a containerized legacy application to the cloud,"February 16, 2024 | 9:55 GMT",input/2024/images/Patrick_Koch.png
+Shala Warner | Cloud Advocate,Code Theft Auto: Learning Terraform with a GTA V Theme,"Febraury 15, 2024 | 19:15 GMT",input/2024/images/Shala_Warner.jpg
+Simon Elliott | HashiCorp,Terraform remote operations,"February 15, 2024 | 22:25 GMT",input/2024/images/simon-elliott.jpg
