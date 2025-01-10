@@ -115,21 +115,21 @@ layer "image" "background" {
   height = 675
 }
 
-layer "image" "top" {
-  content = "${file("images/top.png")}"
-  x       = 730
-  y       = 0
-  width   = 500
-  height  = 262
-}
+#layer "image" "top" {
+#  content = "${file("images/top.png")}"
+#  x       = 730
+#  y       = 0
+#  width   = 500
+#  height  = 262
+#}
 
-layer "image" "bottom" {
-  content = "${file("images/bottom.png")}"
-  x       = 750
-  y       = 415
-  width   = 500
-  height  = 262
-}
+#layer "image" "bottom" {
+#  content = "${file("images/bottom.png")}"
+#  x       = 750
+#  y       = 415
+#  width   = 500
+#  height  = 262
+#}
 
 layer "image" "sun" {
   content = "${file("images/sun.png")}"
@@ -183,7 +183,7 @@ layer "text" "title" {
   content = "${title}"
   width   = 700
   x       = "${x_axis}"
-  y       = 165
+  y       = 165+38
   size    = 42
   font    = "${title_bold_font}"
 }

@@ -86,13 +86,13 @@ layer "image" "background" {
   height = 900
 }
 
-layer "image" "top" {
-  content = "${file("images/lines.png")}"
-  x       = 1050-1000-75+40
-  y       = 0
-  width   = 775+775+50
-  height  = 406+406+100+25
-}
+#layer "image" "top" {
+#  content = "${file("images/lines.png")}"
+#  x       = 1050-1030
+#  y       = 0
+#  width   = 775+825
+#  height  = 406+531
+#}
 
 layer "image" "sun" {
   content = "${file("images/sun.png")}"
@@ -114,15 +114,15 @@ layer "image" "hashitalks" {
   content = "${file(hashitalks)}"
   x       = "${x_axis}"
   y       = "${y_axis}"+36
-  width   = 700+5
-  height  = 106
+  width   = 705-75
+  height  = 106-11
 }
 
 layer "text" "edition" {
   content = "${edition}"
-  x       = "${x_axis}"+740-8
-  y       = "${y_axis}"+45
-  size    = 95
+  x       = "${x_axis}"+732-75
+  y       = "${y_axis}"+45-1
+  size    = 95-10
   font    = "${logo_light_font}"
 }
 
@@ -131,7 +131,7 @@ layer "text" "tagline" {
   x       = "${x_axis}"
   y       = "${y_axis}"+150+65
   width   = "750"
-  size    = 45+15
+  size    = 45+15-10
   font    = "${logo_medium_font}"
 }
 

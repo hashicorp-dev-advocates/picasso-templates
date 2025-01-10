@@ -1,8 +1,5 @@
 speaker,title,date,photo
-Hayato Kawai,巨大 tfstate に立ち向かう技術,14 November 2024 | 11:05,input/japan/images/hayato_kawai.jpg
 浩貴 森,マルチリージョン構成における Terraform モジュール設計,14 November 2024 | 11:20,input/japan/images/hao_gui_sen.jpg
 雅樹 佐藤,HCP Terraform で始める Terraform のテスト,14 November 2024 | 11:50,input/japan/images/ryosei_kuramoto.jpg
 太一 埜下,HCP Vault Secrets でシークレット管理を始めよう,14 November 2024 | 12:35,input/japan/images/tai_yi_ye_xia.png
-檜山 準,Terraform CI/CD パイプラインにおける AWS CodeCommit の代替手段,14 November 2024 | 12:50,input/japan/images/kuai_shan_zhun.jpg
-Kodai Sakabe,Terraform のための Azure Verified Modules を使った IaC のモジュール戦略,14 November 2024 | 13:05,input/japan/images/kodai_sakabe.png
 Masaki Kazue,Terraform でEKSを操る実践的 Tips と効率化テクニック,14 November 2024 | 13:20,input/japan/images/masaki_kazue.jpg
