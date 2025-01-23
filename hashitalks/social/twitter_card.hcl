@@ -130,7 +130,7 @@ layer "text" "tagline" {
   content = "${tagline}"
   x       = "${x_axis}"
   y       = "${y_axis}"+150+65
-  width   = "750"
+  width   = 750+150
   size    = 45+15-10
   font    = "${logo_medium_font}"
 }
