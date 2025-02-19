@@ -1,19 +1,19 @@
 #!/bin/bash
-EDITION="India"
-DATE="30 October 2025"
-URL="hashi.co/hashitalks-india"
+EDITION="Indonesia"
+DATE="21 Agustus 2025"
+URL="hashi.co/hashitalks-indonesia"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
-TAGLINE="Hear from and learn with fellow practitioners."
-REGULAR_FONT="fonts/hashicorpsans/regular.ttf"
-BOLD_FONT="fonts/hashicorpsans/bold.ttf"
-LIGHT_FONT="fonts/hashicorpsans/light.ttf"
+TAGLINE="Mendengar dan belajar dari rekan-rekan praktisi:"
+REGULAR_FONT="fonts/klavika/regular.ttf"
+BOLD_FONT="fonts/klavika/bold.ttf"
+LIGHT_FONT="fonts/klavika/light.ttf"
 COLOR="blue"
-INPUT_DIR="input/$EDITION"
+INPUT_DIR="input/indonesia"
 OUTPUT_DIR="../hashitalks-assets/2025/$EDITION"
 NEXT="Next"
 LOGO_OFFSET="0"
-TAGLINE_OFFSET="275"
+TAGLINE_OFFSET="425"
 
 mkdir -p $OUTPUT_DIR
 mkdir -p $OUTPUT_DIR/speakers
@@ -24,11 +24,11 @@ mkdir -p $OUTPUT_DIR/social
 picasso generate \
 	-t hashitalks/social/twitter_card.hcl \
 	--var edition=$EDITION \
-	--var tagline="$TAGLINE" \
+	--var tagline="Mendengar dan belajar dari rekan-rekan praktisi:" \
 	--var color=$COLOR \
-    --var tagline_offset=$TAGLINE_OFFSET \
+  --var tagline_offset=$TAGLINE_OFFSET \
+	--var date="21 Agustus 2025" \
 	--var url=$URL \
-	--var date="$DATE" \
   -o $OUTPUT_DIR/social/twitter_card.png
 
 picasso generate \
@@ -38,20 +38,13 @@ picasso generate \
   --var logo_offset=$LOGO_OFFSET \
 	-o $OUTPUT_DIR/social/email_banner.png
 
-# title
-# picasso generate \
-#   -t hashitalks/streamyard/overlay/title.hcl \
-#   -o $OUTPUT_DIR/streaming/title.png \
-#   --var edition=$EDITION \
-#   --var color=$COLOR \
-
 # speakers
 # picasso generate \
 #   -t hashitalks/speakers/speaker.hcl \
 #   -o $OUTPUT_DIR/speakers/ \
 #   --var color=$COLOR \
 #   --var edition=$EDITION \
-#   --var date="February 16, 2023" \
+#   --var date="25 APRIL 2025" \
 #   --var url=$URL \
 #   --csv $INPUT_DIR/csv/speakers.csv \
 #   --csv-var speaker

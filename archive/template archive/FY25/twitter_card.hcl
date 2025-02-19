@@ -1,23 +1,6 @@
-# 
-# This template generates a speaker card for a talk that has a short title that fits on 1 line.
-# The required variables for this template are:
-# - edition
-# - speaker
-# - title
-# - photo
-# - date
-# - url
-# - color
-# 
-
 output "png" {
-  width  = 1200
-  height = 675
-}
-
-variable "color" {
-  type    = "string"
-  default = "pink"
+  width  = 1600
+  height = 900
 }
 
 variable "logo" {
@@ -34,15 +17,7 @@ variable "edition" {
   type = "string"
 }
 
-variable "speaker" {
-  type = "string"
-}
-
 variable "title" {
-  type = "string"
-}
-
-variable "photo" {
   type = "string"
 }
 
@@ -56,12 +31,12 @@ variable "url" {
 
 variable "x_axis" {
   type = "string"
-  default = "40"
+  default = "75"
 }
 
 variable "y_axis" {
   type = "string"
-  default = "85"
+  default = "260"
 }
 
 variable "logo_medium_font" {
@@ -74,14 +49,9 @@ variable "logo_light_font" {
   default = "fonts/hashicorpsans/light.ttf"
 }
 
-variable "title_bold_font" {
-  type    = "string"
-  default = "fonts/hashicorpsans/bold.ttf"
-}
-
 variable "regular_font" {
   type    = "string"
-  default = "fonts/metro/regular.ttf"
+  default = "fonts/hashicorpsans/regular.ttf"
 }
 
 variable "bold_font" {
@@ -94,96 +64,89 @@ variable "light_font" {
   default = "fonts/metro/light.ttf"
 }
 
-variable "edition_font" {
+variable "tagline_offset" {
   type    = "string"
-  default = "fonts/hashicorpsans/light.ttf"
+  default = "0"
 }
 
 layer "rectangle" "background" {
   x      = 0
   y      = 0
-  width  = 1200
-  height = 675
+  width  = 1600
+  height = 900
 
   color = "#000000"
 }
+
 layer "image" "background" {
   content = "${file("images/background_${color}.png")}"
   x      = 0
   y      = 0
-  width  = 1200
-  height = 675
+  width  = 1600
+  height = 900
 }
+
+#layer "image" "top" {
+#  content = "${file("images/lines.png")}"
+#  x       = 1050-1030
+#  y       = 0
+#  width   = 775+825
+#  height  = 406+531
+#}
 
 layer "image" "sun" {
   content = "${file("images/sun.png")}"
-  x       = -50
+  x       = 825+25
   y       = 0
-  width   = 1215
-  height  = 675
+  width   = 775
+  height  = 901
 }
 
 layer "image" "logo" {
   content = "${file(logo)}"
   x       = "${x_axis}"
-  y       = "${y_axis}"+17
-  width   = 48
-  height  = 48
-}
-
-layer "text" "2_point" {
-  content = "|"
-  x       = 105+10
-  y       = "${y_axis}"+10
-  size    = 45
-  font    = "fonts/hashicorpsans/light.ttf"
+  y       = "85"
+  width   = 85
+  height  = 85
 }
 
 layer "image" "hashitalks" {
   content = "${file(hashitalks)}"
-  x       = "${x_axis}"+116
-  y       = "${y_axis}"+17
-  width   = 298-2
-  height  = 48-1
+  x       = "${x_axis}"
+  y       = "${y_axis}"+36
+  width   = 705-75
+  height  = 106-11
 }
 
 layer "text" "edition" {
   content = "${edition}"
-  x       = 445+25
-  y       = "${y_axis}"+18
-  size    = 46
-  font    = "${edition_font}"
+  x       = "${x_axis}"+732-75
+  y       = "${y_axis}"+45-1
+  size    = 95-10
+  font    = "${logo_light_font}"
 }
 
-layer "image" "photo" {
-  content = "${file(photo)}"
-  x       = 825
-  y       = 300
-  width   = 375
-  height  = 375
-}
-
-layer "text" "title" {
-  content = "${title}"
-  width   = 650
+layer "text" "tagline" {
+  content = "${tagline}"
   x       = "${x_axis}"
-  y       = 275
-  size    = 42
-  font    = "${title_bold_font}"
+  y       = "${y_axis}"+150+65
+  width   = 750+150
+  size    = 45+15-10
+  font    = "${logo_medium_font}"
 }
 
-layer "text" "speaker" {
-  content = "${speaker}"
+layer "text" "url" {
+  content = "${url}"
   x       = "${x_axis}"
-  y       = 477
-  size    = 30
+  y       = "${y_axis}"+500
+  size    = 45
   font    = "${bold_font}"
 }
 
 layer "text" "date" {
   content = "${date}"
   x       = "${x_axis}"
-  y       = 517
-  size    = 30
+  y       = "${y_axis}"+175
+  size    = 45
   font    = "${regular_font}"
 }

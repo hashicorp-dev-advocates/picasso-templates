@@ -1,7 +1,7 @@
 #!/bin/bash
-EDITION="Template"
-DATE="Month day, year"
-URL="hashi.co/hashitalks-template"
+EDITION="España"
+DATE="15 de enero de 2026"
+URL="hashi.co/hashitalks-espana"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
 TAGLINE="Hear from and learn with fellow practitioners."
@@ -24,7 +24,7 @@ mkdir -p $OUTPUT_DIR/social
 picasso generate \
   -t hashitalks/social/twitter_card.hcl \
   --var edition=$EDITION \
-  --var tagline="$TAGLINE" \
+  --var tagline="Entérate de las novedades y aprende con tus colegas profesionales." \
   --var color=$COLOR \
   --var tagline_offset=$TAGLINE_OFFSET \
   --var date="$DATE" \

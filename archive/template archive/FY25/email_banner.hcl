@@ -68,12 +68,21 @@ layer "image" "background" {
   width  = 1600
   height = 467
 }
+
+ layer "image" "top" {
+  content = "${file("images/lines.png")}"
+  x       = 1150-700
+  y       = 0
+  width   = 540+500
+  height  = 283+500
+ }
+
 layer "image" "sun" {
   content = "${file("images/sun.png")}"
-  x       = 733
+  x       = 1110
   y       = 0
-  width   = 910
-  height  = 467
+  width   = 490
+  height  = 570
 }
 
 layer "image" "logo" {

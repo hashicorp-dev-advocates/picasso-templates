@@ -1,7 +1,7 @@
 #!/bin/bash
-EDITION="Template"
-DATE="Month day, year"
-URL="hashi.co/hashitalks-template"
+EDITION="Italia"
+DATE="8 maggio 2025"
+URL="hashi.co/hashitalks-italia"
 
 ID=$(echo $EDITION | tr '[:upper:]' '[:lower:]')
 TAGLINE="Hear from and learn with fellow practitioners."

@@ -9,7 +9,7 @@ BOLD_FONT="fonts/hashicorpsans/bold.ttf"
 LIGHT_FONT="fonts/hashicorpsans/light.ttf"
 COLOR="blue"
 INPUT_DIR="input/hub"
-OUTPUT_DIR="output/fy2024/hub"
+OUTPUT_DIR="output/fy2026/hub"
 NEXT="Next"
 LOGO_OFFSET="90"
 

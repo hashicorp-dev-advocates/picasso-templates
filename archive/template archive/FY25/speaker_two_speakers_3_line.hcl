@@ -42,11 +42,11 @@ variable "title" {
   type = "string"
 }
 
-variable "photo" {
+variable "date" {
   type = "string"
 }
 
-variable "date" {
+variable "url" {
   type = "string"
 }
 
@@ -111,12 +111,28 @@ layer "image" "background" {
   height = 675
 }
 
+#layer "image" "top" {
+#  content = "${file("images/top.png")}"
+#  x       = 730
+#  y       = 0
+#  width   = 500
+#  height  = 262
+#}
+
+#layer "image" "bottom" {
+#  content = "${file("images/bottom.png")}"
+#  x       = 750
+#  y       = 415
+#  width   = 500
+#  height  = 262
+#}
+
 layer "image" "sun" {
   content = "${file("images/sun.png")}"
-  x       = -50
-  y       = 0
-  width   = 1215
-  height  = 675
+  x       = 700
+  y       = -15
+  width   = 500
+  height  = 700
 }
 
 layer "image" "logo" {
@@ -129,7 +145,7 @@ layer "image" "logo" {
 
 layer "text" "2_point" {
   content = "|"
-  x       = 115
+  x       = 105+10
   y       = "${y_axis}"+10
   size    = 45
   font    = "fonts/hashicorpsans/light.ttf"
@@ -139,13 +155,13 @@ layer "image" "hashitalks" {
   content = "${file(hashitalks)}"
   x       = "${x_axis}"+116
   y       = "${y_axis}"+17
-  width   = 296
-  height  = 47
+  width   = 298-2
+  height  = 48-1
 }
 
 layer "text" "edition" {
   content = "${edition}"
-  x       = 470
+  x       = 445+25
   y       = "${y_axis}"+18
   size    = 46
   font    = "${edition_font}"
@@ -153,17 +169,25 @@ layer "text" "edition" {
 
 layer "image" "photo" {
   content = "${file(photo)}"
-  x       = 825
-  y       = 300
-  width   = 375
-  height  = 375
+  x       = 790
+  y       = 165-115
+  width   = 375-100
+  height  = 375-100
+}
+
+layer "image" "photo1" {
+  content = "${file(photo1)}"
+  x       = 790
+  y       = 165+190
+  width   = 375-100
+  height  = 375-100
 }
 
 layer "text" "title" {
   content = "${title}"
   width   = 650
   x       = "${x_axis}"
-  y       = 203
+  y       = 175+28
   size    = 42
   font    = "${title_bold_font}"
 }

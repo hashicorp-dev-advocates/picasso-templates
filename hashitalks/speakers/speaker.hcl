@@ -111,28 +111,12 @@ layer "image" "background" {
   height = 675
 }
 
-#layer "image" "top" {
-#  content = "${file("images/top.png")}"
-#  x       = 730
-#  y       = 0
-#  width   = 500
-#  height  = 262
-#}
-
-#layer "image" "bottom" {
-#  content = "${file("images/bottom.png")}"
-#  x       = 750
-#  y       = 415
-#  width   = 500
-#  height  = 262
-#}
-
 layer "image" "sun" {
   content = "${file("images/sun.png")}"
-  x       = 700
-  y       = -15
-  width   = 500
-  height  = 700
+  x       = -50
+  y       = 0
+  width   = 1215
+  height  = 675
 }
 
 layer "image" "logo" {
@@ -145,7 +129,7 @@ layer "image" "logo" {
 
 layer "text" "2_point" {
   content = "|"
-  x       = 105+10
+  x       = 115
   y       = "${y_axis}"+10
   size    = 45
   font    = "fonts/hashicorpsans/light.ttf"
@@ -155,13 +139,13 @@ layer "image" "hashitalks" {
   content = "${file(hashitalks)}"
   x       = "${x_axis}"+116
   y       = "${y_axis}"+17
-  width   = 298-2
-  height  = 48-1
+  width   = 296
+  height  = 47
 }
 
 layer "text" "edition" {
   content = "${edition}"
-  x       = 445+25
+  x       = 470
   y       = "${y_axis}"+18
   size    = 46
   font    = "${edition_font}"
@@ -169,15 +153,15 @@ layer "text" "edition" {
 
 layer "image" "photo" {
   content = "${file(photo)}"
-  x       = 790
-  y       = 165
+  x       = 825
+  y       = 300
   width   = 375
   height  = 375
 }
 
 layer "text" "title" {
   content = "${title}"
-  width   = 600
+  width   = 650
   x       = "${x_axis}"
   y       = 245
   size    = 42

@@ -86,20 +86,12 @@ layer "image" "background" {
   height = 900
 }
 
-layer "image" "top" {
-  content = "${file("images/lines.png")}"
-  x       = 1050-1000-75
-  y       = 0
-  width   = 775+775+50
-  height  = 406+406+100+25
-}
-
 layer "image" "sun" {
   content = "${file("images/sun.png")}"
-  x       = 825
+  x       = -10
   y       = 0
-  width   = 775
-  height  = 901
+  width   = 1620
+  height  = 900
 }
 
 layer "image" "logo" {
@@ -114,15 +106,15 @@ layer "image" "hashitalks" {
   content = "${file(hashitalks)}"
   x       = "${x_axis}"
   y       = "${y_axis}"+36
-  width   = 705-25-20
-  height  = 106-4-3
+  width   = 705-75
+  height  = 106-11
 }
 
 layer "text" "edition" {
   content = "${edition}"
-  x       = "${x_axis}"+740-40-20-8
-  y       = "${y_axis}"+45
-  size    = 95-15
+  x       = "${x_axis}"+732-75
+  y       = "${y_axis}"+45-1
+  size    = 95-10
   font    = "${edition_font}"
 }
 

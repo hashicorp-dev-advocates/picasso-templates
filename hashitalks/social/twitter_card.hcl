@@ -85,21 +85,12 @@ layer "image" "background" {
   width  = 1600
   height = 900
 }
-
-#layer "image" "top" {
-#  content = "${file("images/lines.png")}"
-#  x       = 1050-1030
-#  y       = 0
-#  width   = 775+825
-#  height  = 406+531
-#}
-
 layer "image" "sun" {
   content = "${file("images/sun.png")}"
-  x       = 825+25
+  x       = -10
   y       = 0
-  width   = 775
-  height  = 901
+  width   = 1620
+  height  = 900
 }
 
 layer "image" "logo" {
