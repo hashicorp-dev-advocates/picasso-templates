@@ -1,3 +1,6 @@
 output
 .DS_Store
 .tmp.driveupload
+archive/input archive/*/*/images
+input/2025/images
+input/america_latina/images
